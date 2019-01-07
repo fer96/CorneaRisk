@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C4E8CBD21E3FC0500F679F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E8CBC21E3FC0500F679F4 /* AppDelegate.swift */; };
+		4C4E8CBF21E3FC0500F679F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E8CBE21E3FC0500F679F4 /* ViewController.swift */; };
+		4C4E8CC221E3FC0500F679F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4E8CC021E3FC0500F679F4 /* Main.storyboard */; };
+		4C4E8CC421E3FC0600F679F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C4E8CC321E3FC0600F679F4 /* Assets.xcassets */; };
+		4C4E8CC721E3FC0600F679F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4E8CC521E3FC0600F679F4 /* LaunchScreen.storyboard */; };
+		4C4E8CD221E3FC0700F679F4 /* CorneaRiskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E8CD121E3FC0700F679F4 /* CorneaRiskTests.swift */; };
+		4C4E8CDD21E3FC0700F679F4 /* CorneaRiskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E8CDC21E3FC0700F679F4 /* CorneaRiskUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C4E8CCE21E3FC0700F679F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C4E8CB121E3FC0500F679F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C4E8CB821E3FC0500F679F4;
+			remoteInfo = CorneaRisk;
+		};
+		4C4E8CD921E3FC0700F679F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C4E8CB121E3FC0500F679F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C4E8CB821E3FC0500F679F4;
+			remoteInfo = CorneaRisk;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4C4E8CB921E3FC0500F679F4 /* CorneaRisk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CorneaRisk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C4E8CBC21E3FC0500F679F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C4E8CBE21E3FC0500F679F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C4E8CC121E3FC0500F679F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C4E8CC321E3FC0600F679F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C4E8CC621E3FC0600F679F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4C4E8CC821E3FC0700F679F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C4E8CCD21E3FC0700F679F4 /* CorneaRiskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CorneaRiskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C4E8CD121E3FC0700F679F4 /* CorneaRiskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorneaRiskTests.swift; sourceTree = "<group>"; };
+		4C4E8CD321E3FC0700F679F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C4E8CD821E3FC0700F679F4 /* CorneaRiskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CorneaRiskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C4E8CDC21E3FC0700F679F4 /* CorneaRiskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorneaRiskUITests.swift; sourceTree = "<group>"; };
+		4C4E8CDE21E3FC0700F679F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C4E8CB621E3FC0500F679F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C4E8CCA21E3FC0700F679F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C4E8CD521E3FC0700F679F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C4E8CB021E3FC0500F679F4 = {
+			isa = PBXGroup;
+			children = (
+				4C4E8CBB21E3FC0500F679F4 /* CorneaRisk */,
+				4C4E8CD021E3FC0700F679F4 /* CorneaRiskTests */,
+				4C4E8CDB21E3FC0700F679F4 /* CorneaRiskUITests */,
+				4C4E8CBA21E3FC0500F679F4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4C4E8CBA21E3FC0500F679F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C4E8CB921E3FC0500F679F4 /* CorneaRisk.app */,
+				4C4E8CCD21E3FC0700F679F4 /* CorneaRiskTests.xctest */,
+				4C4E8CD821E3FC0700F679F4 /* CorneaRiskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C4E8CBB21E3FC0500F679F4 /* CorneaRisk */ = {
+			isa = PBXGroup;
+			children = (
+				4C4E8CBC21E3FC0500F679F4 /* AppDelegate.swift */,
+				4C4E8CBE21E3FC0500F679F4 /* ViewController.swift */,
+				4C4E8CC021E3FC0500F679F4 /* Main.storyboard */,
+				4C4E8CC321E3FC0600F679F4 /* Assets.xcassets */,
+				4C4E8CC521E3FC0600F679F4 /* LaunchScreen.storyboard */,
+				4C4E8CC821E3FC0700F679F4 /* Info.plist */,
+			);
+			path = CorneaRisk;
+			sourceTree = "<group>";
+		};
+		4C4E8CD021E3FC0700F679F4 /* CorneaRiskTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C4E8CD121E3FC0700F679F4 /* CorneaRiskTests.swift */,
+				4C4E8CD321E3FC0700F679F4 /* Info.plist */,
+			);
+			path = CorneaRiskTests;
+			sourceTree = "<group>";
+		};
+		4C4E8CDB21E3FC0700F679F4 /* CorneaRiskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4C4E8CDC21E3FC0700F679F4 /* CorneaRiskUITests.swift */,
+				4C4E8CDE21E3FC0700F679F4 /* Info.plist */,
+			);
+			path = CorneaRiskUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C4E8CB821E3FC0500F679F4 /* CorneaRisk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C4E8CE121E3FC0700F679F4 /* Build configuration list for PBXNativeTarget "CorneaRisk" */;
+			buildPhases = (
+				4C4E8CB521E3FC0500F679F4 /* Sources */,
+				4C4E8CB621E3FC0500F679F4 /* Frameworks */,
+				4C4E8CB721E3FC0500F679F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CorneaRisk;
+			productName = CorneaRisk;
+			productReference = 4C4E8CB921E3FC0500F679F4 /* CorneaRisk.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4C4E8CCC21E3FC0700F679F4 /* CorneaRiskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C4E8CE421E3FC0700F679F4 /* Build configuration list for PBXNativeTarget "CorneaRiskTests" */;
+			buildPhases = (
+				4C4E8CC921E3FC0700F679F4 /* Sources */,
+				4C4E8CCA21E3FC0700F679F4 /* Frameworks */,
+				4C4E8CCB21E3FC0700F679F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C4E8CCF21E3FC0700F679F4 /* PBXTargetDependency */,
+			);
+			name = CorneaRiskTests;
+			productName = CorneaRiskTests;
+			productReference = 4C4E8CCD21E3FC0700F679F4 /* CorneaRiskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4C4E8CD721E3FC0700F679F4 /* CorneaRiskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C4E8CE721E3FC0700F679F4 /* Build configuration list for PBXNativeTarget "CorneaRiskUITests" */;
+			buildPhases = (
+				4C4E8CD421E3FC0700F679F4 /* Sources */,
+				4C4E8CD521E3FC0700F679F4 /* Frameworks */,
+				4C4E8CD621E3FC0700F679F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C4E8CDA21E3FC0700F679F4 /* PBXTargetDependency */,
+			);
+			name = CorneaRiskUITests;
+			productName = CorneaRiskUITests;
+			productReference = 4C4E8CD821E3FC0700F679F4 /* CorneaRiskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C4E8CB121E3FC0500F679F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Fernando De La Rosa";
+				TargetAttributes = {
+					4C4E8CB821E3FC0500F679F4 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					4C4E8CCC21E3FC0700F679F4 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 4C4E8CB821E3FC0500F679F4;
+					};
+					4C4E8CD721E3FC0700F679F4 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 4C4E8CB821E3FC0500F679F4;
+					};
+				};
+			};
+			buildConfigurationList = 4C4E8CB421E3FC0500F679F4 /* Build configuration list for PBXProject "CorneaRisk" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C4E8CB021E3FC0500F679F4;
+			productRefGroup = 4C4E8CBA21E3FC0500F679F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C4E8CB821E3FC0500F679F4 /* CorneaRisk */,
+				4C4E8CCC21E3FC0700F679F4 /* CorneaRiskTests */,
+				4C4E8CD721E3FC0700F679F4 /* CorneaRiskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C4E8CB721E3FC0500F679F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C4E8CC721E3FC0600F679F4 /* LaunchScreen.storyboard in Resources */,
+				4C4E8CC421E3FC0600F679F4 /* Assets.xcassets in Resources */,
+				4C4E8CC221E3FC0500F679F4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C4E8CCB21E3FC0700F679F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C4E8CD621E3FC0700F679F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C4E8CB521E3FC0500F679F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C4E8CBF21E3FC0500F679F4 /* ViewController.swift in Sources */,
+				4C4E8CBD21E3FC0500F679F4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C4E8CC921E3FC0700F679F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C4E8CD221E3FC0700F679F4 /* CorneaRiskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C4E8CD421E3FC0700F679F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C4E8CDD21E3FC0700F679F4 /* CorneaRiskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C4E8CCF21E3FC0700F679F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C4E8CB821E3FC0500F679F4 /* CorneaRisk */;
+			targetProxy = 4C4E8CCE21E3FC0700F679F4 /* PBXContainerItemProxy */;
+		};
+		4C4E8CDA21E3FC0700F679F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C4E8CB821E3FC0500F679F4 /* CorneaRisk */;
+			targetProxy = 4C4E8CD921E3FC0700F679F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4C4E8CC021E3FC0500F679F4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C4E8CC121E3FC0500F679F4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4C4E8CC521E3FC0600F679F4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C4E8CC621E3FC0600F679F4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C4E8CDF21E3FC0700F679F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4C4E8CE021E3FC0700F679F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C4E8CE221E3FC0700F679F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CorneaRisk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nsn.CorneaRisk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4C4E8CE321E3FC0700F679F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CorneaRisk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nsn.CorneaRisk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4C4E8CE521E3FC0700F679F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CorneaRiskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nsn.CorneaRiskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CorneaRisk.app/CorneaRisk";
+			};
+			name = Debug;
+		};
+		4C4E8CE621E3FC0700F679F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CorneaRiskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nsn.CorneaRiskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CorneaRisk.app/CorneaRisk";
+			};
+			name = Release;
+		};
+		4C4E8CE821E3FC0700F679F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CorneaRiskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nsn.CorneaRiskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CorneaRisk;
+			};
+			name = Debug;
+		};
+		4C4E8CE921E3FC0700F679F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CorneaRiskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nsn.CorneaRiskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CorneaRisk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C4E8CB421E3FC0500F679F4 /* Build configuration list for PBXProject "CorneaRisk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C4E8CDF21E3FC0700F679F4 /* Debug */,
+				4C4E8CE021E3FC0700F679F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C4E8CE121E3FC0700F679F4 /* Build configuration list for PBXNativeTarget "CorneaRisk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C4E8CE221E3FC0700F679F4 /* Debug */,
+				4C4E8CE321E3FC0700F679F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C4E8CE421E3FC0700F679F4 /* Build configuration list for PBXNativeTarget "CorneaRiskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C4E8CE521E3FC0700F679F4 /* Debug */,
+				4C4E8CE621E3FC0700F679F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C4E8CE721E3FC0700F679F4 /* Build configuration list for PBXNativeTarget "CorneaRiskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C4E8CE821E3FC0700F679F4 /* Debug */,
+				4C4E8CE921E3FC0700F679F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C4E8CB121E3FC0500F679F4 /* Project object */;
+}
