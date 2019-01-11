@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,13 +18,118 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imssLogo" translatesAutoresizingMaskIntoConstraints="NO" id="brn-Z5-842">
+                                <rect key="frame" x="87" y="133" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="8xR-5E-LDY"/>
+                                    <constraint firstAttribute="width" constant="240" id="Qjm-F8-QYN"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ppL-75-0id">
+                                <rect key="frame" x="0.0" y="425" width="414" height="211"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" a cornea transplant" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lAJ-3i-pMV">
+                                        <rect key="frame" x="20" y="143" width="358" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="Tir-SH-5D4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="40"/>
+                                        <color key="textColor" name="imssSecondColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cornea Risk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hV-b3-YVg">
+                                        <rect key="frame" x="80.5" y="20" width="237" height="54"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="45"/>
+                                        <color key="textColor" name="imssMainColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Success estimate of" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzU-5N-aFN">
+                                        <rect key="frame" x="20" y="82" width="358" height="53"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <color key="textColor" name="imssSecondColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="yzU-5N-aFN" firstAttribute="top" secondItem="1hV-b3-YVg" secondAttribute="bottom" constant="8" symbolic="YES" id="39q-fL-Agt"/>
+                                    <constraint firstItem="1hV-b3-YVg" firstAttribute="centerX" secondItem="lAJ-3i-pMV" secondAttribute="centerX" id="5gt-fB-4Jx"/>
+                                    <constraint firstItem="1hV-b3-YVg" firstAttribute="centerX" secondItem="yzU-5N-aFN" secondAttribute="centerX" id="Lwd-MX-4fk"/>
+                                    <constraint firstAttribute="bottom" secondItem="lAJ-3i-pMV" secondAttribute="bottom" constant="20" id="PDI-OL-lxe"/>
+                                    <constraint firstItem="lAJ-3i-pMV" firstAttribute="leading" secondItem="yzU-5N-aFN" secondAttribute="leading" id="ggT-nW-fb4"/>
+                                    <constraint firstItem="lAJ-3i-pMV" firstAttribute="top" secondItem="yzU-5N-aFN" secondAttribute="bottom" constant="8" symbolic="YES" id="hp7-mX-EZr"/>
+                                    <constraint firstItem="1hV-b3-YVg" firstAttribute="top" secondItem="ppL-75-0id" secondAttribute="top" constant="20" id="m3T-sM-52L"/>
+                                    <constraint firstItem="lAJ-3i-pMV" firstAttribute="leading" secondItem="ppL-75-0id" secondAttribute="leading" constant="20" id="q05-ZR-oNA"/>
+                                    <constraint firstItem="lAJ-3i-pMV" firstAttribute="top" secondItem="yzU-5N-aFN" secondAttribute="bottom" constant="8" id="sJV-eJ-7iu"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1DM-AA-8xr">
+                                <rect key="frame" x="0.0" y="692" width="401" height="144"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Admisión Continua Oftalmologíca" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZh-J9-TmA">
+                                        <rect key="frame" x="20" y="20" width="361" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" name="imssMainColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hospital de Especialidades" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ek-rQ-bY9">
+                                        <rect key="frame" x="61" y="58" width="279" height="28"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" name="imssThirdColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Centro Médico Nacional Siglo XXI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yc5-Bo-bHm">
+                                        <rect key="frame" x="26.5" y="94" width="348" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" name="imssSecondColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Yc5-Bo-bHm" firstAttribute="centerX" secondItem="1DM-AA-8xr" secondAttribute="centerX" id="07Z-W6-Thd"/>
+                                    <constraint firstItem="Yc5-Bo-bHm" firstAttribute="top" secondItem="9Ek-rQ-bY9" secondAttribute="bottom" constant="8" id="4c3-EP-Jgk"/>
+                                    <constraint firstItem="9Ek-rQ-bY9" firstAttribute="centerX" secondItem="1DM-AA-8xr" secondAttribute="centerX" id="6px-sN-ww6"/>
+                                    <constraint firstItem="9Ek-rQ-bY9" firstAttribute="top" secondItem="wZh-J9-TmA" secondAttribute="bottom" constant="8" id="HST-GU-yFP"/>
+                                    <constraint firstItem="wZh-J9-TmA" firstAttribute="centerX" secondItem="9Ek-rQ-bY9" secondAttribute="centerX" id="JQw-Oo-Ppy"/>
+                                    <constraint firstItem="9Ek-rQ-bY9" firstAttribute="centerY" secondItem="1DM-AA-8xr" secondAttribute="centerY" id="Qp8-ff-uSj"/>
+                                    <constraint firstItem="9Ek-rQ-bY9" firstAttribute="top" secondItem="1DM-AA-8xr" secondAttribute="top" constant="58" id="nng-QA-fDy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1DM-AA-8xr" firstAttribute="leading" secondItem="ppL-75-0id" secondAttribute="leading" id="46J-hs-0VB"/>
+                            <constraint firstItem="ppL-75-0id" firstAttribute="top" secondItem="brn-Z5-842" secondAttribute="bottom" constant="52" id="5Vn-LN-YbH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1DM-AA-8xr" secondAttribute="trailing" constant="13" id="8kY-b8-cHX"/>
+                            <constraint firstItem="brn-Z5-842" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="9bd-Of-sr8"/>
+                            <constraint firstItem="brn-Z5-842" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="HDd-1m-5OM"/>
+                            <constraint firstItem="brn-Z5-842" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="89" id="SWr-z6-FxM"/>
+                            <constraint firstItem="ppL-75-0id" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="UBz-Jd-MCG"/>
+                            <constraint firstItem="1DM-AA-8xr" firstAttribute="top" secondItem="ppL-75-0id" secondAttribute="bottom" constant="56" id="exd-u8-USi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ppL-75-0id" secondAttribute="bottom" constant="226" id="gh9-oy-CvM"/>
+                            <constraint firstItem="brn-Z5-842" firstAttribute="centerX" secondItem="ppL-75-0id" secondAttribute="centerX" id="iaP-o6-34w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1DM-AA-8xr" secondAttribute="bottom" constant="26" id="pcc-uX-xUX"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="imssLogo" width="50.921051025390625" height="48.315788269042969"/>
+        <namedColor name="imssMainColor">
+            <color red="0.0" green="0.20000000000000001" blue="0.14509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="imssSecondColor">
+            <color red="0.1803921568627451" green="0.34509803921568627" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="imssThirdColor">
+            <color red="0.45098039215686275" green="0.5607843137254902" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

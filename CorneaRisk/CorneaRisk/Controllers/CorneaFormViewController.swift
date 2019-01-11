@@ -11,7 +11,7 @@ import UIKit
 class CorneaFormViewController: UIViewController {
     
     var patient = Patient()
-    
+    let imssMainColor = UIColor(red: CGFloat(0.0), green: CGFloat(0.2), blue: CGFloat(0.145), alpha: CGFloat(1))
     
     @IBOutlet weak var ageTextField: UITextField!
     @IBOutlet weak var sexSegmentControl: UISegmentedControl!
@@ -85,6 +85,7 @@ class CorneaFormViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         resetButtonO.layer.cornerRadius = 9
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : imssMainColor]
         
     }
     
