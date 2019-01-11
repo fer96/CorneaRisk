@@ -11,21 +11,21 @@ import Foundation
 
 struct Patient {
     //MARK: Txt fields
-    var age: Int
+    var age: Int = 0
     
     //MARK: Switchs
     //Sex example: male -> 0, female -> 1
     //Gruop risk example: low -> 0, high -> 1
     //systematic comorbidities example: absent -> 0, present -> 1
-    var sex: Int
-    var groupRisk: Int
-    var bloodCompatibility: Bool
-    var vascularization: Bool
-    var systematicComorbidities: Int
+    var sex: Int  = 0
+    var groupRisk: Int = 0
+    var bloodCompatibility: Bool = false
+    var vascularization: Bool = false
+    var systematicComorbidities: Bool = false
     
     //MARK: Pikers
     //Graft size example: -8.25 -> 0, 8.25 -> 1, 8.50 ->2, +8.50 -> 3
     //Type of transplant example: just one -> 0, Double procedure -> 1, Triple procedure -> 2
-    var graftSize: Int
-    var typeOfTransplant: Int
+    var graftSize: Int = 0
+    var typeOfTransplant: Int = 0
 }

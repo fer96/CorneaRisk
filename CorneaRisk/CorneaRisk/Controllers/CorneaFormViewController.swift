@@ -9,11 +9,83 @@
 import UIKit
 
 class CorneaFormViewController: UIViewController {
-
+    
+    var patient = Patient()
+    
+    
+    @IBOutlet weak var ageTextField: UITextField!
+    @IBOutlet weak var sexSegmentControl: UISegmentedControl!
+    @IBOutlet weak var groupRiskSegmentControl: UISegmentedControl!
+    @IBOutlet weak var vascularizationSwitch: UISwitch!
+    @IBOutlet weak var bloodCompatibilitySwitch: UISwitch!
+    @IBOutlet weak var systematicComorbitiesSwitch: UISwitch!
+    @IBOutlet weak var sizeGraftSegmentControl: UISegmentedControl!
+    @IBOutlet weak var typeTransplantSegmentControl: UISegmentedControl!
+    @IBOutlet weak var resetButtonO: UIButton!
+    
+    
+    @IBAction func resetButton(_ sender: UIButton) {
+        resetValues()
+    }
+    
+    @IBAction func resultsButton(_ sender: UIBarButtonItem) {
+        if (chechkValues() == true) {
+            performSegue(withIdentifier: "resultsSegue", sender: nil)
+        } else {
+            //Lanzar alerta
+            resetValues()
+        }
+    }
+    
+    func resetValues() {
+        ageTextField.text = ""
+        ageTextField.placeholder = "Age must be between 20 - 90"
+        sexSegmentControl.selectedSegmentIndex = 0
+        groupRiskSegmentControl.selectedSegmentIndex = 0
+        vascularizationSwitch.setOn(false, animated: false)
+        bloodCompatibilitySwitch.setOn(false, animated: false)
+        systematicComorbitiesSwitch.setOn(false, animated: false)
+        sizeGraftSegmentControl.selectedSegmentIndex = 0
+        typeTransplantSegmentControl.selectedSegmentIndex = 0
+    }
+    
+    func isInt(str: String) -> Bool {
+        return Int(str) != nil
+    }
+    
+    func setValuesToPatient() {
+        if (ageTextField.text?.isEmpty == false && isInt(str: String(ageTextField.text!)) == true ){
+            patient.age = Int(ageTextField.text!)!
+        }else {
+            patient.age = 0
+            ageTextField.placeholder = "Age must be between 20 - 90"
+        }
+        patient.sex = sexSegmentControl.selectedSegmentIndex
+        patient.groupRisk = groupRiskSegmentControl.selectedSegmentIndex
+        patient.vascularization = vascularizationSwitch.isOn
+        patient.bloodCompatibility = bloodCompatibilitySwitch.isOn
+        patient.systematicComorbidities = systematicComorbitiesSwitch.isOn
+        patient.graftSize = sizeGraftSegmentControl.selectedSegmentIndex
+        patient.typeOfTransplant = typeTransplantSegmentControl.selectedSegmentIndex
+    }
+    
+    func chechkValues() -> Bool {
+        setValuesToPatient()
+        
+        if(patient.age > 20 && patient.age < 90){
+            return true
+        } else {
+            return false
+        }
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        resetButtonO.layer.cornerRadius = 9
+        
     }
     
 

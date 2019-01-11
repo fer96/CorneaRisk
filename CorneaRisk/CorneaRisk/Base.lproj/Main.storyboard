@@ -13,20 +13,189 @@
         <!--Cornea Risk-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="FieldsCrViewController" customModule="CorneaRisk" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CorneaFormViewController" customModule="CorneaRisk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vascularization:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKr-E8-9IL">
+                                <rect key="frame" x="8" y="275" width="183" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ooh-ED-C2V">
+                                <rect key="frame" x="357" y="276" width="51" height="31"/>
+                                <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wV7-yX-bse">
+                                <rect key="frame" x="8" y="94" width="60" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="w2G-Nt-gew">
+                                <rect key="frame" x="172" y="211" width="234" height="29"/>
+                                <segments>
+                                    <segment title="LOW"/>
+                                    <segment title="HIGH"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yG6-oL-oHY">
+                                <rect key="frame" x="172" y="154" width="234" height="29"/>
+                                <segments>
+                                    <segment title="MALE"/>
+                                    <segment title="FEMALE"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blood compatibility:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQ6-8c-afg">
+                                <rect key="frame" x="8" y="316" width="230" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Group of risk:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vfl-lA-MoK">
+                                <rect key="frame" x="8" y="209" width="156" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type of transplant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4BX-YY-cRC">
+                                <rect key="frame" x="8" y="509" width="208" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Systematic comorbidities:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7Q-K8-xeg">
+                                <rect key="frame" x="8" y="357" width="301" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size of graft" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHV-k5-QXg">
+                                <rect key="frame" x="8" y="432" width="139" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age must be between 20 - 90" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2fz-rQ-keZ">
+                                <rect key="frame" x="76" y="95" width="330" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bHV-7D-EU6">
+                                <rect key="frame" x="357" y="358" width="51" height="31"/>
+                                <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UQI-bS-3NA">
+                                <rect key="frame" x="357" y="317" width="51" height="31"/>
+                                <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sex:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYE-p4-3hw">
+                                <rect key="frame" x="8" y="152" width="51" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QG7-hO-Iyl">
+                                <rect key="frame" x="178" y="831" width="71" height="41"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="RESET">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KJe-DY-5NS"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Mts-gq-QMa">
+                                <rect key="frame" x="8" y="473" width="398" height="29"/>
+                                <segments>
+                                    <segment title="-8.25"/>
+                                    <segment title="8.25"/>
+                                    <segment title="8.50"/>
+                                    <segment title="+8.50"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ody-IY-4dv">
+                                <rect key="frame" x="8" y="550" width="398" height="29"/>
+                                <segments>
+                                    <segment title="Simple"/>
+                                    <segment title="Double"/>
+                                    <segment title="Triple"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w2G-Nt-gew" secondAttribute="trailing" constant="8" id="20h-z0-y3A"/>
+                            <constraint firstItem="vQ6-8c-afg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="2cd-FC-11n"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yG6-oL-oHY" secondAttribute="trailing" constant="8" id="34j-e8-BX1"/>
+                            <constraint firstItem="bHV-7D-EU6" firstAttribute="top" secondItem="UQI-bS-3NA" secondAttribute="bottom" constant="10" id="3Fi-BD-u4O"/>
+                            <constraint firstItem="Ooh-ED-C2V" firstAttribute="top" secondItem="w2G-Nt-gew" secondAttribute="bottom" constant="37" id="4ZY-Ia-kAI"/>
+                            <constraint firstItem="w2G-Nt-gew" firstAttribute="leading" secondItem="Vfl-lA-MoK" secondAttribute="trailing" constant="8" id="700-3Q-v53"/>
+                            <constraint firstItem="4BX-YY-cRC" firstAttribute="top" secondItem="Mts-gq-QMa" secondAttribute="bottom" constant="8" id="8Mk-bm-yqq"/>
+                            <constraint firstItem="Mts-gq-QMa" firstAttribute="top" secondItem="HHV-k5-QXg" secondAttribute="bottom" constant="8" id="931-l5-LQG"/>
+                            <constraint firstItem="dYE-p4-3hw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="9rZ-RW-aUf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mts-gq-QMa" secondAttribute="trailing" constant="8" id="BCH-od-dWT"/>
+                            <constraint firstItem="yG6-oL-oHY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="66" id="BqD-gU-1lf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UQI-bS-3NA" secondAttribute="trailing" constant="8" id="Css-IY-prF"/>
+                            <constraint firstItem="wV7-yX-bse" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="Fnb-59-HgO"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="QG7-hO-Iyl" secondAttribute="bottom" constant="-10" id="Kdq-64-Rud"/>
+                            <constraint firstItem="Vfl-lA-MoK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="121" id="PCT-rI-4SI"/>
+                            <constraint firstItem="iKr-E8-9IL" firstAttribute="top" secondItem="Vfl-lA-MoK" secondAttribute="bottom" constant="33" id="QWb-3m-pcj"/>
+                            <constraint firstItem="wV7-yX-bse" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="6" id="TbH-Y4-B48"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ody-IY-4dv" secondAttribute="trailing" constant="8" id="TyQ-ld-GUg"/>
+                            <constraint firstItem="2fz-rQ-keZ" firstAttribute="leading" secondItem="wV7-yX-bse" secondAttribute="trailing" constant="8" id="U0H-Hc-0cE"/>
+                            <constraint firstItem="Ooh-ED-C2V" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iKr-E8-9IL" secondAttribute="trailing" constant="8" symbolic="YES" id="Ugr-ul-euS"/>
+                            <constraint firstItem="UQI-bS-3NA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vQ6-8c-afg" secondAttribute="trailing" constant="8" symbolic="YES" id="W0y-RA-nj3"/>
+                            <constraint firstItem="QG7-hO-Iyl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WC0-r4-QzD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4BX-YY-cRC" secondAttribute="trailing" symbolic="YES" id="XU1-iP-F1h"/>
+                            <constraint firstItem="Mts-gq-QMa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="Xgf-dX-MdH"/>
+                            <constraint firstItem="vQ6-8c-afg" firstAttribute="top" secondItem="iKr-E8-9IL" secondAttribute="bottom" constant="8" id="Xuv-Lv-JXh"/>
+                            <constraint firstItem="2fz-rQ-keZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="7" id="Y8Q-QL-ePm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="HHV-k5-QXg" secondAttribute="trailing" symbolic="YES" id="bGb-dq-e87"/>
+                            <constraint firstItem="4BX-YY-cRC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="cOU-rF-7iU"/>
+                            <constraint firstItem="yG6-oL-oHY" firstAttribute="leading" secondItem="dYE-p4-3hw" secondAttribute="trailing" constant="113" id="cgs-14-dz5"/>
+                            <constraint firstItem="iKr-E8-9IL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="dR8-T3-0y4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ooh-ED-C2V" secondAttribute="trailing" constant="8" id="ekZ-37-NuW"/>
+                            <constraint firstItem="bHV-7D-EU6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Q7Q-K8-xeg" secondAttribute="trailing" constant="8" symbolic="YES" id="k8r-IP-IE1"/>
+                            <constraint firstItem="Q7Q-K8-xeg" firstAttribute="top" secondItem="vQ6-8c-afg" secondAttribute="bottom" constant="8" id="k9F-tp-gS7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bHV-7D-EU6" secondAttribute="trailing" constant="8" id="l1B-Ea-PDd"/>
+                            <constraint firstItem="Q7Q-K8-xeg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="l9F-Ec-UlI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2fz-rQ-keZ" secondAttribute="trailing" constant="8" id="lR4-aZ-hgM"/>
+                            <constraint firstItem="dYE-p4-3hw" firstAttribute="firstBaseline" secondItem="wV7-yX-bse" secondAttribute="baseline" constant="57.5" id="lYa-VO-3Gj"/>
+                            <constraint firstItem="UQI-bS-3NA" firstAttribute="top" secondItem="Ooh-ED-C2V" secondAttribute="bottom" constant="10" id="lnb-91-xKB"/>
+                            <constraint firstItem="HHV-k5-QXg" firstAttribute="top" secondItem="Q7Q-K8-xeg" secondAttribute="bottom" constant="42" id="qne-dx-pu1"/>
+                            <constraint firstItem="w2G-Nt-gew" firstAttribute="top" secondItem="yG6-oL-oHY" secondAttribute="bottom" constant="29" id="rCV-zn-PJx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QG7-hO-Iyl" secondAttribute="trailing" constant="165" id="rrx-wa-g7H"/>
+                            <constraint firstItem="ody-IY-4dv" firstAttribute="top" secondItem="4BX-YY-cRC" secondAttribute="bottom" constant="8" id="snw-Az-ybv"/>
+                            <constraint firstItem="HHV-k5-QXg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="tft-QB-DOn"/>
+                            <constraint firstItem="Vfl-lA-MoK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="vOn-7A-36W"/>
+                            <constraint firstItem="ody-IY-4dv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="vl9-aE-SIJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Cornea Risk" id="zJI-4B-Fmb">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="TzL-Xh-ae6">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="YxC-GW-F7n">
                             <connections>
-                                <segue destination="beb-SU-bDr" kind="show" id="bN3-bi-dpz"/>
+                                <action selector="resultsButton:" destination="BYZ-38-t0r" id="0Xi-DL-QfL"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="ageTextField" destination="2fz-rQ-keZ" id="bN1-KK-Poa"/>
+                        <outlet property="bloodCompatibilitySwitch" destination="UQI-bS-3NA" id="nEK-za-utv"/>
+                        <outlet property="groupRiskSegmentControl" destination="w2G-Nt-gew" id="uWn-g7-ChF"/>
+                        <outlet property="resetButtonO" destination="QG7-hO-Iyl" id="0iH-RV-IIW"/>
+                        <outlet property="sexSegmentControl" destination="yG6-oL-oHY" id="Ao9-Hc-gNQ"/>
+                        <outlet property="sizeGraftSegmentControl" destination="Mts-gq-QMa" id="3Zx-nR-1uN"/>
+                        <outlet property="systematicComorbitiesSwitch" destination="bHV-7D-EU6" id="7Z0-6N-cNc"/>
+                        <outlet property="typeTransplantSegmentControl" destination="ody-IY-4dv" id="mHN-ef-WoW"/>
+                        <outlet property="vascularizationSwitch" destination="Ooh-ED-C2V" id="oTH-0d-7ak"/>
+                        <segue destination="beb-SU-bDr" kind="show" identifier="resultsSegue" id="ddd-Vb-sia"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -35,7 +204,7 @@
         <!--Results-->
         <scene sceneID="cXz-cS-EGr">
             <objects>
-                <viewController id="beb-SU-bDr" customClass="SwitchCrViewController" customModule="CorneaRisk" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="beb-SU-bDr" customClass="CorneaResultsViewController" customModule="CorneaRisk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TBI-Xa-qqW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
