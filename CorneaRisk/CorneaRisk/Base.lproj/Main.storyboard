@@ -64,7 +64,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type of transplant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4BX-YY-cRC">
-                                <rect key="frame" x="8" y="509" width="208" height="33"/>
+                                <rect key="frame" x="8" y="582" width="208" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -76,7 +76,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size of graft" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHV-k5-QXg">
-                                <rect key="frame" x="8" y="432" width="139" height="33"/>
+                                <rect key="frame" x="8" y="505" width="139" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -93,6 +93,10 @@
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UQI-bS-3NA">
                                 <rect key="frame" x="357" y="317" width="51" height="31"/>
+                                <color key="onTintColor" name="imssSecondColor"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Qu0-3J-sgF">
+                                <rect key="frame" x="357" y="399" width="51" height="31"/>
                                 <color key="onTintColor" name="imssSecondColor"/>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sex:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYE-p4-3hw">
@@ -114,7 +118,7 @@
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Mts-gq-QMa">
-                                <rect key="frame" x="8" y="473" width="398" height="29"/>
+                                <rect key="frame" x="8" y="546" width="398" height="29"/>
                                 <segments>
                                     <segment title="-8.25"/>
                                     <segment title="8.25"/>
@@ -124,7 +128,7 @@
                                 <color key="tintColor" name="imssSecondColor"/>
                             </segmentedControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ody-IY-4dv">
-                                <rect key="frame" x="8" y="550" width="398" height="29"/>
+                                <rect key="frame" x="8" y="623" width="398" height="29"/>
                                 <segments>
                                     <segment title="Simple"/>
                                     <segment title="Double"/>
@@ -132,23 +136,59 @@
                                 </segments>
                                 <color key="tintColor" name="imssSecondColor"/>
                             </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ophthalmic comorbidities:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1t-al-wc2">
+                                <rect key="frame" x="8" y="399" width="307" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cp9-Pc-Voe">
+                                <rect key="frame" x="357" y="439" width="51" height="31"/>
+                                <color key="onTintColor" name="imssSecondColor"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Postsurgical complications:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdb-0R-y3e">
+                                <rect key="frame" x="8" y="438" width="317" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Surgical time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2c-bA-cqz">
+                                <rect key="frame" x="8" y="666" width="151" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="OMy-eJ-Yhf">
+                                <rect key="frame" x="8" y="707" width="398" height="29"/>
+                                <segments>
+                                    <segment title="-60"/>
+                                    <segment title="60"/>
+                                    <segment title="+60"/>
+                                </segments>
+                                <color key="tintColor" name="imssSecondColor"/>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="OMy-eJ-Yhf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="0iK-m2-dZG"/>
+                            <constraint firstItem="h1t-al-wc2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="1ln-qT-zAb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w2G-Nt-gew" secondAttribute="trailing" constant="8" id="20h-z0-y3A"/>
                             <constraint firstItem="vQ6-8c-afg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="2cd-FC-11n"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yG6-oL-oHY" secondAttribute="trailing" constant="8" id="34j-e8-BX1"/>
                             <constraint firstItem="bHV-7D-EU6" firstAttribute="top" secondItem="UQI-bS-3NA" secondAttribute="bottom" constant="10" id="3Fi-BD-u4O"/>
                             <constraint firstItem="Ooh-ED-C2V" firstAttribute="top" secondItem="w2G-Nt-gew" secondAttribute="bottom" constant="37" id="4ZY-Ia-kAI"/>
                             <constraint firstItem="w2G-Nt-gew" firstAttribute="leading" secondItem="Vfl-lA-MoK" secondAttribute="trailing" constant="8" id="700-3Q-v53"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OMy-eJ-Yhf" secondAttribute="trailing" constant="8" id="7jZ-qi-b9b"/>
                             <constraint firstItem="4BX-YY-cRC" firstAttribute="top" secondItem="Mts-gq-QMa" secondAttribute="bottom" constant="8" id="8Mk-bm-yqq"/>
                             <constraint firstItem="Mts-gq-QMa" firstAttribute="top" secondItem="HHV-k5-QXg" secondAttribute="bottom" constant="8" id="931-l5-LQG"/>
                             <constraint firstItem="dYE-p4-3hw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="9rZ-RW-aUf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mts-gq-QMa" secondAttribute="trailing" constant="8" id="BCH-od-dWT"/>
                             <constraint firstItem="yG6-oL-oHY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="66" id="BqD-gU-1lf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UQI-bS-3NA" secondAttribute="trailing" constant="8" id="Css-IY-prF"/>
+                            <constraint firstItem="cp9-Pc-Voe" firstAttribute="leading" secondItem="hdb-0R-y3e" secondAttribute="trailing" constant="32" id="DCA-nH-eZD"/>
                             <constraint firstItem="wV7-yX-bse" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="Fnb-59-HgO"/>
                             <constraint firstAttribute="bottomMargin" secondItem="QG7-hO-Iyl" secondAttribute="bottom" constant="-10" id="Kdq-64-Rud"/>
+                            <constraint firstItem="hdb-0R-y3e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="Mkc-kc-udc"/>
                             <constraint firstItem="Vfl-lA-MoK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="121" id="PCT-rI-4SI"/>
                             <constraint firstItem="iKr-E8-9IL" firstAttribute="top" secondItem="Vfl-lA-MoK" secondAttribute="bottom" constant="33" id="QWb-3m-pcj"/>
                             <constraint firstItem="wV7-yX-bse" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="6" id="TbH-Y4-B48"/>
@@ -160,26 +200,36 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4BX-YY-cRC" secondAttribute="trailing" symbolic="YES" id="XU1-iP-F1h"/>
                             <constraint firstItem="Mts-gq-QMa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="Xgf-dX-MdH"/>
                             <constraint firstItem="vQ6-8c-afg" firstAttribute="top" secondItem="iKr-E8-9IL" secondAttribute="bottom" constant="8" id="Xuv-Lv-JXh"/>
+                            <constraint firstItem="C2c-bA-cqz" firstAttribute="top" secondItem="ody-IY-4dv" secondAttribute="bottom" constant="15" id="Y0N-sm-xsR"/>
                             <constraint firstItem="2fz-rQ-keZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="7" id="Y8Q-QL-ePm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="C2c-bA-cqz" secondAttribute="trailing" symbolic="YES" id="a8M-73-SIp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="HHV-k5-QXg" secondAttribute="trailing" symbolic="YES" id="bGb-dq-e87"/>
                             <constraint firstItem="4BX-YY-cRC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="cOU-rF-7iU"/>
                             <constraint firstItem="yG6-oL-oHY" firstAttribute="leading" secondItem="dYE-p4-3hw" secondAttribute="trailing" constant="113" id="cgs-14-dz5"/>
                             <constraint firstItem="iKr-E8-9IL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="dR8-T3-0y4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ooh-ED-C2V" secondAttribute="trailing" constant="8" id="ekZ-37-NuW"/>
+                            <constraint firstItem="hdb-0R-y3e" firstAttribute="top" secondItem="h1t-al-wc2" secondAttribute="bottom" constant="6" id="jjX-wD-pp2"/>
                             <constraint firstItem="bHV-7D-EU6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Q7Q-K8-xeg" secondAttribute="trailing" constant="8" symbolic="YES" id="k8r-IP-IE1"/>
                             <constraint firstItem="Q7Q-K8-xeg" firstAttribute="top" secondItem="vQ6-8c-afg" secondAttribute="bottom" constant="8" id="k9F-tp-gS7"/>
+                            <constraint firstItem="Qu0-3J-sgF" firstAttribute="leading" secondItem="h1t-al-wc2" secondAttribute="trailing" constant="42" id="kQb-WL-5ZC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bHV-7D-EU6" secondAttribute="trailing" constant="8" id="l1B-Ea-PDd"/>
+                            <constraint firstItem="OMy-eJ-Yhf" firstAttribute="top" secondItem="C2c-bA-cqz" secondAttribute="bottom" constant="8" id="l85-iQ-Qsa"/>
                             <constraint firstItem="Q7Q-K8-xeg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="l9F-Ec-UlI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2fz-rQ-keZ" secondAttribute="trailing" constant="8" id="lR4-aZ-hgM"/>
                             <constraint firstItem="dYE-p4-3hw" firstAttribute="firstBaseline" secondItem="wV7-yX-bse" secondAttribute="baseline" constant="57.5" id="lYa-VO-3Gj"/>
                             <constraint firstItem="UQI-bS-3NA" firstAttribute="top" secondItem="Ooh-ED-C2V" secondAttribute="bottom" constant="10" id="lnb-91-xKB"/>
-                            <constraint firstItem="HHV-k5-QXg" firstAttribute="top" secondItem="Q7Q-K8-xeg" secondAttribute="bottom" constant="42" id="qne-dx-pu1"/>
+                            <constraint firstItem="Qu0-3J-sgF" firstAttribute="top" secondItem="bHV-7D-EU6" secondAttribute="bottom" constant="10" id="qHq-x3-IfQ"/>
+                            <constraint firstItem="h1t-al-wc2" firstAttribute="top" secondItem="Q7Q-K8-xeg" secondAttribute="bottom" constant="9" id="qsS-3Y-ZJd"/>
                             <constraint firstItem="w2G-Nt-gew" firstAttribute="top" secondItem="yG6-oL-oHY" secondAttribute="bottom" constant="29" id="rCV-zn-PJx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QG7-hO-Iyl" secondAttribute="trailing" constant="165" id="rrx-wa-g7H"/>
                             <constraint firstItem="ody-IY-4dv" firstAttribute="top" secondItem="4BX-YY-cRC" secondAttribute="bottom" constant="8" id="snw-Az-ybv"/>
                             <constraint firstItem="HHV-k5-QXg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="tft-QB-DOn"/>
                             <constraint firstItem="Vfl-lA-MoK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="vOn-7A-36W"/>
                             <constraint firstItem="ody-IY-4dv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="vl9-aE-SIJ"/>
+                            <constraint firstItem="C2c-bA-cqz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="yXM-s7-HOt"/>
+                            <constraint firstItem="HHV-k5-QXg" firstAttribute="top" secondItem="hdb-0R-y3e" secondAttribute="bottom" constant="34" id="yg4-2z-YEB"/>
+                            <constraint firstItem="cp9-Pc-Voe" firstAttribute="top" secondItem="Qu0-3J-sgF" secondAttribute="bottom" constant="9" id="zG7-Pq-eYD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cp9-Pc-Voe" secondAttribute="trailing" constant="8" id="zyn-GU-FZ7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -195,9 +245,12 @@
                         <outlet property="ageTextField" destination="2fz-rQ-keZ" id="bN1-KK-Poa"/>
                         <outlet property="bloodCompatibilitySwitch" destination="UQI-bS-3NA" id="nEK-za-utv"/>
                         <outlet property="groupRiskSegmentControl" destination="w2G-Nt-gew" id="uWn-g7-ChF"/>
+                        <outlet property="ophthalmicComorbidities" destination="Qu0-3J-sgF" id="fju-TB-e49"/>
+                        <outlet property="postsurgicalComplications" destination="cp9-Pc-Voe" id="QgN-RT-WgM"/>
                         <outlet property="resetButtonO" destination="QG7-hO-Iyl" id="0iH-RV-IIW"/>
                         <outlet property="sexSegmentControl" destination="yG6-oL-oHY" id="Ao9-Hc-gNQ"/>
                         <outlet property="sizeGraftSegmentControl" destination="Mts-gq-QMa" id="3Zx-nR-1uN"/>
+                        <outlet property="surgicalTimeSegmentedControl" destination="OMy-eJ-Yhf" id="W07-gU-ear"/>
                         <outlet property="systematicComorbitiesSwitch" destination="bHV-7D-EU6" id="7Z0-6N-cNc"/>
                         <outlet property="typeTransplantSegmentControl" destination="ody-IY-4dv" id="mHN-ef-WoW"/>
                         <outlet property="vascularizationSwitch" destination="Ooh-ED-C2V" id="oTH-0d-7ak"/>
@@ -232,6 +285,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XDR-9q-P85">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="imssMainColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -245,7 +299,7 @@
     </scenes>
     <resources>
         <namedColor name="imssMainColor">
-            <color red="0.0" green="0.20000000000000001" blue="0.14509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.20000000298023224" blue="0.14499999582767487" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="imssSecondColor">
             <color red="0.1803921568627451" green="0.34509803921568627" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -22,6 +22,9 @@ class CorneaFormViewController: UIViewController {
     @IBOutlet weak var sizeGraftSegmentControl: UISegmentedControl!
     @IBOutlet weak var typeTransplantSegmentControl: UISegmentedControl!
     @IBOutlet weak var resetButtonO: UIButton!
+    @IBOutlet weak var ophthalmicComorbidities: UISwitch!
+    @IBOutlet weak var postsurgicalComplications: UISwitch!
+    @IBOutlet weak var surgicalTimeSegmentedControl: UISegmentedControl!
     
     
     @IBAction func resetButton(_ sender: UIButton) {
@@ -45,8 +48,11 @@ class CorneaFormViewController: UIViewController {
         vascularizationSwitch.setOn(false, animated: false)
         bloodCompatibilitySwitch.setOn(false, animated: false)
         systematicComorbitiesSwitch.setOn(false, animated: false)
+        ophthalmicComorbidities.setOn(false, animated: false)
+        postsurgicalComplications.setOn(false, animated: false)
         sizeGraftSegmentControl.selectedSegmentIndex = 0
         typeTransplantSegmentControl.selectedSegmentIndex = 0
+        surgicalTimeSegmentedControl.selectedSegmentIndex = 0
     }
     
     func isInt(str: String) -> Bool {
@@ -65,8 +71,11 @@ class CorneaFormViewController: UIViewController {
         patient.vascularization = vascularizationSwitch.isOn
         patient.bloodCompatibility = bloodCompatibilitySwitch.isOn
         patient.systematicComorbidities = systematicComorbitiesSwitch.isOn
+        patient.ophthalmicComorbidities = ophthalmicComorbidities.isOn
+        patient.postsurgicalComplications = postsurgicalComplications.isOn
         patient.graftSize = sizeGraftSegmentControl.selectedSegmentIndex
         patient.typeOfTransplant = typeTransplantSegmentControl.selectedSegmentIndex
+        patient.surgicalTime = surgicalTimeSegmentedControl.selectedSegmentIndex
     }
     
     func chechkValues() -> Bool {
@@ -84,7 +93,7 @@ class CorneaFormViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        resetButtonO.layer.cornerRadius = 9
+        resetButtonO.layer.cornerRadius = 18
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : imssMainColor]
         
     }
