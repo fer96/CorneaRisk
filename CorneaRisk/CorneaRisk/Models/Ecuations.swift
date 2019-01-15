@@ -16,4 +16,7 @@ class Ecuations{
     func cholesterolMolToMgDl(oldCholesterol: Double) -> Double {
         return oldCholesterol * 38.67
     }
+    static func corneaRisk() -> Double {
+        return Double.random(in: 0.0...100.0)
+    }
 }

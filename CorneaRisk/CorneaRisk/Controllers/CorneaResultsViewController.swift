@@ -10,10 +10,15 @@ import UIKit
 
 class CorneaResultsViewController: UIViewController {
 
+    
+    @IBOutlet weak var resultPorcentLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        ResultPorcentView.resultPorcent = Ecuations.corneaRisk()
+        resultPorcentLabel.text = String(format: "%.2f", ResultPorcentView.resultPorcent) + " %"
     }
     
 
