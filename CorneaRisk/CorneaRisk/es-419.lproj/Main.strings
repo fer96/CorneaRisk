@@ -1,0 +1,102 @@
+
+/* Class = "UITextField"; placeholder = "Age must be between 20 - 90"; ObjectID = "2fz-rQ-keZ"; */
+"2fz-rQ-keZ.placeholder" = "La edad debe estar entre 20 - 90 ";
+
+/* Class = "UILabel"; text = "Type of transplant"; ObjectID = "4BX-YY-cRC"; */
+"4BX-YY-cRC.text" = "Tipo de transplante";
+
+/* Class = "UILabel"; text = "Recomendations"; ObjectID = "AaX-uf-S3e"; */
+"AaX-uf-S3e.text" = "Recomendaciones";
+
+/* Class = "UILabel"; text = "Surgical time"; ObjectID = "C2c-bA-cqz"; */
+"C2c-bA-cqz.text" = "Tiempo de cirujia";
+
+/* Class = "UILabel"; text = "Probability of episode of corneal rejection"; ObjectID = "FEi-rQ-Zz1"; */
+"FEi-rQ-Zz1.text" = "Probabilidad de episodio de rechazo corneal";
+
+/* Class = "UILabel"; text = "Size of graft"; ObjectID = "HHV-k5-QXg"; */
+"HHV-k5-QXg.text" = "Tamaño de injerto";
+
+/* Class = "UILabel"; text = "Result:"; ObjectID = "Jz4-nX-oTs"; */
+"Jz4-nX-oTs.text" = "Resultado:";
+
+/* Class = "UISegmentedControl"; Mts-gq-QMa.segmentTitles[0] = "-8.25"; ObjectID = "Mts-gq-QMa"; */
+"Mts-gq-QMa.segmentTitles[0]" = "-8.25";
+
+/* Class = "UISegmentedControl"; Mts-gq-QMa.segmentTitles[1] = "8.25"; ObjectID = "Mts-gq-QMa"; */
+"Mts-gq-QMa.segmentTitles[1]" = "8.25";
+
+/* Class = "UISegmentedControl"; Mts-gq-QMa.segmentTitles[2] = "8.50"; ObjectID = "Mts-gq-QMa"; */
+"Mts-gq-QMa.segmentTitles[2]" = "8.50";
+
+/* Class = "UISegmentedControl"; Mts-gq-QMa.segmentTitles[3] = "+8.50"; ObjectID = "Mts-gq-QMa"; */
+"Mts-gq-QMa.segmentTitles[3]" = "+8.50";
+
+/* Class = "UISegmentedControl"; OMy-eJ-Yhf.segmentTitles[0] = "-60"; ObjectID = "OMy-eJ-Yhf"; */
+"OMy-eJ-Yhf.segmentTitles[0]" = "-60";
+
+/* Class = "UISegmentedControl"; OMy-eJ-Yhf.segmentTitles[1] = "60"; ObjectID = "OMy-eJ-Yhf"; */
+"OMy-eJ-Yhf.segmentTitles[1]" = "60";
+
+/* Class = "UISegmentedControl"; OMy-eJ-Yhf.segmentTitles[2] = "+60"; ObjectID = "OMy-eJ-Yhf"; */
+"OMy-eJ-Yhf.segmentTitles[2]" = "+60";
+
+/* Class = "UILabel"; text = "Systematic comorbidities:"; ObjectID = "Q7Q-K8-xeg"; */
+"Q7Q-K8-xeg.text" = "Cormobidades sistematicas:";
+
+/* Class = "UIButton"; normalTitle = "RESET"; ObjectID = "QG7-hO-Iyl"; */
+"QG7-hO-Iyl.normalTitle" = "Reiniciar";
+
+/* Class = "UINavigationItem"; title = "Results"; ObjectID = "VIB-Q2-cbF"; */
+"VIB-Q2-cbF.title" = "Resultados";
+
+/* Class = "UILabel"; text = "Group of risk:"; ObjectID = "Vfl-lA-MoK"; */
+"Vfl-lA-MoK.text" = "Grupo de riesgo:";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "W3H-Ff-3q5"; */
+"W3H-Ff-3q5.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UILabel"; text = "75 %"; ObjectID = "ZzQ-43-YLL"; */
+"ZzQ-43-YLL.text" = "75 %";
+
+/* Class = "UILabel"; text = "Sex:"; ObjectID = "dYE-p4-3hw"; */
+"dYE-p4-3hw.text" = "Sexo:";
+
+/* Class = "UILabel"; text = "Ophthalmic comorbidities:"; ObjectID = "h1t-al-wc2"; */
+"h1t-al-wc2.text" = "Comorbidades oftalmológicas:";
+
+/* Class = "UILabel"; text = "Postsurgical complications:"; ObjectID = "hdb-0R-y3e"; */
+"hdb-0R-y3e.text" = "Complicaciones post-quirurjicas:";
+
+/* Class = "UILabel"; text = "Vascularization:"; ObjectID = "iKr-E8-9IL"; */
+"iKr-E8-9IL.text" = "Vascularización:";
+
+/* Class = "UISegmentedControl"; ody-IY-4dv.segmentTitles[0] = "Simple"; ObjectID = "ody-IY-4dv"; */
+"ody-IY-4dv.segmentTitles[0]" = "Simple";
+
+/* Class = "UISegmentedControl"; ody-IY-4dv.segmentTitles[1] = "Double"; ObjectID = "ody-IY-4dv"; */
+"ody-IY-4dv.segmentTitles[1]" = "Doble";
+
+/* Class = "UISegmentedControl"; ody-IY-4dv.segmentTitles[2] = "Triple"; ObjectID = "ody-IY-4dv"; */
+"ody-IY-4dv.segmentTitles[2]" = "Triple";
+
+/* Class = "UILabel"; text = "Blood compatibility:"; ObjectID = "vQ6-8c-afg"; */
+"vQ6-8c-afg.text" = "Compatibilidad sanguinea:";
+
+/* Class = "UISegmentedControl"; w2G-Nt-gew.segmentTitles[0] = "LOW"; ObjectID = "w2G-Nt-gew"; */
+"w2G-Nt-gew.segmentTitles[0]" = "Bajo";
+
+/* Class = "UISegmentedControl"; w2G-Nt-gew.segmentTitles[1] = "HIGH"; ObjectID = "w2G-Nt-gew"; */
+"w2G-Nt-gew.segmentTitles[1]" = "Alto";
+
+/* Class = "UILabel"; text = "Age: "; ObjectID = "wV7-yX-bse"; */
+"wV7-yX-bse.text" = "Edad: ";
+
+/* Class = "UISegmentedControl"; yG6-oL-oHY.segmentTitles[0] = "MALE"; ObjectID = "yG6-oL-oHY"; */
+"yG6-oL-oHY.segmentTitles[0]" = "Masculino";
+
+/* Class = "UISegmentedControl"; yG6-oL-oHY.segmentTitles[1] = "FEMALE"; ObjectID = "yG6-oL-oHY"; */
+"yG6-oL-oHY.segmentTitles[1]" = "Femenino";
+
+/* Class = "UINavigationItem"; title = "Cornea Risk"; ObjectID = "zJI-4B-Fmb"; */
+"zJI-4B-Fmb.title" = "Cornea Risk";
