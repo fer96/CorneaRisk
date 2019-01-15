@@ -12,8 +12,8 @@
 		4C4E8CC721E3FC0600F679F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4E8CC521E3FC0600F679F4 /* LaunchScreen.storyboard */; };
 		4C4E8CD221E3FC0700F679F4 /* CorneaRiskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E8CD121E3FC0700F679F4 /* CorneaRiskTests.swift */; };
 		4C4E8CDD21E3FC0700F679F4 /* CorneaRiskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E8CDC21E3FC0700F679F4 /* CorneaRiskUITests.swift */; };
-		4CB43DE821ED862A000D9DC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CB43DE721ED862A000D9DC6 /* Assets.xcassets */; };
 		4CB43DEA21ED8A10000D9DC6 /* ResultPorcentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB43DE921ED8A10000D9DC6 /* ResultPorcentView.swift */; };
+		4CB43DEC21EE8229000D9DC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CB43DEB21EE8229000D9DC6 /* Assets.xcassets */; };
 		4CDC177B21E6879800A5EA1E /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC177A21E6879800A5EA1E /* Patient.swift */; };
 		4CDC178521E69AD300A5EA1E /* Ecuations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC178421E69AD300A5EA1E /* Ecuations.swift */; };
 		4CDC178721E6F97A00A5EA1E /* CorneaFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC178621E6F97A00A5EA1E /* CorneaFormViewController.swift */; };
@@ -49,8 +49,8 @@
 		4C4E8CD821E3FC0700F679F4 /* CorneaRiskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CorneaRiskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C4E8CDC21E3FC0700F679F4 /* CorneaRiskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorneaRiskUITests.swift; sourceTree = "<group>"; };
 		4C4E8CDE21E3FC0700F679F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4CB43DE721ED862A000D9DC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../diploIOS/actividades/Buggy/Buggy/Assets.xcassets; sourceTree = "<group>"; };
 		4CB43DE921ED8A10000D9DC6 /* ResultPorcentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPorcentView.swift; sourceTree = "<group>"; };
+		4CB43DEB21EE8229000D9DC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = CorneaRisk/Assets.xcassets; sourceTree = "<group>"; };
 		4CDC177A21E6879800A5EA1E /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
 		4CDC178421E69AD300A5EA1E /* Ecuations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ecuations.swift; sourceTree = "<group>"; };
 		4CDC178621E6F97A00A5EA1E /* CorneaFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorneaFormViewController.swift; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 		4C4E8CB021E3FC0500F679F4 = {
 			isa = PBXGroup;
 			children = (
-				4CB43DE721ED862A000D9DC6 /* Assets.xcassets */,
+				4CB43DEB21EE8229000D9DC6 /* Assets.xcassets */,
 				4C4E8CBB21E3FC0500F679F4 /* CorneaRisk */,
 				4C4E8CD021E3FC0700F679F4 /* CorneaRiskTests */,
 				4C4E8CDB21E3FC0700F679F4 /* CorneaRiskUITests */,
@@ -266,7 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C4E8CC721E3FC0600F679F4 /* LaunchScreen.storyboard in Resources */,
-				4CB43DE821ED862A000D9DC6 /* Assets.xcassets in Resources */,
+				4CB43DEC21EE8229000D9DC6 /* Assets.xcassets in Resources */,
 				4C4E8CC221E3FC0500F679F4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
