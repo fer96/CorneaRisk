@@ -11,7 +11,7 @@ import UIKit
 class CorneaFormViewController: UIViewController {
     
     var patient = Patient()
-    let imssMainColor = UIColor(red: CGFloat(0.0), green: CGFloat(0.2), blue: CGFloat(0.145), alpha: CGFloat(1))
+    //let imssMainColor = UIColor(red: CGFloat(0.0), green: CGFloat(0.2), blue: CGFloat(0.145), alpha: CGFloat(1))
     
     @IBOutlet weak var ageTextField: UITextField!
     @IBOutlet weak var sexSegmentControl: UISegmentedControl!
@@ -42,7 +42,7 @@ class CorneaFormViewController: UIViewController {
     
     func resetValues() {
         ageTextField.text = ""
-        ageTextField.placeholder = "Age must be between 20 - 90"
+        ageTextField.placeholder = "Age must be between 0 - 99"
         sexSegmentControl.selectedSegmentIndex = 0
         groupRiskSegmentControl.selectedSegmentIndex = 0
         vascularizationSwitch.setOn(false, animated: false)
@@ -64,7 +64,7 @@ class CorneaFormViewController: UIViewController {
             patient.age = Int(ageTextField.text!)!
         }else {
             patient.age = 0
-            ageTextField.placeholder = "Age must be between 20 - 90"
+            ageTextField.placeholder = "Age must be between 0 - 99"
         }
         patient.sex = sexSegmentControl.selectedSegmentIndex
         patient.groupRisk = groupRiskSegmentControl.selectedSegmentIndex
@@ -81,7 +81,7 @@ class CorneaFormViewController: UIViewController {
     func chechkValues() -> Bool {
         setValuesToPatient()
         
-        if(patient.age > 20 && patient.age < 90){
+        if(patient.age > 0 && patient.age < 99){
             return true
         } else {
             return false
@@ -94,7 +94,7 @@ class CorneaFormViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         resetButtonO.layer.cornerRadius = 18
-        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : imssMainColor]
+        //self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : imssMainColor]
         
     }
     

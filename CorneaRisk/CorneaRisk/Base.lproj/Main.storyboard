@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tEB-td-aHJ">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,27 +16,27 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="CorneaFormViewController" customModule="CorneaRisk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vascularization:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKr-E8-9IL">
-                                <rect key="frame" x="8" y="275" width="183" height="33"/>
+                                <rect key="frame" x="8" y="251" width="183" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ooh-ED-C2V">
-                                <rect key="frame" x="357" y="276" width="51" height="31"/>
+                                <rect key="frame" x="263" y="252" width="51" height="31"/>
                                 <color key="onTintColor" name="imssSecondColor"/>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wV7-yX-bse">
-                                <rect key="frame" x="8" y="94" width="60" height="33"/>
+                                <rect key="frame" x="8" y="70" width="60" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="w2G-Nt-gew">
-                                <rect key="frame" x="172" y="211" width="234" height="29"/>
+                                <rect key="frame" x="172" y="187" width="140" height="29"/>
                                 <segments>
                                     <segment title="LOW"/>
                                     <segment title="HIGH"/>
@@ -44,7 +44,7 @@
                                 <color key="tintColor" name="imssSecondColor"/>
                             </segmentedControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yG6-oL-oHY">
-                                <rect key="frame" x="172" y="154" width="234" height="29"/>
+                                <rect key="frame" x="172" y="130" width="140" height="29"/>
                                 <segments>
                                     <segment title="MALE"/>
                                     <segment title="FEMALE"/>
@@ -52,61 +52,61 @@
                                 <color key="tintColor" name="imssSecondColor"/>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blood compatibility:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQ6-8c-afg">
-                                <rect key="frame" x="8" y="316" width="230" height="33"/>
+                                <rect key="frame" x="8" y="292" width="230" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Group of risk:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vfl-lA-MoK">
-                                <rect key="frame" x="8" y="209" width="156" height="33"/>
+                                <rect key="frame" x="8" y="185" width="156" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type of transplant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4BX-YY-cRC">
-                                <rect key="frame" x="8" y="582" width="208" height="33"/>
+                                <rect key="frame" x="8" y="558" width="208" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Systematic comorbidities:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7Q-K8-xeg">
-                                <rect key="frame" x="8" y="357" width="301" height="33"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Systematic comorbidities:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7Q-K8-xeg">
+                                <rect key="frame" x="8" y="333" width="301" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size of graft" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHV-k5-QXg">
-                                <rect key="frame" x="8" y="505" width="139" height="33"/>
+                                <rect key="frame" x="8" y="481" width="139" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age must be between 20 - 90" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2fz-rQ-keZ">
-                                <rect key="frame" x="76" y="95" width="330" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age must be between 0 - 90" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2fz-rQ-keZ">
+                                <rect key="frame" x="76" y="71" width="236" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bHV-7D-EU6">
-                                <rect key="frame" x="357" y="358" width="51" height="31"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bHV-7D-EU6">
+                                <rect key="frame" x="357" y="334" width="51" height="31"/>
                                 <color key="onTintColor" name="imssSecondColor"/>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UQI-bS-3NA">
-                                <rect key="frame" x="357" y="317" width="51" height="31"/>
+                                <rect key="frame" x="263" y="293" width="51" height="31"/>
                                 <color key="onTintColor" name="imssSecondColor"/>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Qu0-3J-sgF">
-                                <rect key="frame" x="357" y="399" width="51" height="31"/>
+                                <rect key="frame" x="263" y="375" width="51" height="31"/>
                                 <color key="onTintColor" name="imssSecondColor"/>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sex:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYE-p4-3hw">
-                                <rect key="frame" x="8" y="152" width="51" height="33"/>
+                                <rect key="frame" x="8" y="128" width="51" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QG7-hO-Iyl">
-                                <rect key="frame" x="171.5" y="831" width="71" height="41"/>
+                                <rect key="frame" x="124.5" y="449" width="71" height="41"/>
                                 <color key="backgroundColor" name="imssSecondColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="tintColor" name="imssThirdColor"/>
@@ -118,52 +118,49 @@
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Mts-gq-QMa">
-                                <rect key="frame" x="8" y="546" width="398" height="29"/>
+                                <rect key="frame" x="8" y="522" width="304" height="29"/>
                                 <segments>
-                                    <segment title="-8.25"/>
-                                    <segment title="8.25"/>
-                                    <segment title="8.50"/>
+                                    <segment title="-7.25"/>
+                                    <segment title="7.50 to 8.25"/>
                                     <segment title="+8.50"/>
                                 </segments>
                                 <color key="tintColor" name="imssSecondColor"/>
                             </segmentedControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ody-IY-4dv">
-                                <rect key="frame" x="8" y="623" width="398" height="29"/>
+                                <rect key="frame" x="8" y="599" width="304" height="29"/>
                                 <segments>
                                     <segment title="Simple"/>
-                                    <segment title="Double"/>
                                     <segment title="Triple"/>
                                 </segments>
                                 <color key="tintColor" name="imssSecondColor"/>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ophthalmic comorbidities:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1t-al-wc2">
-                                <rect key="frame" x="8" y="399" width="307" height="33"/>
+                                <rect key="frame" x="8" y="375" width="213" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cp9-Pc-Voe">
-                                <rect key="frame" x="357" y="439" width="51" height="31"/>
+                                <rect key="frame" x="263" y="415" width="51" height="31"/>
                                 <color key="onTintColor" name="imssSecondColor"/>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Postsurgical complications:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdb-0R-y3e">
-                                <rect key="frame" x="8" y="438" width="317" height="33"/>
+                                <rect key="frame" x="8" y="414" width="223" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Surgical time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2c-bA-cqz">
-                                <rect key="frame" x="8" y="666" width="151" height="33"/>
+                                <rect key="frame" x="8" y="642" width="151" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="OMy-eJ-Yhf">
-                                <rect key="frame" x="8" y="707" width="398" height="29"/>
+                                <rect key="frame" x="8" y="683" width="304" height="29"/>
                                 <segments>
-                                    <segment title="-60"/>
-                                    <segment title="60"/>
-                                    <segment title="+60"/>
+                                    <segment title="-60 min"/>
+                                    <segment title="+60 min"/>
                                 </segments>
                                 <color key="tintColor" name="imssSecondColor"/>
                             </segmentedControl>
@@ -266,31 +263,31 @@
             <objects>
                 <viewController id="beb-SU-bDr" customClass="CorneaResultsViewController" customModule="CorneaRisk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TBI-Xa-qqW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WLF-6r-0pa">
-                                <rect key="frame" x="20" y="108" width="374" height="321"/>
+                                <rect key="frame" x="20" y="84" width="280" height="321"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="321" id="Hz3-hz-hIh"/>
                                     <constraint firstAttribute="width" constant="374" id="n5y-Ed-94r"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jz4-nX-oTs">
-                                <rect key="frame" x="20" y="437" width="80" height="33"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Result:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jz4-nX-oTs">
+                                <rect key="frame" x="20" y="413" width="80" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recomendations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AaX-uf-S3e">
-                                <rect key="frame" x="20" y="545" width="196" height="33"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Warning signs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AaX-uf-S3e">
+                                <rect key="frame" x="20" y="545" width="102" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2jX-af-CPJ" customClass="ResultPorcentView" customModule="CorneaRisk" customModuleProvider="target">
-                                <rect key="frame" x="20" y="478" width="374" height="25"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2jX-af-CPJ" customClass="ResultPorcentView" customModule="CorneaRisk" customModuleProvider="target">
+                                <rect key="frame" x="20" y="478" width="280" height="25"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="75 %" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZzQ-43-YLL">
                                         <rect key="frame" x="166" y="2" width="38" height="21"/>
@@ -310,44 +307,40 @@
                                     <constraint firstItem="ZzQ-43-YLL" firstAttribute="top" secondItem="2jX-af-CPJ" secondAttribute="top" constant="2" id="tVj-qG-BFO"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Probability of episode of corneal rejection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEi-rQ-Zz1">
-                                <rect key="frame" x="20" y="511" width="374" height="26"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Probability of episode of corneal rejection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEi-rQ-Zz1">
+                                <rect key="frame" x="20" y="511" width="280" height="26"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="W3H-Ff-3q5">
-                                <rect key="frame" x="20" y="586" width="374" height="276"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="374" id="aTc-BK-d9h"/>
-                                    <constraint firstAttribute="height" constant="276" id="iYR-bA-o4w"/>
-                                </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5xF-vp-PlQ">
+                                <rect key="frame" x="20" y="480" width="280" height="0.0"/>
+                                <color key="backgroundColor" white="0.96524507705479456" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="SsI-G8-aJw" firstAttribute="trailing" secondItem="FEi-rQ-Zz1" secondAttribute="trailing" constant="20" id="3GD-sO-Rlt"/>
-                            <constraint firstItem="SsI-G8-aJw" firstAttribute="bottom" secondItem="W3H-Ff-3q5" secondAttribute="bottom" id="5zy-jj-g9k"/>
+                            <constraint firstItem="5xF-vp-PlQ" firstAttribute="top" secondItem="AaX-uf-S3e" secondAttribute="bottom" constant="8" id="89x-jx-9Ps"/>
+                            <constraint firstItem="SsI-G8-aJw" firstAttribute="trailing" secondItem="5xF-vp-PlQ" secondAttribute="trailing" constant="20" id="8Gr-yf-Llf"/>
                             <constraint firstItem="Jz4-nX-oTs" firstAttribute="top" secondItem="WLF-6r-0pa" secondAttribute="bottom" constant="8" id="8hb-Lz-SU9"/>
                             <constraint firstItem="SsI-G8-aJw" firstAttribute="trailing" secondItem="AaX-uf-S3e" secondAttribute="trailing" constant="198" id="Ayi-pn-d7Z"/>
+                            <constraint firstItem="5xF-vp-PlQ" firstAttribute="leading" secondItem="SsI-G8-aJw" secondAttribute="leading" constant="20" id="CjS-7K-DLy"/>
                             <constraint firstItem="SsI-G8-aJw" firstAttribute="trailing" secondItem="Jz4-nX-oTs" secondAttribute="trailing" constant="314" id="DPw-4G-Kri"/>
                             <constraint firstItem="2jX-af-CPJ" firstAttribute="leading" secondItem="SsI-G8-aJw" secondAttribute="leading" constant="20" id="Gaf-pB-hoa"/>
                             <constraint firstItem="SsI-G8-aJw" firstAttribute="trailing" secondItem="2jX-af-CPJ" secondAttribute="trailing" constant="20" id="P7v-0l-WEi"/>
-                            <constraint firstItem="W3H-Ff-3q5" firstAttribute="leading" secondItem="SsI-G8-aJw" secondAttribute="leading" constant="20" id="PnM-Id-WyB"/>
                             <constraint firstItem="FEi-rQ-Zz1" firstAttribute="top" secondItem="2jX-af-CPJ" secondAttribute="bottom" constant="8" id="QCE-ML-URe"/>
                             <constraint firstItem="WLF-6r-0pa" firstAttribute="top" secondItem="SsI-G8-aJw" secondAttribute="top" constant="20" id="RfT-UI-L2n"/>
                             <constraint firstItem="Jz4-nX-oTs" firstAttribute="leading" secondItem="SsI-G8-aJw" secondAttribute="leading" constant="20" id="SfY-6X-7f1"/>
+                            <constraint firstItem="5xF-vp-PlQ" firstAttribute="bottom" secondItem="SsI-G8-aJw" secondAttribute="bottom" id="UVe-nZ-ooe"/>
                             <constraint firstAttribute="bottom" secondItem="FEi-rQ-Zz1" secondAttribute="bottom" constant="359" id="XyK-il-pF1"/>
                             <constraint firstItem="AaX-uf-S3e" firstAttribute="top" secondItem="FEi-rQ-Zz1" secondAttribute="bottom" constant="8" symbolic="YES" id="d1e-Ve-8Tv"/>
                             <constraint firstItem="SsI-G8-aJw" firstAttribute="trailing" secondItem="WLF-6r-0pa" secondAttribute="trailing" constant="20" id="ddJ-UY-SMY"/>
                             <constraint firstItem="WLF-6r-0pa" firstAttribute="leading" secondItem="SsI-G8-aJw" secondAttribute="leading" constant="20" id="fYX-sX-Kwh"/>
                             <constraint firstItem="FEi-rQ-Zz1" firstAttribute="leading" secondItem="SsI-G8-aJw" secondAttribute="leading" constant="20" id="he7-eH-WO6"/>
                             <constraint firstItem="AaX-uf-S3e" firstAttribute="leading" secondItem="SsI-G8-aJw" secondAttribute="leading" constant="20" id="l5r-te-MK4"/>
-                            <constraint firstItem="SsI-G8-aJw" firstAttribute="trailing" secondItem="W3H-Ff-3q5" secondAttribute="trailing" constant="20" id="lHx-6f-u6J"/>
                             <constraint firstItem="2jX-af-CPJ" firstAttribute="top" secondItem="Jz4-nX-oTs" secondAttribute="bottom" constant="8" symbolic="YES" id="xS5-xd-0v2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SsI-G8-aJw"/>
@@ -355,6 +348,8 @@
                     <navigationItem key="navigationItem" title="Results" id="VIB-Q2-cbF"/>
                     <connections>
                         <outlet property="resultPorcentLabel" destination="ZzQ-43-YLL" id="Acy-0e-Aa5"/>
+                        <outlet property="warningSingsLabel" destination="AaX-uf-S3e" id="qDe-Xt-oHJ"/>
+                        <outlet property="warningTextView" destination="5xF-vp-PlQ" id="eDA-X2-Zc6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z87-GW-qcU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -367,7 +362,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tEB-td-aHJ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XDR-9q-P85">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" name="imssMainColor"/>
                     </navigationBar>

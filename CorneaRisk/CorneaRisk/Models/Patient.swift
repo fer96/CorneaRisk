@@ -25,11 +25,16 @@ struct Patient {
     var ophthalmicComorbidities: Bool = false
     var postsurgicalComplications: Bool = false
     
-    //MARK: Pikers
-    //Graft size example: -8.25 -> 0, 8.25 -> 1, 8.50 ->2, +8.50 -> 3
-    //Type of transplant example: just one -> 0, Double procedure -> 1, Triple procedure -> 2
-    //Surgical Time example: menos de 1 hr -> 0, 1 hr -> 1, más de 1 hr -> 2
+    //MARK: Segmented Controls
+    //Graft size example: -7.25 -> 0, 7.50 a 8.25 -> 1, +8.50 -> 3
+    //Type of transplant example: Simple -> 0, Triple -> 1
+    //Surgical Time example: menos de 1 hr -> 0, más de 1 hr -> 1
     var graftSize: Int = 0
     var typeOfTransplant: Int = 0
     var surgicalTime: Int = 0
+    
+    //MARK: Tables
+    //Just with one selected SC is on
+    let systemicCormobilities: [String] = ["ATL","DM","ITAS"]
+    let highCharacteristics: [String] = ["Herpetic leukoma","Perforated ulcers","Stevens Johnson syndrome","Rejection","Bacterial keratitis","Retrasplant","Neurotrophic keratitis","Micotica","Keratoglobus","Congenital glaucoma","Corneal descemetocele","Pelucid marginal degeneration","Corneal burns","Atalamia","Pemphigoid","Keratitis sicca","Keratoconus","Bullous keratopathy","Vascularized leukoma","Fuchs dystrophy","Interstitial keratitis","granular dystrophy","Iridocorneal endothelial syndrome","Blood compatibility","Ophthalmic comorbidities","Postsurgical complications"]
 }
