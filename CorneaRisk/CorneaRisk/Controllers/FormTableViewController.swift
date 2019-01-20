@@ -23,6 +23,9 @@ protocol setValuesCalculator {
 
 class FormTableViewController: UITableViewController {
     
+    var patient = Patient()
+    let numberOfRowAtSection: [Int] = [8,26,3]
+    
     @IBOutlet weak var ageTextField: UITextField!
     @IBOutlet weak var sexControl: UISegmentedControl!
     @IBOutlet weak var sizeGraftControl: UISegmentedControl!
@@ -69,8 +72,9 @@ class FormTableViewController: UITableViewController {
             setValuesToPatient()
             performSegue(withIdentifier: "resultsSegue", sender: nil)
         }else {
-            //Lanzar alerta
-            
+            let alert = UIAlertController(title: "Error", message: "Please review your data", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         }
     }
     
@@ -83,21 +87,19 @@ class FormTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        
-        ageTextField.text = "23"
-        
+                
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 3
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return numberOfRowAtSection[section]
     }
 
     /*
@@ -207,9 +209,13 @@ extension FormTableViewController: setValuesCalculator {
             if (Int(ageTextField.text!)! > 0 && Int(ageTextField.text!)! < 100) {
                 return true
             }else {
+                ageTextField.text = ""
+                ageTextField.placeholder = "Age must be between 1 - 99"
                 return false
             }
         }else {
+            ageTextField.text = ""
+            ageTextField.placeholder = "Age must be between 1 - 99"
             return false
         }
     }
@@ -217,7 +223,7 @@ extension FormTableViewController: setValuesCalculator {
         var count: Int = 0
         for element in array {
             if element == true {
-                count += count
+                count += 1
             }
         }
         return count
@@ -254,9 +260,8 @@ extension FormTableViewController: setValuesCalculator {
         }
     }
     func setValuesToPatient() {
-        var patient = Patient()
         
-        patient.age = Int(ageTextField.text!)!
+        patient.setAge(Int(ageTextField.text!)!)
         patient.sex = sexControl.selectedSegmentIndex
         patient.graftSize = sizeGraftControl.selectedSegmentIndex
         patient.typeOfTransplant = typeTransplantControl.selectedSegmentIndex

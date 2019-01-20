@@ -11,6 +11,7 @@ import Foundation
 
 struct Patient {
     //MARK: Txt fields
+    //Age example: -60 --> 0, 60|+60 --> 1
     var age: Int = 0
     
     //MARK: Switchs
@@ -35,6 +36,15 @@ struct Patient {
     
     //MARK: Tables
     //Just with one selected SC is on
-    let systemicCormobilities: [String] = ["ATL","DM","ITAS"]
-    let highCharacteristics: [String] = ["Herpetic leukoma","Perforated ulcers","Stevens Johnson syndrome","Rejection","Bacterial keratitis","Retrasplant","Neurotrophic keratitis","Micotica","Keratoglobus","Congenital glaucoma","Corneal descemetocele","Pelucid marginal degeneration","Corneal burns","Atalamia","Pemphigoid","Keratitis sicca","Keratoconus","Bullous keratopathy","Vascularized leukoma","Fuchs dystrophy","Interstitial keratitis","granular dystrophy","Iridocorneal endothelial syndrome","Blood compatibility","Ophthalmic comorbidities","Postsurgical complications"]
+//    let systemicCormobilities: [String] = ["ATL","DM","ITAS"]
+//    let highCharacteristics: [String] = ["Herpetic leukoma","Perforated ulcers","Stevens Johnson syndrome","Rejection","Bacterial keratitis","Retrasplant","Neurotrophic keratitis","Micotica","Keratoglobus","Congenital glaucoma","Corneal descemetocele","Pelucid marginal degeneration","Corneal burns","Atalamia","Pemphigoid","Keratitis sicca","Keratoconus","Bullous keratopathy","Vascularized leukoma","Fuchs dystrophy","Interstitial keratitis","granular dystrophy","Iridocorneal endothelial syndrome","Blood compatibility","Ophthalmic comorbidities","Postsurgical complications"]
+    
+    //MARK: Methods
+    mutating func setAge(_ age: Int) {
+        if (age < 60){
+            self.age = 0
+        }else {
+            self.age = 1
+        }
+    }
 }

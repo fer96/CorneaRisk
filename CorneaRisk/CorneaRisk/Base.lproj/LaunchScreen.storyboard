@@ -19,12 +19,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oftalmologiaLogo" translatesAutoresizingMaskIntoConstraints="NO" id="8Fd-sL-dw9">
-                                <rect key="frame" x="0.0" y="444.5" width="375" height="222.5"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imssLogo" translatesAutoresizingMaskIntoConstraints="NO" id="brn-Z5-842">
-                                <rect key="frame" x="0.0" y="20" width="375" height="222.5"/>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T7n-2I-Fub">
                                 <rect key="frame" x="0.0" y="222.5" width="375" height="222"/>
                                 <subviews>
@@ -45,17 +39,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="T7n-2I-Fub" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="1:3" id="1Z3-bo-tBb"/>
-                            <constraint firstItem="brn-Z5-842" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="AhV-mJ-dcW"/>
-                            <constraint firstItem="brn-Z5-842" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="DCU-yp-pzS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8Fd-sL-dw9" secondAttribute="bottom" id="Ft9-ia-MwK"/>
                             <constraint firstItem="T7n-2I-Fub" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="GMo-wH-nvm"/>
-                            <constraint firstItem="8Fd-sL-dw9" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="1:3" id="R1Q-T1-J4Z"/>
                             <constraint firstItem="T7n-2I-Fub" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="VrA-OH-JjZ"/>
-                            <constraint firstItem="brn-Z5-842" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="1:3" id="Zpa-Zz-WfX"/>
-                            <constraint firstItem="8Fd-sL-dw9" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="bqX-Ct-4cm"/>
-                            <constraint firstItem="8Fd-sL-dw9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="kWt-ml-VIS"/>
                             <constraint firstItem="T7n-2I-Fub" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ori-AE-iRP"/>
-                            <constraint firstItem="brn-Z5-842" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vUI-kw-9N9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -66,8 +52,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="imssLogo" width="255" height="191.25"/>
-        <image name="oftalmologiaLogo" width="425" height="245"/>
         <namedColor name="imssMainColor">
             <color red="0.0" green="0.20000000000000001" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
