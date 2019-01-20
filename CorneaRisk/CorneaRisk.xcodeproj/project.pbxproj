@@ -17,7 +17,6 @@
 		4CB43DF921F27E5B000D9DC6 /* FormTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB43DF821F27E5B000D9DC6 /* FormTableViewController.swift */; };
 		4CDC177B21E6879800A5EA1E /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC177A21E6879800A5EA1E /* Patient.swift */; };
 		4CDC178521E69AD300A5EA1E /* Ecuations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC178421E69AD300A5EA1E /* Ecuations.swift */; };
-		4CDC178721E6F97A00A5EA1E /* CorneaFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC178621E6F97A00A5EA1E /* CorneaFormViewController.swift */; };
 		4CDC178921E6F99300A5EA1E /* CorneaResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC178821E6F99300A5EA1E /* CorneaResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +54,6 @@
 		4CB43DF821F27E5B000D9DC6 /* FormTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableViewController.swift; sourceTree = "<group>"; };
 		4CDC177A21E6879800A5EA1E /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
 		4CDC178421E69AD300A5EA1E /* Ecuations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ecuations.swift; sourceTree = "<group>"; };
-		4CDC178621E6F97A00A5EA1E /* CorneaFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorneaFormViewController.swift; sourceTree = "<group>"; };
 		4CDC178821E6F99300A5EA1E /* CorneaResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorneaResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,7 +138,6 @@
 		4CDC177721E682E200A5EA1E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				4CDC178621E6F97A00A5EA1E /* CorneaFormViewController.swift */,
 				4CDC178821E6F99300A5EA1E /* CorneaResultsViewController.swift */,
 				4CB43DF821F27E5B000D9DC6 /* FormTableViewController.swift */,
 			);
@@ -295,7 +292,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CDC178721E6F97A00A5EA1E /* CorneaFormViewController.swift in Sources */,
 				4CB43DEA21ED8A10000D9DC6 /* ResultPorcentView.swift in Sources */,
 				4C4E8CBD21E3FC0500F679F4 /* AppDelegate.swift in Sources */,
 				4CDC177B21E6879800A5EA1E /* Patient.swift in Sources */,
@@ -480,7 +476,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L34FBBW2U7;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CorneaRisk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -500,7 +496,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L34FBBW2U7;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CorneaRisk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

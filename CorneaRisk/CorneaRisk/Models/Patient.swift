@@ -20,8 +20,8 @@ struct Patient {
     var sex: Int  = 0
     var groupRisk: Int = 0
     var bloodCompatibility: Bool = false
-    var vascularization: Bool = false
-    var systematicComorbidities: Bool = false
+    //var vascularization: Bool = false
+    var systematicComorbidities: Int = 0
     var ophthalmicComorbidities: Bool = false
     var postsurgicalComplications: Bool = false
     
