@@ -11,7 +11,7 @@ import UIKit
 class ResultPorcentView: UIView {
     
     static var resultPorcent: Double = 75.0
-    let imssThirdColor = UIColor(red: CGFloat(0.388), green: CGFloat(0.604), blue: CGFloat(0.404), alpha: CGFloat(1))
+    let thirdColor = UIColor(red: CGFloat(0.388), green: CGFloat(0.604), blue: CGFloat(0.404), alpha: CGFloat(1))
     let redColor = UIColor(red: CGFloat(0.6), green: CGFloat(0.192), blue: CGFloat(0.161), alpha: CGFloat(1))
     /*
     // Only override draw() if you perform custom drawing.
@@ -20,7 +20,7 @@ class ResultPorcentView: UIView {
     override func draw(_ rect: CGRect) {
         let contextGreen = UIGraphicsGetCurrentContext()
         contextGreen?.setLineWidth(frame.width)
-        contextGreen?.setStrokeColor(imssThirdColor.cgColor)
+        contextGreen?.setStrokeColor(thirdColor.cgColor)
         contextGreen?.move(to: CGPoint(x: 0, y: 0))
         contextGreen?.addLine(to: CGPoint(x: frame.width * (CGFloat(ResultPorcentView.resultPorcent) * CGFloat(0.01)), y: CGFloat(0)))
         contextGreen?.strokePath()

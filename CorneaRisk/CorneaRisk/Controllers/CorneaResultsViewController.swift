@@ -20,6 +20,7 @@ class CorneaResultsViewController: UIViewController {
         if (result > 50.00){
             warningSingsLabel.isHidden = false
             warningSingsLabel.isEnabled = false
+            warningSingsLabel.text = ""
             warningTextView.isSelectable = false
             warningTextView.isEditable = false
             warningTextView.isHidden = false
