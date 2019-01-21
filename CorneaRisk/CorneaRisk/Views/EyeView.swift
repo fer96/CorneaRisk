@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable
+//@IBDesignable
 class EyeView: UIView {
 
     /*
@@ -18,7 +18,7 @@ class EyeView: UIView {
     override func draw(_ rect: CGRect) {
         // Drawing code
         //MARK: Colors
-        let mainColor = UIColor(red: CGFloat(0.0), green: CGFloat(0.2), blue: CGFloat(0.141), alpha: CGFloat(1))
+        //let translucentColor = UIColor(red: CGFloat(0.819), green: CGFloat(0.917), blue: CGFloat(0.839), alpha: CGFloat(0.25))
         let secondColor = UIColor(red: CGFloat(0.231), green: CGFloat(0.373), blue: CGFloat(0.255), alpha: CGFloat(1))
         let thirdColor = UIColor(red: CGFloat(0.388), green: CGFloat(0.604), blue: CGFloat(0.404), alpha: CGFloat(1))
         let blackColor = UIColor(red: CGFloat(0.203), green: CGFloat(0.203), blue: CGFloat(0.203), alpha: CGFloat(1))
@@ -79,11 +79,11 @@ class EyeView: UIView {
         shine?.fillPath()
         shine?.strokePath()
         
-        let line = UIBezierPath()
-        line.lineWidth = 5.0
-        line.move(to: CGPoint(x: center.x - (radius * 0.9725), y: center.y))
-        line.addLine(to: CGPoint(x: center.x + (radius * 0.9725), y: center.y))
-        thirdColor.setStroke()
-        line.stroke()
+//        let line = UIGraphicsGetCurrentContext()
+//        line?.move(to: CGPoint(x: center.x, y: center.y + radius))
+//        line?.addRect(rect)
+//        line?.setFillColor(translucentColor.cgColor)
+//        line?.fillPath()
+//        line?.strokePath()
     }
 }

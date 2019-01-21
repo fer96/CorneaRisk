@@ -8,35 +8,37 @@
 
 import UIKit
 
-class CorneaResultsViewController: UIViewController {
 
+protocol setResult {
+    func showWarnigs(result: Double)
+    func porcentResult()
+}
+
+class CorneaResultsViewController: UIViewController {
+    
+    var result: Double = Ecuations.corneaRisk()
     
     @IBOutlet weak var resultPorcentLabel: UILabel!
     @IBOutlet weak var warningSingsLabel: UILabel!
     @IBOutlet weak var warningTextView: UITextView!
-    
-    
-    func showWarnigs(result: Double) {
-        if (result > 50.00){
-            warningSingsLabel.isHidden = false
-            warningSingsLabel.isEnabled = false
-            warningSingsLabel.text = ""
-            warningTextView.isSelectable = false
-            warningTextView.isEditable = false
-            warningTextView.isHidden = false
-        }
-    }
+    @IBOutlet weak var translucentView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        ResultPorcentView.resultPorcent = Ecuations.corneaRisk()
-        resultPorcentLabel.text = String(format: "%.2f", ResultPorcentView.resultPorcent) + " %"
-        showWarnigs(result: ResultPorcentView.resultPorcent)
-        
+        porcentResult()
     }
     
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        UIView.animate(withDuration: 2.0, delay: 0.0, options: [.autoreverse,.repeat], animations: {
+            self.translucentView.center.y += self.translucentView.bounds.height
+        }, completion: nil)
+    }
     /*
     // MARK: - Navigation
 
@@ -47,4 +49,22 @@ class CorneaResultsViewController: UIViewController {
     }
     */
 
+}
+
+extension CorneaResultsViewController: setResult {
+    func showWarnigs(result: Double) {
+        if (result > 50.00){
+            warningSingsLabel.isHidden = false
+            warningSingsLabel.isEnabled = false
+            warningSingsLabel.text = ""
+            warningTextView.isSelectable = false
+            warningTextView.isEditable = false
+            warningTextView.isHidden = false
+        }
+    }
+    func porcentResult() {
+        ResultPorcentView.resultPorcent = result
+        resultPorcentLabel.text = String(format: "%.2f", ResultPorcentView.resultPorcent) + " %"
+        showWarnigs(result: ResultPorcentView.resultPorcent)
+    }
 }
