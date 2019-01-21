@@ -10,7 +10,7 @@ import UIKit
 
 class ResultPorcentView: UIView {
     
-    static var resultPorcent: Double = 75.0
+    static var resultPorcent: Double = 100.0
     let thirdColor = UIColor(red: CGFloat(0.388), green: CGFloat(0.604), blue: CGFloat(0.404), alpha: CGFloat(1))
     let redColor = UIColor(red: CGFloat(0.6), green: CGFloat(0.192), blue: CGFloat(0.161), alpha: CGFloat(1))
     /*

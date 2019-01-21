@@ -26,18 +26,28 @@ class CorneaResultsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        porcentResult()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 6.1){
+            self.translucentView.layer.removeAllAnimations()
+            DispatchQueue.main.asyncAfter(deadline: .now()) {
+                UIView.animate(withDuration: 2.0, delay: 0.0, options: [.curveEaseIn], animations: {
+                    self.translucentView.center.y -= self.translucentView.bounds.height * CGFloat(self.result / 100)
+                }, completion: nil)
+                self.porcentResult()
+            }
+        }
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
-    
+
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         UIView.animate(withDuration: 2.0, delay: 0.0, options: [.autoreverse,.repeat], animations: {
             self.translucentView.center.y += self.translucentView.bounds.height
         }, completion: nil)
+        
     }
     /*
     // MARK: - Navigation
