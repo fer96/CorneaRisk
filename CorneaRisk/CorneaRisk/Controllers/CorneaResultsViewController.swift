@@ -18,17 +18,19 @@ protocol setResult {
 class CorneaResultsViewController: UIViewController {
     
     var result: Double = Ecuations.corneaRisk()
+    var centerRL: CGPoint = CGPoint(x: 0,y: 0)
     
     @IBOutlet weak var resultPorcentLabel: UILabel!
     @IBOutlet weak var warningSingsLabel: UILabel!
     @IBOutlet weak var warningTextView: UITextView!
     @IBOutlet weak var translucentView: UIView!
+    @IBOutlet weak var greenPorcentView: UIView!
+    @IBOutlet weak var redPorcentView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         timerAnimate()
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -40,7 +42,7 @@ class CorneaResultsViewController: UIViewController {
         UIView.animate(withDuration: 2.0, delay: 0.0, options: [.autoreverse,.repeat], animations: {
             self.translucentView.center.y += self.translucentView.bounds.height
         }, completion: nil)
-        
+        //resultPorcentLabel.center.x -= (resultPorcentLabel.center.x * 2) - (greenPorcentView.bounds.width * CGFloat((100 - self.result)  * 0.01))
     }
     /*
     // MARK: - Navigation
@@ -60,7 +62,14 @@ extension CorneaResultsViewController: setResult {
             self.translucentView.layer.removeAllAnimations()
             DispatchQueue.main.asyncAfter(deadline: .now()) {
                 UIView.animate(withDuration: 2.0, delay: 0.0, options: [.curveEaseIn], animations: {
-                    self.translucentView.center.y -= self.translucentView.bounds.height * CGFloat(self.result / 100)
+                    self.translucentView.center.y -= self.translucentView.bounds.height * CGFloat(self.result * 0.01)
+                }, completion: nil)
+                UIView.animate(withDuration: 2.0, delay: 0.0, options: [.curveEaseIn], animations: {
+                    //self.greenPorcentView.center.x -= self.greenPorcentView.bounds.width * CGFloat((100.0 - self.result)  * 0.01)
+                    self.greenPorcentView.center.x += self.greenPorcentView.bounds.width * CGFloat((self.result)  * 0.01)
+                }, completion: nil)
+                UIView.animate(withDuration: 2.0, delay: 0.0, options: [.curveEaseIn], animations: {
+                    self.resultPorcentLabel.center.x -= (self.resultPorcentLabel.center.x * 2) - (self.greenPorcentView.bounds.width * CGFloat((100 - self.result)  * 0.01))
                 }, completion: nil)
             }
             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
@@ -81,12 +90,7 @@ extension CorneaResultsViewController: setResult {
         }
     }
     func porcentResult() {
-//        resultPorcentView.resultPorcent = result
-//        resultPorcentLabel.text = String(format: "%.2f", resultPorcentView.resultPorcent) + " %"
-//        showWarnigs(result: resultPorcentView.resultPorcent)
-        let rp = ResultPorcentView()
-        rp.resultPorcent = result
-        resultPorcentLabel.text = String(format: "%.2f",rp.resultPorcent) + " %"
-        showWarnigs(result: rp.resultPorcent)
+        resultPorcentLabel.text = String(format: "%.2f",result) + " %"
+        showWarnigs(result: result)
     }
 }

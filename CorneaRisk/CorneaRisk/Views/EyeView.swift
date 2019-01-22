@@ -22,7 +22,7 @@ class EyeView: UIView {
         let secondColor = UIColor(red: CGFloat(0.231), green: CGFloat(0.373), blue: CGFloat(0.255), alpha: CGFloat(1))
         let thirdColor = UIColor(red: CGFloat(0.388), green: CGFloat(0.604), blue: CGFloat(0.404), alpha: CGFloat(1))
         let blackColor = UIColor(red: CGFloat(0.203), green: CGFloat(0.203), blue: CGFloat(0.203), alpha: CGFloat(1))
-        let grayColor = UIColor(red: CGFloat(0.203), green: CGFloat(0.203), blue: CGFloat(0.203), alpha: CGFloat(0.75))
+        //let grayColor = UIColor(red: CGFloat(0.203), green: CGFloat(0.203), blue: CGFloat(0.203), alpha: CGFloat(0.75))
         //let redColor = UIColor(red: CGFloat(0.6), green: CGFloat(0.192), blue: CGFloat(0.161), alpha: CGFloat(1))
         
         //MARK: Auxiliars points
