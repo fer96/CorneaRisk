@@ -70,7 +70,7 @@
                                                         <segment title="MALE"/>
                                                         <segment title="FEMALE"/>
                                                     </segments>
-                                                    <color key="tintColor" name="imssSecondColor"/>
+                                                    <color key="tintColor" name="secondColor"/>
                                                 </segmentedControl>
                                             </subviews>
                                             <constraints>
@@ -116,7 +116,7 @@
                                                         <segment title="7.50 to 8.25"/>
                                                         <segment title="+8.50"/>
                                                     </segments>
-                                                    <color key="tintColor" name="imssSecondColor"/>
+                                                    <color key="tintColor" name="secondColor"/>
                                                 </segmentedControl>
                                             </subviews>
                                             <constraints>
@@ -158,7 +158,7 @@
                                                         <segment title="Simple"/>
                                                         <segment title="Triple"/>
                                                     </segments>
-                                                    <color key="tintColor" name="imssSecondColor"/>
+                                                    <color key="tintColor" name="secondColor"/>
                                                 </segmentedControl>
                                             </subviews>
                                             <constraints>
@@ -200,7 +200,7 @@
                                                         <segment title="-60 min"/>
                                                         <segment title="+60 min"/>
                                                     </segments>
-                                                    <color key="tintColor" name="imssSecondColor"/>
+                                                    <color key="tintColor" name="secondColor"/>
                                                 </segmentedControl>
                                             </subviews>
                                             <constraints>
@@ -228,7 +228,7 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cbQ-Eq-IzF">
                                                     <rect key="frame" x="310" y="6.5" width="51" height="31"/>
-                                                    <color key="onTintColor" name="imssSecondColor"/>
+                                                    <color key="onTintColor" name="secondColor"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -255,7 +255,7 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ptm-04-gbm">
                                                     <rect key="frame" x="310" y="6.5" width="51" height="31"/>
-                                                    <color key="onTintColor" name="imssSecondColor"/>
+                                                    <color key="onTintColor" name="secondColor"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -282,7 +282,7 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Fdz-8Q-ugw">
                                                     <rect key="frame" x="310" y="6.5" width="51" height="31"/>
-                                                    <color key="onTintColor" name="imssSecondColor"/>
+                                                    <color key="onTintColor" name="secondColor"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -309,7 +309,7 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1UO-h0-PsH">
                                                     <rect key="frame" x="310" y="6.5" width="51" height="31"/>
-                                                    <color key="onTintColor" name="imssSecondColor"/>
+                                                    <color key="onTintColor" name="secondColor"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -336,7 +336,7 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JTe-Qq-LKF">
                                                     <rect key="frame" x="310" y="6.5" width="51" height="31"/>
-                                                    <color key="onTintColor" name="imssSecondColor"/>
+                                                    <color key="onTintColor" name="secondColor"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -363,7 +363,7 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gp1-oL-KNa">
                                                     <rect key="frame" x="310" y="6.5" width="51" height="31"/>
-                                                    <color key="onTintColor" name="imssSecondColor"/>
+                                                    <color key="onTintColor" name="secondColor"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -390,7 +390,7 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="viD-G9-bpZ">
                                                     <rect key="frame" x="310" y="6.5" width="51" height="31"/>
-                                                    <color key="onTintColor" name="imssSecondColor"/>
+                                                    <color key="onTintColor" name="secondColor"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -417,7 +417,7 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Vl4-aa-ffO">
                                                     <rect key="frame" x="310" y="6.5" width="51" height="31"/>
-                                                    <color key="onTintColor" name="imssSecondColor"/>
+                                                    <color key="onTintColor" name="secondColor"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -444,7 +444,7 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QeB-sp-CqN">
                                                     <rect key="frame" x="310" y="6.5" width="51" height="31"/>
-                                                    <color key="onTintColor" name="imssSecondColor"/>
+                                                    <color key="onTintColor" name="secondColor"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -471,7 +471,7 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5Jc-11-wT5">
                                                     <rect key="frame" x="310" y="6.5" width="51" height="31"/>
-                                                    <color key="onTintColor" name="imssSecondColor"/>
+                                                    <color key="onTintColor" name="secondColor"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -498,7 +498,7 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Rro-I3-aEN">
                                                     <rect key="frame" x="310" y="15.5" width="51" height="31"/>
-                                                    <color key="onTintColor" name="imssSecondColor"/>
+                                                    <color key="onTintColor" name="secondColor"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -525,7 +525,7 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="b5T-g0-gRj">
                                                     <rect key="frame" x="310" y="6.5" width="51" height="31"/>
-                                                    <color key="onTintColor" name="imssSecondColor"/>
+                                                    <color key="onTintColor" name="secondColor"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -552,7 +552,7 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4J1-PL-ug5">
                                                     <rect key="frame" x="310" y="6.5" width="51" height="31"/>
-                                                    <color key="onTintColor" name="imssSecondColor"/>
+                                                    <color key="onTintColor" name="secondColor"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -579,7 +579,7 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="avJ-Iq-DbB">
                                                     <rect key="frame" x="310" y="6.5" width="51" height="31"/>
-                                                    <color key="onTintColor" name="imssSecondColor"/>
+                                                    <color key="onTintColor" name="secondColor"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -606,7 +606,7 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ngQ-zY-U7Q">
                                                     <rect key="frame" x="310" y="6.5" width="51" height="31"/>
-                                                    <color key="onTintColor" name="imssSecondColor"/>
+                                                    <color key="onTintColor" name="secondColor"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -633,7 +633,7 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Vne-PW-NVC">
                                                     <rect key="frame" x="310" y="6.5" width="51" height="31"/>
-                                                    <color key="onTintColor" name="imssSecondColor"/>
+                                                    <color key="onTintColor" name="secondColor"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -660,7 +660,7 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IKe-9d-MKR">
                                                     <rect key="frame" x="310" y="6.5" width="51" height="31"/>
-                                                    <color key="onTintColor" name="imssSecondColor"/>
+                                                    <color key="onTintColor" name="secondColor"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -687,7 +687,7 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WmR-oR-HqC">
                                                     <rect key="frame" x="310" y="6.5" width="51" height="31"/>
-                                                    <color key="onTintColor" name="imssSecondColor"/>
+                                                    <color key="onTintColor" name="secondColor"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -714,7 +714,7 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oUT-vJ-5i9">
                                                     <rect key="frame" x="310" y="6.5" width="51" height="31"/>
-                                                    <color key="onTintColor" name="imssSecondColor"/>
+                                                    <color key="onTintColor" name="secondColor"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -741,7 +741,7 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7kM-dD-Daf">
                                                     <rect key="frame" x="310" y="6.5" width="51" height="31"/>
-                                                    <color key="onTintColor" name="imssSecondColor"/>
+                                                    <color key="onTintColor" name="secondColor"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -768,7 +768,7 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aLm-Zp-gBr">
                                                     <rect key="frame" x="310" y="6.5" width="51" height="31"/>
-                                                    <color key="onTintColor" name="imssSecondColor"/>
+                                                    <color key="onTintColor" name="secondColor"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -795,7 +795,7 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Okf-LP-6Xf">
                                                     <rect key="frame" x="310" y="12.5" width="51" height="31"/>
-                                                    <color key="onTintColor" name="imssSecondColor"/>
+                                                    <color key="onTintColor" name="secondColor"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -822,7 +822,7 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="b6Q-Gd-av3">
                                                     <rect key="frame" x="310" y="6.5" width="51" height="31"/>
-                                                    <color key="onTintColor" name="imssSecondColor"/>
+                                                    <color key="onTintColor" name="secondColor"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -849,7 +849,7 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ie5-KD-WC1">
                                                     <rect key="frame" x="310" y="6.5" width="51" height="31"/>
-                                                    <color key="onTintColor" name="imssSecondColor"/>
+                                                    <color key="onTintColor" name="secondColor"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -876,7 +876,7 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4YB-H2-OF6">
                                                     <rect key="frame" x="310" y="6.5" width="51" height="31"/>
-                                                    <color key="onTintColor" name="imssSecondColor"/>
+                                                    <color key="onTintColor" name="secondColor"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -903,7 +903,7 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2gf-JP-QBI">
                                                     <rect key="frame" x="310" y="6.5" width="51" height="31"/>
-                                                    <color key="onTintColor" name="imssSecondColor"/>
+                                                    <color key="onTintColor" name="secondColor"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -934,7 +934,7 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eIh-K7-7cD">
                                                     <rect key="frame" x="308" y="6.5" width="51" height="31"/>
-                                                    <color key="onTintColor" name="imssSecondColor"/>
+                                                    <color key="onTintColor" name="secondColor"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -961,7 +961,7 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ub8-WR-AwX">
                                                     <rect key="frame" x="308" y="6.5" width="51" height="31"/>
-                                                    <color key="onTintColor" name="imssSecondColor"/>
+                                                    <color key="onTintColor" name="secondColor"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -988,7 +988,7 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sbi-lx-Kvb">
                                                     <rect key="frame" x="308" y="6.5" width="51" height="31"/>
-                                                    <color key="onTintColor" name="imssSecondColor"/>
+                                                    <color key="onTintColor" name="secondColor"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -1191,7 +1191,7 @@
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" name="imssThirdColor"/>
+                        <color key="barTintColor" name="thirdColor"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1208,14 +1208,17 @@
         </scene>
     </scenes>
     <resources>
-        <namedColor name="imssSecondColor">
-            <color red="0.23100000619888306" green="0.37299999594688416" blue="0.25499999523162842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="imssThirdColor">
             <color red="0.3843137254901961" green="0.60392156862745094" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="redColor">
             <color red="0.60000002384185791" green="0.19200000166893005" blue="0.16099999845027924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="secondColor">
+            <color red="0.23100000619888306" green="0.37299999594688416" blue="0.25499999523162842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="thirdColor">
+            <color red="0.3843137254901961" green="0.60392156862745094" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
