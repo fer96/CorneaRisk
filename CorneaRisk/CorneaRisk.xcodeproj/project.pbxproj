@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C0A786C21F7DE7100B37AE5 /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0A786B21F7DE7100B37AE5 /* Variables.swift */; };
+		4C0A786E21F7E0A000B37AE5 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0A786D21F7E0A000B37AE5 /* Appointment.swift */; };
+		4C2DE0AE21F7E41A00C7F46A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C2DE0AD21F7E41A00C7F46A /* Main.storyboard */; };
+		4C2DE0B021F7E4E300C7F46A /* Progress.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C2DE0AF21F7E4E300C7F46A /* Progress.storyboard */; };
 		4C4E8CBD21E3FC0500F679F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E8CBC21E3FC0500F679F4 /* AppDelegate.swift */; };
-		4C4E8CC221E3FC0500F679F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4E8CC021E3FC0500F679F4 /* Main.storyboard */; };
+		4C4E8CC221E3FC0500F679F4 /* Calculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4E8CC021E3FC0500F679F4 /* Calculator.storyboard */; };
 		4C4E8CC721E3FC0600F679F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4E8CC521E3FC0600F679F4 /* LaunchScreen.storyboard */; };
 		4C4E8CD221E3FC0700F679F4 /* CorneaRiskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E8CD121E3FC0700F679F4 /* CorneaRiskTests.swift */; };
 		4C4E8CDD21E3FC0700F679F4 /* CorneaRiskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E8CDC21E3FC0700F679F4 /* CorneaRiskUITests.swift */; };
@@ -38,9 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C0A786B21F7DE7100B37AE5 /* Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
+		4C0A786D21F7E0A000B37AE5 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
+		4C2DE0AD21F7E41A00C7F46A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		4C2DE0AF21F7E4E300C7F46A /* Progress.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Progress.storyboard; sourceTree = "<group>"; };
 		4C4E8CB921E3FC0500F679F4 /* CorneaRisk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CorneaRisk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C4E8CBC21E3FC0500F679F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C4E8CC121E3FC0500F679F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C4E8CC121E3FC0500F679F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Calculator.storyboard; sourceTree = "<group>"; };
 		4C4E8CC621E3FC0600F679F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C4E8CC821E3FC0700F679F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C4E8CCD21E3FC0700F679F4 /* CorneaRiskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CorneaRiskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +90,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C0A786F21F7E32C00B37AE5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4C4E8CC521E3FC0600F679F4 /* LaunchScreen.storyboard */,
+				4C4E8CC021E3FC0500F679F4 /* Calculator.storyboard */,
+				4C2DE0AD21F7E41A00C7F46A /* Main.storyboard */,
+				4C2DE0AF21F7E4E300C7F46A /* Progress.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		4C4E8CB021E3FC0500F679F4 = {
 			isa = PBXGroup;
 			children = (
@@ -106,12 +125,11 @@
 		4C4E8CBB21E3FC0500F679F4 /* CorneaRisk */ = {
 			isa = PBXGroup;
 			children = (
+				4C0A786F21F7E32C00B37AE5 /* Storyboards */,
 				4CDC177921E682F600A5EA1E /* Models */,
 				4CDC177821E682EC00A5EA1E /* Views */,
 				4CDC177721E682E200A5EA1E /* Controllers */,
 				4C4E8CBC21E3FC0500F679F4 /* AppDelegate.swift */,
-				4C4E8CC521E3FC0600F679F4 /* LaunchScreen.storyboard */,
-				4C4E8CC021E3FC0500F679F4 /* Main.storyboard */,
 				4C4E8CC821E3FC0700F679F4 /* Info.plist */,
 			);
 			path = CorneaRisk;
@@ -157,6 +175,8 @@
 			children = (
 				4CDC177A21E6879800A5EA1E /* Patient.swift */,
 				4CDC178421E69AD300A5EA1E /* Ecuations.swift */,
+				4C0A786B21F7DE7100B37AE5 /* Variables.swift */,
+				4C0A786D21F7E0A000B37AE5 /* Appointment.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -267,7 +287,9 @@
 			files = (
 				4C4E8CC721E3FC0600F679F4 /* LaunchScreen.storyboard in Resources */,
 				4CB43DEC21EE8229000D9DC6 /* Assets.xcassets in Resources */,
-				4C4E8CC221E3FC0500F679F4 /* Main.storyboard in Resources */,
+				4C2DE0B021F7E4E300C7F46A /* Progress.storyboard in Resources */,
+				4C2DE0AE21F7E41A00C7F46A /* Main.storyboard in Resources */,
+				4C4E8CC221E3FC0500F679F4 /* Calculator.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +315,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CAF298421F5335E009ADCF5 /* EyeView.swift in Sources */,
+				4C0A786C21F7DE7100B37AE5 /* Variables.swift in Sources */,
 				4C4E8CBD21E3FC0500F679F4 /* AppDelegate.swift in Sources */,
+				4C0A786E21F7E0A000B37AE5 /* Appointment.swift in Sources */,
 				4CDC177B21E6879800A5EA1E /* Patient.swift in Sources */,
 				4CDC178921E6F99300A5EA1E /* CorneaResultsViewController.swift in Sources */,
 				4CDC178521E69AD300A5EA1E /* Ecuations.swift in Sources */,
@@ -333,12 +357,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4C4E8CC021E3FC0500F679F4 /* Main.storyboard */ = {
+		4C4E8CC021E3FC0500F679F4 /* Calculator.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4C4E8CC121E3FC0500F679F4 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Calculator.storyboard;
 			sourceTree = "<group>";
 		};
 		4C4E8CC521E3FC0600F679F4 /* LaunchScreen.storyboard */ = {
