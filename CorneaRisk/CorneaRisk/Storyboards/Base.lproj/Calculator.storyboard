@@ -1091,7 +1091,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="re0-jc-uHR">
-                                <rect key="frame" x="0.0" y="284.5" width="375" height="382.5"/>
+                                <rect key="frame" x="0.0" y="235.5" width="375" height="382.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Possibility of successful transplant" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEi-rQ-Zz1">
                                         <rect key="frame" x="38" y="0.0" width="299" height="24"/>
@@ -1182,11 +1182,13 @@
             </objects>
             <point key="canvasLocation" x="2581.5999999999999" y="247.82608695652175"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--CRC-->
         <scene sceneID="Mqo-p9-wh2">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jXg-5P-qrv" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Calculator" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jXg-5P-qrv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="CRC" image="calculator_36" id="rBR-aR-uUb"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gDH-9K-LbN">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1208,6 +1210,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="calculator_36" width="66.461540222167969" height="66.461540222167969"/>
         <namedColor name="imssThirdColor">
             <color red="0.3843137254901961" green="0.60392156862745094" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
