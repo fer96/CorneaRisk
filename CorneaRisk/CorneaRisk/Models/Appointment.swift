@@ -10,7 +10,7 @@ import Foundation
 
 struct Appointment: Codable {
     let socialSecurityNumber: String
-    let date = Date()
+    let date: Date
     let visualAcuity: String
     let transplant: Bool
     let complications: String
@@ -24,9 +24,9 @@ struct Appointment: Codable {
         return try? propertyListDecoder.decode(Array<Appointment>.self, from: codedAppoiments)
     }
     static func loadSampleAppoiments() -> [Appointment] {
-        let appoiment1 = Appointment(socialSecurityNumber: "999666999", visualAcuity: "16/20", transplant: true, complications: "No one", attended: true)
-        let appoiment2 = Appointment(socialSecurityNumber: "999666999", visualAcuity: "18/20", transplant: true, complications: "No one", attended: true)
-        let appoiment3 = Appointment(socialSecurityNumber: "999666999", visualAcuity: "20/20", transplant: true, complications: "No one", attended: true)
+        let appoiment1 = Appointment(socialSecurityNumber: "999666999", date: Date(), visualAcuity: "16/20", transplant: true, complications: "No one", attended: true)
+        let appoiment2 = Appointment(socialSecurityNumber: "999666999", date: Date(timeIntervalSinceNow: 604800), visualAcuity: "18/20", transplant: true, complications: "No one", attended: true)
+        let appoiment3 = Appointment(socialSecurityNumber: "999666999", date: Date(timeIntervalSinceNow: 604800 * 2), visualAcuity: "20/20", transplant: true, complications: "No one", attended: true)
         return [appoiment1,appoiment2,appoiment3]
     }
     static func appoimentsFrom(_ patient: Patient, _ appoiments: [Appointment]) -> [Appointment] {
@@ -50,7 +50,4 @@ struct Appointment: Codable {
         try? codedAppoiments?.write(to: ArchiveURL, options: .noFileProtection)
     }
     
-    //MARK: Appoiment fake
-    static let fakeAppoiment = Appointment(socialSecurityNumber: "", visualAcuity: "", transplant: false, complications: "", attended: false)
 }
-

@@ -12,6 +12,7 @@ class PatientsTableViewController: UITableViewController, PatientCellDelegate {
     
     
     var patients = [Patient]()
+    var appoiments = [Appointment]()
 
     // MARK: - Table view data source
 
@@ -90,8 +91,37 @@ class PatientsTableViewController: UITableViewController, PatientCellDelegate {
                 patients.append(patient)
                 tableView.insertRows(at: [newIndexPath], with: .automatic)
             }
+            var oldAppoiments = Appointment.loadAppoiments() ?? []
+            for newAppoiment in patient.newAppoiments() {
+                oldAppoiments.append(newAppoiment)
+            }
+            Appointment.saveAppoiments(oldAppoiments)
         }
         
         Patient.savePatients(patients)
     }
+    
+    //MARK: Save appoiment edited
+    @IBAction func unwindAppoimentList(segue: UIStoryboardSegue) {
+        guard segue.identifier == "EditAppoiment" else { return }
+        
+        let sourceViewController = segue.source as! ProgressViewController
+        
+        if let appoiment = sourceViewController.appoimentSended {
+            var oldAppoiments = Appointment.loadAppoiments()
+            //oldAppoiments?.append(appoiment)
+            var index: Int = 0
+            for oldAppoiment in oldAppoiments ?? [] {
+                if (oldAppoiment.socialSecurityNumber == appoiment.socialSecurityNumber && oldAppoiment.date.string(with: "DD/MM/YYYY") == appoiment.date.string(with: "DD/MM/YYYY")) {
+                    oldAppoiments?.remove(at: index)
+                    oldAppoiments?.append(appoiment)
+                }
+                index += 1
+            }
+            appoiments = oldAppoiments ?? []
+        }
+        
+        Appointment.saveAppoiments(appoiments)
+    }
 }
+

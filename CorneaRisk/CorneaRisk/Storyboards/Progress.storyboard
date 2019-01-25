@@ -308,9 +308,13 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="visualAcuityTxtField:" destination="AG3-4S-zzL" eventType="editingDidEnd" id="liM-wt-txc"/>
+                                                    </connections>
                                                 </textField>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Y0-yD-7mj">
                                                     <rect key="frame" x="311" y="82" width="51" height="31"/>
+                                                    <color key="onTintColor" name="secondColor"/>
                                                 </switch>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uSA-I0-wDU">
                                                     <rect key="frame" x="15" y="150" width="345" height="59.5"/>
@@ -361,45 +365,75 @@
                                     <outlet property="delegate" destination="AG3-4S-zzL" id="GVW-u8-uaW"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6k-dd-jL7">
-                                <rect key="frame" x="0.0" y="574" width="375" height="36"/>
-                                <color key="backgroundColor" name="thirdColor"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x8f-XP-f0k">
+                                <rect key="frame" x="0.0" y="571" width="375" height="47"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5vv-7Z-aRa">
+                                        <rect key="frame" x="192.5" y="8" width="174.5" height="31"/>
+                                        <color key="backgroundColor" name="thirdColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Generate PDF"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDG-JJ-xMy">
+                                        <rect key="frame" x="8" y="8" width="174.5" height="31"/>
+                                        <color key="backgroundColor" name="thirdColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Generate Graph"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="PSj-Ij-hDs"/>
+                                    <constraint firstAttribute="trailing" secondItem="5vv-7Z-aRa" secondAttribute="trailing" constant="8" id="Jyv-WR-5ix"/>
+                                    <constraint firstItem="GDG-JJ-xMy" firstAttribute="top" secondItem="x8f-XP-f0k" secondAttribute="top" constant="8" id="Kbv-sk-TRf"/>
+                                    <constraint firstItem="5vv-7Z-aRa" firstAttribute="top" secondItem="x8f-XP-f0k" secondAttribute="top" constant="8" id="Qzf-u4-WDc"/>
+                                    <constraint firstItem="5vv-7Z-aRa" firstAttribute="width" secondItem="x8f-XP-f0k" secondAttribute="width" multiplier="0.465" id="aXw-Nd-jby"/>
+                                    <constraint firstItem="GDG-JJ-xMy" firstAttribute="width" secondItem="x8f-XP-f0k" secondAttribute="width" multiplier="0.465" id="bp1-Rm-Lje"/>
+                                    <constraint firstItem="GDG-JJ-xMy" firstAttribute="leading" secondItem="x8f-XP-f0k" secondAttribute="leading" constant="8" id="ivM-aU-uBq"/>
+                                    <constraint firstAttribute="bottom" secondItem="GDG-JJ-xMy" secondAttribute="bottom" constant="8" id="tiN-IQ-gxu"/>
+                                    <constraint firstAttribute="bottom" secondItem="5vv-7Z-aRa" secondAttribute="bottom" constant="8" id="xhE-mI-8Sf"/>
                                 </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Generate Graph"/>
-                            </button>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="c6k-dd-jL7" firstAttribute="centerX" secondItem="4pe-wx-80d" secondAttribute="centerX" id="3nB-wQ-tqF"/>
                             <constraint firstItem="fU7-fG-CZn" firstAttribute="centerX" secondItem="4pe-wx-80d" secondAttribute="centerX" id="4fo-eY-DUk"/>
                             <constraint firstItem="3eG-DB-fA2" firstAttribute="height" secondItem="krl-aw-liW" secondAttribute="height" multiplier="1:3" id="69R-Fa-mIl"/>
-                            <constraint firstItem="c6k-dd-jL7" firstAttribute="width" secondItem="krl-aw-liW" secondAttribute="width" id="9qp-HS-BZJ"/>
                             <constraint firstItem="fU7-fG-CZn" firstAttribute="top" secondItem="3eG-DB-fA2" secondAttribute="bottom" constant="-2" id="HGC-3C-miF"/>
+                            <constraint firstItem="x8f-XP-f0k" firstAttribute="width" secondItem="krl-aw-liW" secondAttribute="width" id="PKB-ao-62w"/>
                             <constraint firstItem="3eG-DB-fA2" firstAttribute="width" secondItem="krl-aw-liW" secondAttribute="width" id="Tw3-Q3-Ff0"/>
+                            <constraint firstItem="x8f-XP-f0k" firstAttribute="top" secondItem="krl-aw-liW" secondAttribute="top" constant="571" id="Xtz-1V-ve9"/>
+                            <constraint firstItem="x8f-XP-f0k" firstAttribute="centerX" secondItem="4pe-wx-80d" secondAttribute="centerX" id="dui-69-LpC"/>
                             <constraint firstItem="3eG-DB-fA2" firstAttribute="top" secondItem="4pe-wx-80d" secondAttribute="top" id="hQe-7B-aZD"/>
                             <constraint firstItem="fU7-fG-CZn" firstAttribute="height" secondItem="krl-aw-liW" secondAttribute="height" multiplier="0.43" id="lDd-5l-tpf"/>
                             <constraint firstItem="fU7-fG-CZn" firstAttribute="width" secondItem="krl-aw-liW" secondAttribute="width" id="rUb-fS-vcP"/>
-                            <constraint firstItem="4pe-wx-80d" firstAttribute="bottom" secondItem="c6k-dd-jL7" secondAttribute="bottom" constant="8" id="rmP-PS-ytZ"/>
+                            <constraint firstItem="4pe-wx-80d" firstAttribute="bottom" secondItem="x8f-XP-f0k" secondAttribute="bottom" id="wJq-zy-OP3"/>
                             <constraint firstItem="3eG-DB-fA2" firstAttribute="centerX" secondItem="4pe-wx-80d" secondAttribute="centerX" id="yey-Q5-Nsg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4pe-wx-80d"/>
                     </view>
                     <navigationItem key="navigationItem" title="Progress" id="epK-iQ-shj">
-                        <barButtonItem key="rightBarButtonItem" title="PDF" id="Dfy-i6-Euc">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Dfy-i6-Euc">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="mrZ-WB-kxb" kind="unwind" identifier="EditAppoiment" unwindAction="unwindAppoimentListWithSegue:" id="RbE-9X-pnp"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="saveButton" destination="Dfy-i6-Euc" id="Zbk-8p-DAg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0cd-yH-1Hk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="mrZ-WB-kxb" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2564" y="751"/>
+            <point key="canvasLocation" x="2564" y="750.67466266866575"/>
         </scene>
     </scenes>
     <resources>
         <image name="treatment_36" width="99.692306518554688" height="99.692306518554688"/>
+        <namedColor name="secondColor">
+            <color red="0.23100000619888306" green="0.37299999594688416" blue="0.25499999523162842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="thirdColor">
             <color red="0.3843137254901961" green="0.60392156862745094" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
