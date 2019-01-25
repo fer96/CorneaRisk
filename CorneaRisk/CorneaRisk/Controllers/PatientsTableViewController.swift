@@ -74,4 +74,24 @@ class PatientsTableViewController: UITableViewController, PatientCellDelegate {
             progressViewController.patient = selectedPatient
         }
     }
+    
+    //MARK: Save patient
+    @IBAction func unwindPatientList(segue: UIStoryboardSegue) {
+        guard segue.identifier == "SavePatient" else { return }
+        
+        let sourceViewController = segue.source as! SavePatientViewController
+        
+        if let patient = sourceViewController.patient {
+            if let selectedIndexPath = tableView.indexPathForSelectedRow {
+                patients[selectedIndexPath.row] = patient
+                tableView.reloadRows(at: [selectedIndexPath], with: .none)
+            } else {
+                let newIndexPath = IndexPath(row: patients.count, section: 0)
+                patients.append(patient)
+                tableView.insertRows(at: [newIndexPath], with: .automatic)
+            }
+        }
+        
+        Patient.savePatients(patients)
+    }
 }

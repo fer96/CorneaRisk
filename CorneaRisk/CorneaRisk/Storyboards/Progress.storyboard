@@ -61,71 +61,73 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="nameTxtField:" destination="bjO-OB-kTW" eventType="editingDidEnd" id="h54-rX-mdK"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wcq-3Z-X60">
                                         <rect key="frame" x="8" y="118" width="359" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="lastNameTxtField:" destination="bjO-OB-kTW" eventType="editingDidEnd" id="cib-bx-TC6"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ORd-3w-tun">
                                         <rect key="frame" x="8" y="268" width="359" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="ssNumberTxtField:" destination="bjO-OB-kTW" eventType="editingDidEnd" id="pJk-hD-weU"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eQb-5b-Iyf">
                                         <rect key="frame" x="8" y="193" width="359" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5km-Gx-Lte">
-                                        <rect key="frame" x="0.0" y="341" width="375" height="32"/>
-                                        <color key="backgroundColor" name="thirdColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Save"/>
                                         <connections>
-                                            <action selector="saveButton:" destination="bjO-OB-kTW" eventType="touchUpInside" id="PNd-XI-OQ8"/>
+                                            <action selector="secondLNTxtField:" destination="bjO-OB-kTW" eventType="editingDidEnd" id="Pl5-0i-EwG"/>
                                         </connections>
-                                    </button>
+                                    </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iN8-wP-Na8">
-                                        <rect key="frame" x="270" y="306" width="97" height="30"/>
+                                        <rect key="frame" x="8" y="343" width="359" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="crResultTxtField:" destination="bjO-OB-kTW" eventType="editingDidEnd" id="0HX-aX-9I1"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="iN8-wP-Na8" firstAttribute="leading" secondItem="xJ5-as-Qb2" secondAttribute="trailing" constant="37" id="1jE-id-0jY"/>
                                     <constraint firstItem="EW5-Uf-4gP" firstAttribute="top" secondItem="wcq-3Z-X60" secondAttribute="bottom" constant="8" id="2GE-15-b6j"/>
                                     <constraint firstItem="EW5-Uf-4gP" firstAttribute="leading" secondItem="jvY-IM-wcj" secondAttribute="leading" constant="8" id="3V3-t7-iqP"/>
                                     <constraint firstItem="U1b-sR-Wqk" firstAttribute="leading" secondItem="jvY-IM-wcj" secondAttribute="leading" constant="8" id="5ND-Yf-JS3"/>
                                     <constraint firstItem="U1b-sR-Wqk" firstAttribute="top" secondItem="eQb-5b-Iyf" secondAttribute="bottom" constant="8" id="606-wg-b6L"/>
                                     <constraint firstAttribute="trailing" secondItem="V8u-Fs-oYs" secondAttribute="trailing" constant="8" id="6dF-S8-GNw"/>
-                                    <constraint firstItem="iN8-wP-Na8" firstAttribute="top" secondItem="ORd-3w-tun" secondAttribute="bottom" constant="8" id="90n-Zz-PGs"/>
                                     <constraint firstAttribute="trailing" secondItem="eQb-5b-Iyf" secondAttribute="trailing" constant="8" id="Bjd-Zp-Irs"/>
                                     <constraint firstItem="E5Y-cS-awa" firstAttribute="leading" secondItem="jvY-IM-wcj" secondAttribute="leading" constant="8" id="Bqx-SL-J3h"/>
                                     <constraint firstItem="V8u-Fs-oYs" firstAttribute="top" secondItem="E5Y-cS-awa" secondAttribute="bottom" constant="8" id="DY4-6F-ilR"/>
                                     <constraint firstItem="ORd-3w-tun" firstAttribute="leading" secondItem="jvY-IM-wcj" secondAttribute="leading" constant="8" id="Gki-X5-12E"/>
-                                    <constraint firstAttribute="bottom" secondItem="5km-Gx-Lte" secondAttribute="bottom" constant="8" id="IfD-AK-YZz"/>
                                     <constraint firstItem="ORd-3w-tun" firstAttribute="top" secondItem="U1b-sR-Wqk" secondAttribute="bottom" constant="10" id="JEf-Ke-vYI"/>
                                     <constraint firstItem="XVv-sx-Fwd" firstAttribute="top" secondItem="V8u-Fs-oYs" secondAttribute="bottom" constant="8" id="JUS-fg-Rru"/>
                                     <constraint firstItem="wcq-3Z-X60" firstAttribute="top" secondItem="XVv-sx-Fwd" secondAttribute="bottom" constant="10" id="QFO-au-Pxt"/>
                                     <constraint firstItem="E5Y-cS-awa" firstAttribute="top" secondItem="jvY-IM-wcj" secondAttribute="top" constant="8" id="SO8-XV-IhC"/>
                                     <constraint firstItem="eQb-5b-Iyf" firstAttribute="leading" secondItem="jvY-IM-wcj" secondAttribute="leading" constant="8" id="UGv-lK-LXM"/>
                                     <constraint firstAttribute="trailing" secondItem="wcq-3Z-X60" secondAttribute="trailing" constant="8" id="Xo1-lQ-JRU"/>
-                                    <constraint firstItem="5km-Gx-Lte" firstAttribute="width" secondItem="jvY-IM-wcj" secondAttribute="width" id="gnh-3c-Lqs"/>
+                                    <constraint firstItem="iN8-wP-Na8" firstAttribute="leading" secondItem="jvY-IM-wcj" secondAttribute="leading" constant="8" id="iAd-ZT-XPo"/>
                                     <constraint firstItem="eQb-5b-Iyf" firstAttribute="top" secondItem="EW5-Uf-4gP" secondAttribute="bottom" constant="10" id="iRq-VS-yVa"/>
                                     <constraint firstItem="XVv-sx-Fwd" firstAttribute="leading" secondItem="jvY-IM-wcj" secondAttribute="leading" constant="8" id="iX6-e3-FiR"/>
                                     <constraint firstItem="wcq-3Z-X60" firstAttribute="leading" secondItem="jvY-IM-wcj" secondAttribute="leading" constant="8" id="jcA-5H-m1h"/>
+                                    <constraint firstItem="iN8-wP-Na8" firstAttribute="top" secondItem="xJ5-as-Qb2" secondAttribute="bottom" constant="10" id="jib-H0-Gcx"/>
                                     <constraint firstAttribute="trailing" secondItem="ORd-3w-tun" secondAttribute="trailing" constant="8" id="kk1-oG-7fB"/>
                                     <constraint firstAttribute="trailing" secondItem="iN8-wP-Na8" secondAttribute="trailing" constant="8" id="lKa-AW-mN6"/>
                                     <constraint firstItem="xJ5-as-Qb2" firstAttribute="leading" secondItem="jvY-IM-wcj" secondAttribute="leading" constant="8" id="mUx-0p-IIq"/>
                                     <constraint firstItem="V8u-Fs-oYs" firstAttribute="leading" secondItem="jvY-IM-wcj" secondAttribute="leading" constant="8" id="oPQ-0t-fZ1"/>
                                     <constraint firstItem="xJ5-as-Qb2" firstAttribute="top" secondItem="ORd-3w-tun" secondAttribute="bottom" constant="8" id="vGi-7V-0va"/>
-                                    <constraint firstItem="5km-Gx-Lte" firstAttribute="centerX" secondItem="jvY-IM-wcj" secondAttribute="centerX" id="zAT-43-R6L"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -143,10 +145,10 @@
                         <viewLayoutGuide key="safeArea" id="4TX-7S-0uu"/>
                     </view>
                     <navigationItem key="navigationItem" title="Save patient" id="bip-YK-htS">
-                        <barButtonItem key="rightBarButtonItem" title="Next" id="Hrp-E9-IyB">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Hrp-E9-IyB">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <segue destination="bYB-qC-Wxu" kind="show" identifier="" id="lEg-cG-kCx"/>
+                                <segue destination="C51-oa-bvL" kind="unwind" identifier="SavePatient" unwindAction="unwindPatientListWithSegue:" id="UpD-bP-Oi3"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -154,14 +156,15 @@
                         <outlet property="crResultTextField" destination="iN8-wP-Na8" id="GMO-kI-Em9"/>
                         <outlet property="lastNameTextField" destination="wcq-3Z-X60" id="Ss1-sZ-4ko"/>
                         <outlet property="nameTextField" destination="V8u-Fs-oYs" id="dhy-1O-Bny"/>
+                        <outlet property="saveButton" destination="Hrp-E9-IyB" id="x5E-uY-ik4"/>
                         <outlet property="secondLNTextField" destination="eQb-5b-Iyf" id="e6V-ac-zKS"/>
                         <outlet property="ssNumberTextField" destination="ORd-3w-tun" id="kbW-7q-t7M"/>
-                        <segue destination="bYB-qC-Wxu" kind="show" identifier="SavePatient" id="CUJ-lw-Diz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bn4-sC-w3q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="C51-oa-bvL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1008.8" y="152.47376311844079"/>
+            <point key="canvasLocation" x="2564" y="-229"/>
         </scene>
         <!--Appoiment-->
         <scene sceneID="qhb-vB-gsc">
@@ -185,7 +188,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="bjO-OB-kTW" kind="relationship" relationship="rootViewController" id="6vh-fH-0GK"/>
+                        <segue destination="bYB-qC-Wxu" kind="relationship" relationship="rootViewController" id="2C7-ay-lxT"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jPI-aY-Pso" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -241,11 +244,17 @@
                             <outlet property="delegate" destination="bYB-qC-Wxu" id="gSv-h5-eT8"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Patients" id="jwm-75-FZb"/>
+                    <navigationItem key="navigationItem" title="Patients" id="jwm-75-FZb">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="3J8-Op-SPA">
+                            <connections>
+                                <segue destination="bjO-OB-kTW" kind="show" id="MSk-Da-0yy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aJF-rJ-rLV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1992.8" y="151.57421289355324"/>
+            <point key="canvasLocation" x="1103" y="152"/>
         </scene>
         <!--Progress-->
         <scene sceneID="fL7-2L-l6r">
@@ -386,7 +395,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0cd-yH-1Hk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2949.5999999999999" y="151.57421289355324"/>
+            <point key="canvasLocation" x="2564" y="751"/>
         </scene>
     </scenes>
     <resources>
@@ -395,7 +404,4 @@
             <color red="0.3843137254901961" green="0.60392156862745094" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="CUJ-lw-Diz"/>
-    </inferredMetricsTieBreakers>
 </document>
