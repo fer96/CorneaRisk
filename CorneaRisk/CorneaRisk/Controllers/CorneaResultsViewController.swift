@@ -27,11 +27,16 @@ class CorneaResultsViewController: UIViewController {
     @IBOutlet weak var greenPorcentView: UIView!
     @IBOutlet weak var redPorcentView: UIView!
     
+    
+    @IBOutlet weak var scrollView: UIScrollView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         timerAnimate()
         hideKeyboardWhenTappedAround()
+        autoResizeScrollView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -45,15 +50,6 @@ class CorneaResultsViewController: UIViewController {
         }, completion: nil)
         //resultPorcentLabel.center.x -= (resultPorcentLabel.center.x * 2) - (greenPorcentView.bounds.width * CGFloat((100 - self.result)  * 0.01))
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 
@@ -94,6 +90,8 @@ extension CorneaResultsViewController: setResult {
         resultPorcentLabel.text = String(format: "%.2f",result) + " %"
         showWarnigs(result: result)
     }
+    
+    //MARK: Hide keyboard
     func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(SavePatientViewController.dismissKeyboard))
         tap.cancelsTouchesInView = false
@@ -102,5 +100,27 @@ extension CorneaResultsViewController: setResult {
     
     @objc func dismissKeyboard() {
         view.endEditing(true)
+    }
+    
+    //MARK: Scroll View
+    func autoResizeScrollView() {
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.addObserver(self, selector: #selector(adjustForKeyboard), name: UIResponder.keyboardWillHideNotification, object: nil)
+        notificationCenter.addObserver(self, selector: #selector(adjustForKeyboard), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
+    }
+    @objc func adjustForKeyboard(notification: Notification) {
+        let userInfo = notification.userInfo!
+        
+        let keyboardScreenEndFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+        let keyboardViewEndFrame = view.convert(keyboardScreenEndFrame, from: view.window)
+        
+        if notification.name == UIResponder.keyboardWillHideNotification {
+            scrollView.contentInset = UIEdgeInsets.zero
+        } else {
+            scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: keyboardViewEndFrame.height, right: 0)
+        }
+        
+        scrollView.scrollIndicatorInsets = scrollView.contentInset
+        
     }
 }

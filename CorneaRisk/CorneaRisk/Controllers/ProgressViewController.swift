@@ -37,6 +37,8 @@ class ProgressViewController: UIViewController, UITableViewDelegate, UITableView
         complicatoins = updateSaveButton(sender)
     }
     
+    @IBOutlet weak var tableView: UITableView!
+    
     
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -81,6 +83,7 @@ class ProgressViewController: UIViewController, UITableViewDelegate, UITableView
         }
         saveButton.isEnabled = false
         hideKeyboardWhenTappedAround()
+        autoResizeScrollView()
         
     }
     
@@ -112,6 +115,8 @@ extension ProgressViewController: AppoimentManager {
         saveButton.isEnabled = !text.isEmpty
         return text
     }
+    
+    //MARK: Hide keyboard
     func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(SavePatientViewController.dismissKeyboard))
         tap.cancelsTouchesInView = false
@@ -120,5 +125,26 @@ extension ProgressViewController: AppoimentManager {
     
     @objc func dismissKeyboard() {
         view.endEditing(true)
+    }
+    
+    //MARK: Scroll View
+    func autoResizeScrollView() {
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.addObserver(self, selector: #selector(adjustForKeyboard), name: UIResponder.keyboardWillHideNotification, object: nil)
+        notificationCenter.addObserver(self, selector: #selector(adjustForKeyboard), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
+    }
+    @objc func adjustForKeyboard(notification: Notification) {
+        let userInfo = notification.userInfo!
+        
+        let keyboardScreenEndFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+        let keyboardViewEndFrame = view.convert(keyboardScreenEndFrame, from: view.window)
+        
+        if notification.name == UIResponder.keyboardWillHideNotification {
+            tableView.contentInset = UIEdgeInsets.zero
+        } else {
+            tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: keyboardViewEndFrame.height, right: 0)
+        }
+        
+        tableView.scrollIndicatorInsets = tableView.contentInset
     }
 }
