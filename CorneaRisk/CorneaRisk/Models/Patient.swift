@@ -27,10 +27,11 @@ struct Patient: Codable {
         return try? propertyListDecoder.decode(Array<Patient>.self, from: codedPatients)
     }
     static func loadSamplePatients() -> [Patient] {
-        let patient1 = Patient(name: "Fernando", lastName: "De La Rosa", secondLastName: "Salas", socialSecurityNumber: "999666999", resultCRC: "96")
-        let patient2 = Patient(name: "Pablo", lastName: "De La Rosa", secondLastName: "Salas", socialSecurityNumber: "555666999", resultCRC: "16")
-        let patient3 = Patient(name: "Uriel", lastName: "De La Rosa", secondLastName: "Salas", socialSecurityNumber: "111666999", resultCRC: "56")
-        return [patient1,patient2,patient3]
+//        let patient1 = Patient(name: "Fernando", lastName: "De La Rosa", secondLastName: "Salas", socialSecurityNumber: "999666999", resultCRC: "96")
+//        let patient2 = Patient(name: "Pablo", lastName: "De La Rosa", secondLastName: "Salas", socialSecurityNumber: "555666999", resultCRC: "16")
+//        let patient3 = Patient(name: "Uriel", lastName: "De La Rosa", secondLastName: "Salas", socialSecurityNumber: "111666999", resultCRC: "56")
+//        return [patient1,patient2,patient3]
+        return []
     }
     
     //MARK: Archiving

@@ -17,7 +17,7 @@ class AppoimentTableViewCell: UITableViewCell {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var vaTextField: UITextField!
     @IBOutlet weak var transplantSwitch: UISwitch!
-    @IBOutlet weak var complicationsTextView: UITextView!
+    @IBOutlet weak var complicationsTxtField: UITextField!
     
     var delegate: AppoimentCellDelegate?
     

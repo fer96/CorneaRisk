@@ -309,39 +309,45 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                     <connections>
-                                                        <action selector="visualAcuityTxtField:" destination="AG3-4S-zzL" eventType="editingDidEnd" id="liM-wt-txc"/>
+                                                        <action selector="changeVA:" destination="AG3-4S-zzL" eventType="editingDidEnd" id="0dO-H9-wQs"/>
                                                     </connections>
                                                 </textField>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Y0-yD-7mj">
                                                     <rect key="frame" x="311" y="82" width="51" height="31"/>
                                                     <color key="onTintColor" name="secondColor"/>
+                                                    <connections>
+                                                        <action selector="changeTransplant:" destination="AG3-4S-zzL" eventType="valueChanged" id="zAS-1J-ZZK"/>
+                                                    </connections>
                                                 </switch>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uSA-I0-wDU">
-                                                    <rect key="frame" x="15" y="150" width="345" height="59.5"/>
-                                                    <color key="backgroundColor" white="0.96524507709999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                </textView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transplant:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zy8-dA-Q9k">
                                                     <rect key="frame" x="15" y="87" width="86" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="54x-Sg-Oad">
+                                                    <rect key="frame" x="15" y="150" width="345" height="47"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="changeComplications:" destination="AG3-4S-zzL" eventType="editingDidEnd" id="o7l-fP-GYd"/>
+                                                    </connections>
+                                                </textField>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="h5o-fk-qxn" firstAttribute="leading" secondItem="cGp-43-HjB" secondAttribute="leading" constant="15" id="86a-7P-eEF"/>
                                                 <constraint firstItem="GUL-fR-0NK" firstAttribute="top" secondItem="cGp-43-HjB" secondAttribute="top" constant="11" id="9tt-s8-3It"/>
-                                                <constraint firstAttribute="bottom" secondItem="uSA-I0-wDU" secondAttribute="bottom" constant="6" id="B1q-xx-zyW"/>
                                                 <constraint firstItem="iRi-mA-owx" firstAttribute="leading" secondItem="90w-JE-GAn" secondAttribute="trailing" constant="8" id="GzC-jH-9bp"/>
+                                                <constraint firstItem="54x-Sg-Oad" firstAttribute="leading" secondItem="cGp-43-HjB" secondAttribute="leading" constant="15" id="JUQ-gB-xUj"/>
                                                 <constraint firstItem="Zy8-dA-Q9k" firstAttribute="leading" secondItem="cGp-43-HjB" secondAttribute="leading" constant="15" id="Kbv-7b-L3S"/>
                                                 <constraint firstAttribute="trailing" secondItem="iRi-mA-owx" secondAttribute="trailing" constant="15" id="P3Q-ne-kfY"/>
-                                                <constraint firstAttribute="trailing" secondItem="uSA-I0-wDU" secondAttribute="trailing" constant="15" id="Pn0-BL-0Bn"/>
-                                                <constraint firstItem="uSA-I0-wDU" firstAttribute="top" secondItem="h5o-fk-qxn" secondAttribute="bottom" constant="8" id="SbG-by-udq"/>
                                                 <constraint firstAttribute="trailing" secondItem="8Y0-yD-7mj" secondAttribute="trailing" constant="15" id="XhK-VA-64j"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="54x-Sg-Oad" secondAttribute="bottom" constant="8" id="Xho-tC-XTU"/>
+                                                <constraint firstItem="54x-Sg-Oad" firstAttribute="top" secondItem="h5o-fk-qxn" secondAttribute="bottom" constant="8" id="YHf-mf-Im0"/>
                                                 <constraint firstAttribute="trailing" secondItem="rwy-dn-GfT" secondAttribute="trailing" constant="15" id="eeg-fw-9Xv"/>
                                                 <constraint firstItem="rwy-dn-GfT" firstAttribute="top" secondItem="cGp-43-HjB" secondAttribute="top" constant="11" id="gU4-UI-wZ1"/>
-                                                <constraint firstItem="uSA-I0-wDU" firstAttribute="leading" secondItem="cGp-43-HjB" secondAttribute="leading" constant="15" id="h6C-0T-Onw"/>
+                                                <constraint firstAttribute="trailing" secondItem="54x-Sg-Oad" secondAttribute="trailing" constant="15" id="gu2-r5-tFJ"/>
                                                 <constraint firstItem="8Y0-yD-7mj" firstAttribute="top" secondItem="iRi-mA-owx" secondAttribute="bottom" constant="12" id="iIg-GL-Ls1"/>
                                                 <constraint firstItem="h5o-fk-qxn" firstAttribute="top" secondItem="Zy8-dA-Q9k" secondAttribute="bottom" constant="13" id="j8C-cc-XaW"/>
                                                 <constraint firstItem="90w-JE-GAn" firstAttribute="leading" secondItem="cGp-43-HjB" secondAttribute="leading" constant="15" id="rNo-D4-dEi"/>
@@ -352,7 +358,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="complicationsTextView" destination="uSA-I0-wDU" id="rpS-Mf-DCY"/>
+                                            <outlet property="complicationsTxtField" destination="54x-Sg-Oad" id="opp-Sb-65w"/>
                                             <outlet property="dateLabel" destination="rwy-dn-GfT" id="9bM-jj-wQa"/>
                                             <outlet property="transplantSwitch" destination="8Y0-yD-7mj" id="cBd-K3-YqH"/>
                                             <outlet property="vaTextField" destination="iRi-mA-owx" id="6lN-ao-RVZ"/>

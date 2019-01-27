@@ -10,22 +10,33 @@ import UIKit
 
 protocol AppoimentManager {
     func enableAppoiment(_ cell: AppoimentTableViewCell, _ set: Bool)
-    func copyAppoiment(_ old: Appointment, _ cell: AppoimentTableViewCell) -> Appointment
-    func updateStateSaveButton(_ cell: AppoimentTableViewCell)
+    func updateSaveButton(_ sender: UITextField) -> String
 }
 
 class ProgressViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var patient: Patient?
     var appoiments = [Appointment]()
-    var appoimentEdited: Appointment?
     var appoimentSended: Appointment?
+    
+    var vaString: String = ""
+    var transplant: Bool = false
+    var complicatoins: String = ""
     
     
     @IBOutlet weak var saveButton: UIBarButtonItem!
-    @IBAction func visualAcuityTxtField(_ sender: UITextField) {
-        updateStateSaveButton(AppoimentTableViewCell())
+    @IBAction func changeVA(_ sender: UITextField) {
+        //vaString = sender.text ?? ""
+        vaString = updateSaveButton(sender)
     }
+    @IBAction func changeTransplant(_ sender: UISwitch) {
+        transplant = sender.isOn
+    }
+    @IBAction func changeComplications(_ sender: UITextField) {
+        //complicatoins = sender.text ?? ""
+        complicatoins = updateSaveButton(sender)
+    }
+    
     
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -43,15 +54,13 @@ class ProgressViewController: UIViewController, UITableViewDelegate, UITableView
         cell.dateLabel.text = appoiment.date.string(with: "dd/MM/YYYY")
         cell.vaTextField.text = appoiment.visualAcuity
         cell.transplantSwitch.setOn(appoiment.transplant, animated: false)
-        cell.complicationsTextView.text = appoiment.complications
+        cell.complicationsTxtField.text = appoiment.complications
         cell.delegate = self as? AppoimentCellDelegate
         
         if (appoiment.date.string(with: "DD/MM/YYYY") != Date().string(with: "DD/MM/YYYY")) {
             enableAppoiment(cell, false)
         }else {
             enableAppoiment(cell, true)
-            appoimentEdited = copyAppoiment(appoiment, cell)
-            updateStateSaveButton(cell)
         }
         
         return cell
@@ -70,6 +79,7 @@ class ProgressViewController: UIViewController, UITableViewDelegate, UITableView
         }else {
             appoiments = Appointment.appoimentsFrom(patient!, Appointment.loadSampleAppoiments())
         }
+        saveButton.isEnabled = false
         
     }
     
@@ -77,7 +87,7 @@ class ProgressViewController: UIViewController, UITableViewDelegate, UITableView
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard segue.identifier == "EditAppoiment" else { return }
         
-        appoimentSended = appoimentEdited
+        appoimentSended = Appointment(socialSecurityNumber: (patient?.socialSecurityNumber)!, date: Date(), visualAcuity: vaString, transplant: transplant, complications: complicatoins , attended: true)
     }
 
 }
@@ -90,18 +100,15 @@ extension Date {
 }
 
 extension ProgressViewController: AppoimentManager {
-    func copyAppoiment(_ old: Appointment, _ cell: AppoimentTableViewCell) -> Appointment {
-        return Appointment(socialSecurityNumber: old.socialSecurityNumber, date: old.date, visualAcuity: cell.vaTextField.text!, transplant: cell.transplantSwitch.isOn, complications: cell.complicationsTextView.text ?? "", attended: true)
-    }
     func enableAppoiment(_ cell: AppoimentTableViewCell, _ set: Bool) {
         cell.isEditing = set
         cell.vaTextField.isEnabled = set
         cell.transplantSwitch.isEnabled = set
-        cell.complicationsTextView.isSelectable = set
-        cell.complicationsTextView.isEditable = set
+        cell.complicationsTxtField.isEnabled = set
     }
-    func updateStateSaveButton(_ cell: AppoimentTableViewCell) {
-//        let text = cell.vaTextField.text ?? ""
-//        saveButton.isEnabled = !text.isEmpty
+    func updateSaveButton(_ sender: UITextField) -> String {
+        let text = sender.text ?? ""
+        saveButton.isEnabled = !text.isEmpty
+        return text
     }
 }
