@@ -1091,7 +1091,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="re0-jc-uHR">
-                                <rect key="frame" x="0.0" y="235.5" width="375" height="382.5"/>
+                                <rect key="frame" x="0.0" y="291" width="375" height="327"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Possibility of successful transplant" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEi-rQ-Zz1">
                                         <rect key="frame" x="38" y="0.0" width="299" height="24"/>
@@ -1100,7 +1100,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YNQ-QT-fhr">
-                                        <rect key="frame" x="0.0" y="106" width="375" height="276.5"/>
+                                        <rect key="frame" x="8" y="72.5" width="359" height="246.5"/>
                                         <color key="backgroundColor" white="0.96524507709999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1117,8 +1117,8 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2jX-af-CPJ" userLabel="Results Porcent View">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="24.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="66.00 %" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZzQ-43-YLL">
-                                                        <rect key="frame" x="154" y="1" width="67" height="21.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZzQ-43-YLL">
+                                                        <rect key="frame" x="187.5" y="12" width="0.0" height="0.0"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -1145,14 +1145,15 @@
                                     <constraint firstItem="AaX-uf-S3e" firstAttribute="top" secondItem="re0-jc-uHR" secondAttribute="top" constant="64" id="3i2-2D-8lk"/>
                                     <constraint firstItem="AaX-uf-S3e" firstAttribute="centerX" secondItem="re0-jc-uHR" secondAttribute="centerX" id="4rC-dc-H0k"/>
                                     <constraint firstItem="YNQ-QT-fhr" firstAttribute="centerX" secondItem="re0-jc-uHR" secondAttribute="centerX" id="50i-Dh-mbl"/>
+                                    <constraint firstAttribute="bottom" secondItem="YNQ-QT-fhr" secondAttribute="bottom" constant="8" id="6h5-H5-rfe"/>
                                     <constraint firstItem="fr0-Qb-23S" firstAttribute="width" secondItem="re0-jc-uHR" secondAttribute="width" id="89G-ft-1Ak"/>
                                     <constraint firstItem="FEi-rQ-Zz1" firstAttribute="top" secondItem="re0-jc-uHR" secondAttribute="top" id="DeG-jM-0gi"/>
+                                    <constraint firstAttribute="trailing" secondItem="YNQ-QT-fhr" secondAttribute="trailing" constant="8" id="Ozv-v3-1MQ"/>
                                     <constraint firstItem="FEi-rQ-Zz1" firstAttribute="centerX" secondItem="re0-jc-uHR" secondAttribute="centerX" id="VSm-0Z-nt7"/>
-                                    <constraint firstItem="YNQ-QT-fhr" firstAttribute="width" secondItem="re0-jc-uHR" secondAttribute="width" id="Xeb-k4-5jk"/>
-                                    <constraint firstItem="YNQ-QT-fhr" firstAttribute="top" secondItem="AaX-uf-S3e" secondAttribute="bottom" constant="42" id="di6-er-IU4"/>
                                     <constraint firstItem="fr0-Qb-23S" firstAttribute="centerX" secondItem="re0-jc-uHR" secondAttribute="centerX" id="hfi-JK-8g8"/>
                                     <constraint firstItem="fr0-Qb-23S" firstAttribute="top" secondItem="FEi-rQ-Zz1" secondAttribute="bottom" constant="7" id="pfD-Eg-2lN"/>
-                                    <constraint firstAttribute="bottom" secondItem="YNQ-QT-fhr" secondAttribute="bottom" id="xHr-FX-lpV"/>
+                                    <constraint firstItem="YNQ-QT-fhr" firstAttribute="leading" secondItem="re0-jc-uHR" secondAttribute="leading" constant="8" id="uc0-tC-YSm"/>
+                                    <constraint firstItem="YNQ-QT-fhr" firstAttribute="top" secondItem="AaX-uf-S3e" secondAttribute="bottom" constant="8.5" id="wNB-BA-x3n"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -1161,9 +1162,9 @@
                             <constraint firstItem="re0-jc-uHR" firstAttribute="centerX" secondItem="SsI-G8-aJw" secondAttribute="centerX" id="1m2-jT-tcG"/>
                             <constraint firstItem="WLF-6r-0pa" firstAttribute="centerX" secondItem="SsI-G8-aJw" secondAttribute="centerX" id="Ieu-bh-Msm"/>
                             <constraint firstItem="WLF-6r-0pa" firstAttribute="top" secondItem="SsI-G8-aJw" secondAttribute="top" id="Jaf-mX-le8"/>
-                            <constraint firstItem="re0-jc-uHR" firstAttribute="height" secondItem="WLF-6r-0pa" secondAttribute="height" multiplier="1.72" id="NnR-EA-JPW"/>
                             <constraint firstItem="re0-jc-uHR" firstAttribute="width" secondItem="TBI-Xa-qqW" secondAttribute="width" id="Oyd-jN-LUO"/>
-                            <constraint firstItem="SsI-G8-aJw" firstAttribute="bottom" secondItem="re0-jc-uHR" secondAttribute="bottom" id="f6e-iR-1Wp"/>
+                            <constraint firstItem="SsI-G8-aJw" firstAttribute="bottom" secondItem="re0-jc-uHR" secondAttribute="bottom" id="fQ8-6C-3x3"/>
+                            <constraint firstItem="re0-jc-uHR" firstAttribute="height" secondItem="TBI-Xa-qqW" secondAttribute="height" multiplier="0.49" id="hww-z7-Gjx"/>
                             <constraint firstItem="WLF-6r-0pa" firstAttribute="height" secondItem="TBI-Xa-qqW" secondAttribute="height" multiplier="1:3" id="yIM-mY-iin"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SsI-G8-aJw"/>
