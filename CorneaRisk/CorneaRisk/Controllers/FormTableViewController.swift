@@ -82,11 +82,7 @@ class FormTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        hideKeyboardWhenTappedAround()
                 
     }
 
@@ -215,5 +211,16 @@ extension FormTableViewController: setValuesCalculator {
         patient.postsurgicalComplications = postsurgicalComplicationSwitch.isOn
         patient.groupRisk = setGroupRisk()
         patient.systematicComorbidities = setSystematicComorbidities()
+    }
+    
+    //MARK: Hide keyboard
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(SavePatientViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }

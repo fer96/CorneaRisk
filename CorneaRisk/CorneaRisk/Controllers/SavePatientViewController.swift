@@ -52,6 +52,10 @@ class SavePatientViewController: UIViewController {
         // Do any additional setup after loading the view.
         crResultTextField.placeholder = "Result must be between 1 - 100"
         updateSaveButtonState()
+        
+        //MARK: Hide keyboard
+        hideKeyboardWhenTappedAround()
+
     }
     
     //MARK: Save patient
@@ -108,5 +112,15 @@ extension SavePatientViewController: SavePatient {
             crResultTextField.placeholder = "This value must be a number"
             return false
         }
+    }
+    //MARK: Hide keyboard
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(SavePatientViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }

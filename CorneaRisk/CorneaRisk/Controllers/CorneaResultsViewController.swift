@@ -31,6 +31,7 @@ class CorneaResultsViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         timerAnimate()
+        hideKeyboardWhenTappedAround()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -92,5 +93,14 @@ extension CorneaResultsViewController: setResult {
     func porcentResult() {
         resultPorcentLabel.text = String(format: "%.2f",result) + " %"
         showWarnigs(result: result)
+    }
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(SavePatientViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }

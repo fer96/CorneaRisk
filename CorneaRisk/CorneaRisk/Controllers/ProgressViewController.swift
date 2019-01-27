@@ -80,6 +80,7 @@ class ProgressViewController: UIViewController, UITableViewDelegate, UITableView
             appoiments = Appointment.appoimentsFrom(patient!, Appointment.loadSampleAppoiments())
         }
         saveButton.isEnabled = false
+        hideKeyboardWhenTappedAround()
         
     }
     
@@ -110,5 +111,14 @@ extension ProgressViewController: AppoimentManager {
         let text = sender.text ?? ""
         saveButton.isEnabled = !text.isEmpty
         return text
+    }
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(SavePatientViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }
