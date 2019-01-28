@@ -29,8 +29,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age must be between 0 - 99" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CIP-NJ-oED">
-                                                    <rect key="frame" x="153.5" y="7" width="205.5" height="30"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age must be between 1 - 99" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CIP-NJ-oED">
+                                                    <rect key="frame" x="155.5" y="7" width="203.5" height="30"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>

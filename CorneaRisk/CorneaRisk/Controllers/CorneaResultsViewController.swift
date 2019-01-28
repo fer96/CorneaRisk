@@ -34,6 +34,7 @@ class CorneaResultsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        warningTextView.isEditable = false
         timerAnimate()
         hideKeyboardWhenTappedAround()
         autoResizeScrollView()
@@ -75,15 +76,18 @@ extension CorneaResultsViewController: setResult {
         }
     }
     func showWarnigs(result: Double) {
-        if (result > 50.00){
-            warningSingsLabel.isHidden = false
+        if (result > 50.0){
+            warningSingsLabel.isHidden = true
             warningSingsLabel.isEnabled = false
             warningSingsLabel.text = ""
             warningTextView.isSelectable = false
             warningTextView.isEditable = false
-            warningTextView.isHidden = false
+            warningTextView.isHidden = true
         }else {
             warningSingsLabel.text = "Warning sings"
+            warningTextView.isEditable = true
+            warningTextView.isSelectable = true
+            warningTextView.isHidden = false
         }
     }
     func porcentResult() {
