@@ -68,7 +68,7 @@ class PatientsTableViewController: UITableViewController, PatientCellDelegate {
     //MARK: Patient appoiments
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "PatientAppoiments" {
-            let progressViewController = segue.destination as! ProgressViewController
+            let progressViewController = segue.destination as! ProgressTableViewController
             let indexPath = tableView.indexPathForSelectedRow!
             let selectedPatient = patients[indexPath.row]
             
@@ -105,16 +105,18 @@ class PatientsTableViewController: UITableViewController, PatientCellDelegate {
     @IBAction func unwindAppoimentList(segue: UIStoryboardSegue) {
         guard segue.identifier == "EditAppoiment" else { return }
         
-        let sourceViewController = segue.source as! ProgressViewController
+        let sourceViewController = segue.source as! ProgressTableViewController
         
         if let appoiment = sourceViewController.appoimentSended {
             var oldAppoiments = Appointment.loadAppoiments()
-            //oldAppoiments?.append(appoiment)
             var index: Int = 0
             for oldAppoiment in oldAppoiments ?? [] {
                 if (oldAppoiment.socialSecurityNumber == appoiment.socialSecurityNumber && oldAppoiment.date.string(with: "DD/MM/YYYY") == appoiment.date.string(with: "DD/MM/YYYY")) {
                     oldAppoiments?.remove(at: index)
                     oldAppoiments?.append(appoiment)
+                    oldAppoiments?.sort(by: { (app1, app2) -> Bool in
+                        return app1.date < app2.date
+                    })
                 }
                 index += 1
             }

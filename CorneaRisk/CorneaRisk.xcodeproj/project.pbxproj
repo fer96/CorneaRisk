@@ -13,8 +13,8 @@
 		4C2DE0B021F7E4E300C7F46A /* Progress.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C2DE0AF21F7E4E300C7F46A /* Progress.storyboard */; };
 		4C2DE0B221F9232C00C7F46A /* SavePatientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2DE0B121F9232C00C7F46A /* SavePatientViewController.swift */; };
 		4C2DE0B421F9235900C7F46A /* PatientsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2DE0B321F9235900C7F46A /* PatientsTableViewController.swift */; };
-		4C2DE0B621F9237900C7F46A /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2DE0B521F9237900C7F46A /* ProgressViewController.swift */; };
 		4C2DE0BA21F9373F00C7F46A /* PatientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2DE0B921F9373F00C7F46A /* PatientTableViewCell.swift */; };
+		4C4D1E5A21FE9FC80029EBCE /* ProgressTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4D1E5921FE9FC80029EBCE /* ProgressTableViewController.swift */; };
 		4C4E8CBD21E3FC0500F679F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E8CBC21E3FC0500F679F4 /* AppDelegate.swift */; };
 		4C4E8CC221E3FC0500F679F4 /* Calculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4E8CC021E3FC0500F679F4 /* Calculator.storyboard */; };
 		4C4E8CC721E3FC0600F679F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4E8CC521E3FC0600F679F4 /* LaunchScreen.storyboard */; };
@@ -53,8 +53,8 @@
 		4C2DE0AF21F7E4E300C7F46A /* Progress.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Progress.storyboard; sourceTree = "<group>"; };
 		4C2DE0B121F9232C00C7F46A /* SavePatientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavePatientViewController.swift; sourceTree = "<group>"; };
 		4C2DE0B321F9235900C7F46A /* PatientsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientsTableViewController.swift; sourceTree = "<group>"; };
-		4C2DE0B521F9237900C7F46A /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		4C2DE0B921F9373F00C7F46A /* PatientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientTableViewCell.swift; sourceTree = "<group>"; };
+		4C4D1E5921FE9FC80029EBCE /* ProgressTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressTableViewController.swift; sourceTree = "<group>"; };
 		4C4E8CB921E3FC0500F679F4 /* CorneaRisk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CorneaRisk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C4E8CBC21E3FC0500F679F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C4E8CC121E3FC0500F679F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Calculator.storyboard; sourceTree = "<group>"; };
@@ -170,7 +170,7 @@
 				4CB43DF821F27E5B000D9DC6 /* FormTableViewController.swift */,
 				4C2DE0B121F9232C00C7F46A /* SavePatientViewController.swift */,
 				4C2DE0B321F9235900C7F46A /* PatientsTableViewController.swift */,
-				4C2DE0B521F9237900C7F46A /* ProgressViewController.swift */,
+				4C4D1E5921FE9FC80029EBCE /* ProgressTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -331,8 +331,8 @@
 			files = (
 				4CAF298421F5335E009ADCF5 /* EyeView.swift in Sources */,
 				4C0A786C21F7DE7100B37AE5 /* Variables.swift in Sources */,
+				4C4D1E5A21FE9FC80029EBCE /* ProgressTableViewController.swift in Sources */,
 				4C4E8CBD21E3FC0500F679F4 /* AppDelegate.swift in Sources */,
-				4C2DE0B621F9237900C7F46A /* ProgressViewController.swift in Sources */,
 				4C2DE0B421F9235900C7F46A /* PatientsTableViewController.swift in Sources */,
 				4C2DE0B221F9232C00C7F46A /* SavePatientViewController.swift in Sources */,
 				4C0A786E21F7E0A000B37AE5 /* Appointment.swift in Sources */,
