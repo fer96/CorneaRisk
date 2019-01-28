@@ -59,9 +59,22 @@ class PatientsTableViewController: UITableViewController, PatientCellDelegate {
         editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath:
         IndexPath) {
         if editingStyle == .delete {
+            //Delete appointments from patient
+            var oldAppointments = Appointment.loadAppoiments() ?? []
+            var idx = 0
+            for appointment in oldAppointments {
+                if patients[indexPath.row].socialSecurityNumber == appointment.socialSecurityNumber {
+                    oldAppointments.remove(at: idx)
+                }
+                Appointment.saveAppoiments(oldAppointments)
+            }
+            idx += 1
+            //Delete patient
             patients.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
             Patient.savePatients(patients)
+            
+            
         }
     }
     

@@ -34,6 +34,7 @@ class ProgressTableViewController: UITableViewController {
         complicatoins = updateSaveButton(sender)
     }
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -98,6 +99,8 @@ extension Date {
 }
 
 extension ProgressTableViewController: AppoimentManager {
+    
+    //MARK: Enable appointments
     func enableAppoiment(_ cell: AppoimentTableViewCell, _ set: Bool) {
         cell.isEditing = set
         cell.vaTextField.isEnabled = set
