@@ -103,6 +103,7 @@ extension ProgressTableViewController: AppoimentManager {
         cell.vaTextField.isEnabled = set
         cell.transplantSwitch.isEnabled = set
         cell.complicationsTxtField.isEnabled = set
+        
     }
     func updateSaveButton(_ sender: UITextField) -> String {
         let text = sender.text ?? ""
