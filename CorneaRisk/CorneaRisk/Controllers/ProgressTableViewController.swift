@@ -110,6 +110,7 @@ class ProgressTableViewController: UITableViewController {
             appoiments = oldAppointments
         }
         Appointment.saveAppoiments(appoiments)
+        tableView.reloadData()
     }
     
 }

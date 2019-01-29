@@ -23,13 +23,13 @@ class NewAppointmentViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     
     @IBAction func changeDay(_ sender: UITextField) {
-        dayTxtField.text = updateSaveButton(sender)
+        updateSaveButtonState()
     }
     @IBAction func changeMonth(_ sender: UITextField) {
-        monthTxtField.text = updateSaveButton(sender)
+        updateSaveButtonState()
     }
     @IBAction func changeYear(_ sender: UITextField) {
-        yearTxtField.text = updateSaveButton(sender)
+        updateSaveButtonState()
     }
     
 
@@ -46,19 +46,59 @@ class NewAppointmentViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard segue.identifier == "SaveNewAppointment" else { return }
         
-        newAppointment = Appointment(socialSecurityNumber: (NewAppointmentViewController.patient?.socialSecurityNumber)!, date: Date(), visualAcuity: vaTxtField.text ?? "", transplant: transplantSwitch.isOn, complications: complicationsTxtField.text ?? "" , attended: false)
+        newAppointment = Appointment(socialSecurityNumber: (NewAppointmentViewController.patient?.socialSecurityNumber)!, date: stringToDate(toString(dayTxtField.text!, monthTxtField.text!, yearTxtField.text!)), visualAcuity: vaTxtField.text ?? "", transplant: transplantSwitch.isOn, complications: complicationsTxtField.text ?? "" , attended: false)
     }
 
 }
 
-extension NewAppointmentViewController: AppoimentManager {
-    func enableAppoiment(_ cell: AppoimentTableViewCell, _ set: Bool) {
-        //Nothing
+extension NewAppointmentViewController {
+    func toString(_ day: String, _ month: String, _ year: String) -> String {
+        return day + "/" + month + "/" + year
     }
-    func updateSaveButton(_ sender: UITextField) -> String {
-        let text = sender.text ?? ""
-        saveButton.isEnabled = !text.isEmpty
-        return text
+    func stringToDate(_ stringDate: String) -> Date {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd/MM/yyyy"
+        dateFormatter.timeZone = TimeZone.autoupdatingCurrent
+        guard let date = dateFormatter.date(from: stringDate) else {
+            fatalError()
+        }
+        return date
+    }
+    func isInt(_ str: String) -> Bool {
+        return Int(str) != nil
+    }
+    func checkDate(number: String, inf: Int, sup: Int) -> Bool{
+        if (isInt(number) == true) {
+            if (Int(number)! >= inf && Int(number)! <= sup) {
+                return true
+            }else {
+                throwAlert("Error", "Review your date: \(number)")
+                return false
+            }
+        }else {
+            throwAlert("Error", "Review your date: \(number)")
+            return false
+        }
+    }
+    func checkValue() -> Bool {
+        let day = dayTxtField.text ?? ""
+        let month = monthTxtField.text ?? ""
+        let year = yearTxtField.text ?? ""
+        
+        if (day.isEmpty == true || month.isEmpty == true || year.isEmpty == true){
+            return false
+        }else {
+            return (checkDate(number: day, inf: 1, sup: 31) && checkDate(number: month, inf: 1, sup: 12) && checkDate(number: year, inf: 2019, sup: 2030))
+        }
+    }
+    func updateSaveButtonState() {
+        let state = checkValue()
+        saveButton.isEnabled = state
+    }
+    func throwAlert(_ title: String, _ message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     //MARK: Hide keyboard

@@ -482,7 +482,7 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                         <connections>
                                             <action selector="changeDay:" destination="TeX-gw-pR7" eventType="editingDidEnd" id="Gud-ac-dlg"/>
                                         </connections>
@@ -495,7 +495,7 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                         <connections>
                                             <action selector="changeMonth:" destination="TeX-gw-pR7" eventType="editingDidEnd" id="hyT-7M-268"/>
                                         </connections>
@@ -508,7 +508,7 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                         <connections>
                                             <action selector="changeYear:" destination="TeX-gw-pR7" eventType="editingDidEnd" id="gwU-eV-zch"/>
                                         </connections>
