@@ -35,6 +35,13 @@ class ProgressTableViewController: UITableViewController {
     }
     
     
+    
+    @IBAction func addAppointment(_ sender: UIButton) {
+        performSegue(withIdentifier: "NewAppointment", sender: nil)
+        NewAppointmentViewController.patient = patient
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -86,6 +93,23 @@ class ProgressTableViewController: UITableViewController {
         guard segue.identifier == "EditAppoiment" else { return }
         
         appoimentSended = Appointment(socialSecurityNumber: (patient?.socialSecurityNumber)!, date: Date(), visualAcuity: vaString, transplant: transplant, complications: complicatoins , attended: true)
+    }
+    
+    //MARK: Save new appointment
+    @IBAction func unwindNewAppointment(segue: UIStoryboardSegue) {
+        guard segue.identifier == "SaveNewAppointment" else { return }
+        
+        let sourceViewController = segue.source as! NewAppointmentViewController
+        
+        if let appointment = sourceViewController.newAppointment {
+            var oldAppointments = appoiments
+            oldAppointments.append(appointment)
+            oldAppointments.sort { (app1, app2) -> Bool in
+                return app1.date < app2.date
+            }
+            appoiments = oldAppointments
+        }
+        Appointment.saveAppoiments(appoiments)
     }
     
 }
