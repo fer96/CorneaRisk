@@ -48,9 +48,12 @@ class CorneaResultsViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        UIView.animate(withDuration: 2.0, delay: 0.0, options: [.autoreverse,.repeat], animations: {
-            self.translucentView.center.y += self.translucentView.bounds.height
-        }, completion: nil)
+        if (resultPorcentLabel.text?.isEmpty)! {
+            UIView.animate(withDuration: 2.0, delay: 0.0, options: [.autoreverse,.repeat], animations: {
+                self.translucentView.center.y += self.translucentView.bounds.height
+            }, completion: nil)
+        }
+        
     }
 
 }
