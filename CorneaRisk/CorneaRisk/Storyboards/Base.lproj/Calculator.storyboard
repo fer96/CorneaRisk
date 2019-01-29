@@ -1116,22 +1116,10 @@
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2jX-af-CPJ" userLabel="Results Porcent View">
                                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="24.5"/>
-                                                                <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZzQ-43-YLL">
-                                                                        <rect key="frame" x="187.5" y="12" width="0.0" height="0.0"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                                        <nil key="textColor"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                </subviews>
                                                                 <color key="backgroundColor" name="redColor"/>
-                                                                <constraints>
-                                                                    <constraint firstItem="ZzQ-43-YLL" firstAttribute="centerY" secondItem="2jX-af-CPJ" secondAttribute="centerY" constant="-0.5" id="9gB-Bg-y5n"/>
-                                                                    <constraint firstItem="ZzQ-43-YLL" firstAttribute="centerX" secondItem="2jX-af-CPJ" secondAttribute="centerX" id="X36-QG-lAd"/>
-                                                                </constraints>
                                                             </view>
                                                         </subviews>
-                                                        <color key="backgroundColor" name="imssThirdColor"/>
+                                                        <color key="backgroundColor" name="thirdColor"/>
                                                         <constraints>
                                                             <constraint firstItem="2jX-af-CPJ" firstAttribute="centerY" secondItem="fr0-Qb-23S" secondAttribute="centerY" id="Ap1-fD-VIh"/>
                                                             <constraint firstAttribute="height" constant="24.5" id="MTN-ty-WXD"/>
@@ -1161,6 +1149,12 @@
                                                     <constraint firstItem="fr0-Qb-23S" firstAttribute="width" secondItem="re0-jc-uHR" secondAttribute="width" id="w6a-Ar-noI"/>
                                                 </constraints>
                                             </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZzQ-43-YLL">
+                                                <rect key="frame" x="334" y="194" width="0.0" height="0.0"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -1172,6 +1166,8 @@
                                             <constraint firstItem="re0-jc-uHR" firstAttribute="height" secondItem="441-iL-W6a" secondAttribute="height" multiplier="0.64" constant="-12.560000000000002" id="Kmk-u8-uFb"/>
                                             <constraint firstItem="re0-jc-uHR" firstAttribute="centerX" secondItem="441-iL-W6a" secondAttribute="centerX" id="QYd-nr-AD5"/>
                                             <constraint firstItem="re0-jc-uHR" firstAttribute="width" secondItem="441-iL-W6a" secondAttribute="width" id="VcU-vd-fbn"/>
+                                            <constraint firstItem="ZzQ-43-YLL" firstAttribute="centerX" secondItem="441-iL-W6a" secondAttribute="centerX" constant="146.25" id="etd-gk-0S5"/>
+                                            <constraint firstItem="ZzQ-43-YLL" firstAttribute="centerY" secondItem="441-iL-W6a" secondAttribute="centerY" constant="-83.25" id="gLc-s6-8c7"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -1237,9 +1233,6 @@
     </scenes>
     <resources>
         <image name="calculator_36" width="66.461540222167969" height="66.461540222167969"/>
-        <namedColor name="imssThirdColor">
-            <color red="0.3843137254901961" green="0.60392156862745094" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="redColor">
             <color red="0.60000002384185791" green="0.19200000166893005" blue="0.16099999845027924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
