@@ -9,8 +9,8 @@
 import Foundation
 
 
-class Ecuations{
-    static func corneaRisk() -> Double {
-        return Double.random(in: 0.0...100.0)
-    }
+protocol Ecuations{
+    static func corneaRisk() -> Double //{
+        //return Double.random(in: 0.0...100.0)
+    //}
 }

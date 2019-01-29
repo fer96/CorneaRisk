@@ -19,11 +19,11 @@ struct Variable {
     //systematic comorbidities example: absent -> 0, present -> 1
     var sex: Int  = 0
     var groupRisk: Int = 0
-    var bloodCompatibility: Bool = false
+    var bloodCompatibility: Int = 0
     //var vascularization: Bool = false
     var systematicComorbidities: Int = 0
-    var ophthalmicComorbidities: Bool = false
-    var postsurgicalComplications: Bool = false
+    var ophthalmicComorbidities: Int = 0
+    var postsurgicalComplications: Int = 0
     
     //MARK: Segmented Controls
     //Graft size example: -7.25 -> 0, 7.50 a 8.25 -> 1, +8.50 -> 3
@@ -33,11 +33,6 @@ struct Variable {
     var typeOfTransplant: Int = 0
     var surgicalTime: Int = 0
     
-    //MARK: Tables
-    //Just with one selected SC is on
-    //    let systemicCormobilities: [String] = ["ATL","DM","ITAS"]
-    //    let highCharacteristics: [String] = ["Herpetic leukoma","Perforated ulcers","Stevens Johnson syndrome","Rejection","Bacterial keratitis","Retrasplant","Neurotrophic keratitis","Micotica","Keratoglobus","Congenital glaucoma","Corneal descemetocele","Pelucid marginal degeneration","Corneal burns","Atalamia","Pemphigoid","Keratitis sicca","Keratoconus","Bullous keratopathy","Vascularized leukoma","Fuchs dystrophy","Interstitial keratitis","granular dystrophy","Iridocorneal endothelial syndrome","Blood compatibility","Ophthalmic comorbidities","Postsurgical complications"]
-    
     //MARK: Methods
     mutating func setAge(_ age: Int) {
         if (age < 60){
@@ -46,4 +41,12 @@ struct Variable {
             self.age = 1
         }
     }
+    func boolToInt(_ value: Bool) -> Int {
+        if value == true {
+            return 1
+        }else {
+            return 0
+        }
+    }
 }
+

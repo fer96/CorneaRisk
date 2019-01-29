@@ -1,8 +1,8 @@
 //
-//  ProgressViewController.swift
+//  ProgressTableViewController.swift
 //  CorneaRisk
 //
-//  Created by Fernando De La Rosa on 1/23/19.
+//  Created by Fernando De La Rosa on 1/27/19.
 //  Copyright © 2019 Fernando De La Rosa. All rights reserved.
 //
 
@@ -13,8 +13,8 @@ protocol AppoimentManager {
     func updateSaveButton(_ sender: UITextField) -> String
 }
 
-class ProgressViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+class ProgressTableViewController: UITableViewController {
+
     var patient: Patient?
     var appoiments = [Appointment]()
     var appoimentSended: Appointment?
@@ -23,35 +23,53 @@ class ProgressViewController: UIViewController, UITableViewDelegate, UITableView
     var transplant: Bool = false
     var complicatoins: String = ""
     
-    
     @IBOutlet weak var saveButton: UIBarButtonItem!
     @IBAction func changeVA(_ sender: UITextField) {
-        //vaString = sender.text ?? ""
         vaString = updateSaveButton(sender)
     }
     @IBAction func changeTransplant(_ sender: UISwitch) {
         transplant = sender.isOn
     }
     @IBAction func changeComplications(_ sender: UITextField) {
-        //complicatoins = sender.text ?? ""
         complicatoins = updateSaveButton(sender)
     }
     
-    @IBOutlet weak var tableView: UITableView!
     
     
+    @IBAction func addAppointment(_ sender: UIButton) {
+        performSegue(withIdentifier: "NewAppointment", sender: nil)
+        NewAppointmentViewController.patient = patient
+    }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        if let saveAppoiments = Appointment.loadAppoiments() {
+            appoiments = Appointment.appoimentsFrom(patient!, saveAppoiments)
+        }else {
+            appoiments = Appointment.appoimentsFrom(patient!, Appointment.loadSampleAppoiments())
+        }
+        saveButton.isEnabled = false
+        hideKeyboardWhenTappedAround()
+        autoResizeScrollView()
+    }
+
+    // MARK: - Table view data source
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
         return 1
     }
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
         return appoiments.count
     }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "AppoimentCell") as? AppoimentTableViewCell else {
-            fatalError("Could not dequeue a cell.")
-        }
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "AppoimentCell") as? AppoimentTableViewCell else {
+                fatalError("Could not dequeue a cell.")
+            }
+            
         let appoiment = appoiments[indexPath.row]
         cell.dateLabel.text = appoiment.date.string(with: "dd/MM/YYYY")
         cell.vaTextField.text = appoiment.visualAcuity
@@ -64,37 +82,39 @@ class ProgressViewController: UIViewController, UITableViewDelegate, UITableView
         }else {
             enableAppoiment(cell, true)
         }
-        
         return cell
     }
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return CGFloat(216.0)
     }
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        if let saveAppoiments = Appointment.loadAppoiments() {
-            appoiments = Appointment.appoimentsFrom(patient!, saveAppoiments)
-        }else {
-            appoiments = Appointment.appoimentsFrom(patient!, Appointment.loadSampleAppoiments())
-        }
-        saveButton.isEnabled = false
-        hideKeyboardWhenTappedAround()
-        autoResizeScrollView()
-        
-    }
-    
     //MARK: Edit Appoiment
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard segue.identifier == "EditAppoiment" else { return }
         
         appoimentSended = Appointment(socialSecurityNumber: (patient?.socialSecurityNumber)!, date: Date(), visualAcuity: vaString, transplant: transplant, complications: complicatoins , attended: true)
     }
-
+    
+    //MARK: Save new appointment
+    @IBAction func unwindNewAppointment(segue: UIStoryboardSegue) {
+        guard segue.identifier == "SaveNewAppointment" else { return }
+        
+        let sourceViewController = segue.source as! NewAppointmentViewController
+        
+        if let appointment = sourceViewController.newAppointment {
+            var oldAppointments = appoiments
+            oldAppointments.append(appointment)
+            oldAppointments.sort { (app1, app2) -> Bool in
+                return app1.date < app2.date
+            }
+            appoiments = oldAppointments
+        }
+        Appointment.saveAppoiments(appoiments)
+        tableView.reloadData()
+    }
+    
 }
+
 extension Date {
     func string(with format: String) -> String {
         let dateFormatter = DateFormatter()
@@ -103,12 +123,15 @@ extension Date {
     }
 }
 
-extension ProgressViewController: AppoimentManager {
+extension ProgressTableViewController: AppoimentManager {
+    
+    //MARK: Enable appointments
     func enableAppoiment(_ cell: AppoimentTableViewCell, _ set: Bool) {
         cell.isEditing = set
         cell.vaTextField.isEnabled = set
         cell.transplantSwitch.isEnabled = set
         cell.complicationsTxtField.isEnabled = set
+        
     }
     func updateSaveButton(_ sender: UITextField) -> String {
         let text = sender.text ?? ""

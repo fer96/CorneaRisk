@@ -59,16 +59,29 @@ class PatientsTableViewController: UITableViewController, PatientCellDelegate {
         editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath:
         IndexPath) {
         if editingStyle == .delete {
+            //Delete appointments from patient
+            var oldAppointments = Appointment.loadAppoiments() ?? []
+            var idx = 0
+            for appointment in oldAppointments {
+                if patients[indexPath.row].socialSecurityNumber == appointment.socialSecurityNumber {
+                    oldAppointments.remove(at: idx)
+                }
+                Appointment.saveAppoiments(oldAppointments)
+            }
+            idx += 1
+            //Delete patient
             patients.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
             Patient.savePatients(patients)
+            
+            
         }
     }
     
     //MARK: Patient appoiments
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "PatientAppoiments" {
-            let progressViewController = segue.destination as! ProgressViewController
+            let progressViewController = segue.destination as! ProgressTableViewController
             let indexPath = tableView.indexPathForSelectedRow!
             let selectedPatient = patients[indexPath.row]
             
@@ -105,16 +118,18 @@ class PatientsTableViewController: UITableViewController, PatientCellDelegate {
     @IBAction func unwindAppoimentList(segue: UIStoryboardSegue) {
         guard segue.identifier == "EditAppoiment" else { return }
         
-        let sourceViewController = segue.source as! ProgressViewController
+        let sourceViewController = segue.source as! ProgressTableViewController
         
         if let appoiment = sourceViewController.appoimentSended {
             var oldAppoiments = Appointment.loadAppoiments()
-            //oldAppoiments?.append(appoiment)
             var index: Int = 0
             for oldAppoiment in oldAppoiments ?? [] {
                 if (oldAppoiment.socialSecurityNumber == appoiment.socialSecurityNumber && oldAppoiment.date.string(with: "DD/MM/YYYY") == appoiment.date.string(with: "DD/MM/YYYY")) {
                     oldAppoiments?.remove(at: index)
                     oldAppoiments?.append(appoiment)
+                    oldAppoiments?.sort(by: { (app1, app2) -> Bool in
+                        return app1.date < app2.date
+                    })
                 }
                 index += 1
             }

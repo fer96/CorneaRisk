@@ -23,7 +23,7 @@ protocol setValuesCalculator {
 
 class FormTableViewController: UITableViewController {
     
-    var patient = Variable()
+    var variable = Variable()
     let numberOfRowAtSection: [Int] = [8,26,3]
     
     @IBOutlet weak var ageTextField: UITextField!
@@ -70,7 +70,9 @@ class FormTableViewController: UITableViewController {
     @IBAction func doneButton(_ sender: UIBarButtonItem) {
         if (checkValues() == true) {
             setValuesToPatient()
+            CorneaResultsViewController.variable = variable
             performSegue(withIdentifier: "resultsSegue", sender: nil)
+            
         }else {
             let alert = UIAlertController(title: "Error", message: "Please review your data", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
@@ -201,16 +203,16 @@ extension FormTableViewController: setValuesCalculator {
     }
     func setValuesToPatient() {
         
-        patient.setAge(Int(ageTextField.text!)!)
-        patient.sex = sexControl.selectedSegmentIndex
-        patient.graftSize = sizeGraftControl.selectedSegmentIndex
-        patient.typeOfTransplant = typeTransplantControl.selectedSegmentIndex
-        patient.surgicalTime = timeSurgicalControl.selectedSegmentIndex
-        patient.bloodCompatibility = bloodCompatibilitySwitch.isOn
-        patient.ophthalmicComorbidities = ophthalmicComorbiditiesSwitch.isOn
-        patient.postsurgicalComplications = postsurgicalComplicationSwitch.isOn
-        patient.groupRisk = setGroupRisk()
-        patient.systematicComorbidities = setSystematicComorbidities()
+        variable.setAge(Int(ageTextField.text!)!)
+        variable.sex = sexControl.selectedSegmentIndex
+        variable.graftSize = sizeGraftControl.selectedSegmentIndex
+        variable.typeOfTransplant = typeTransplantControl.selectedSegmentIndex
+        variable.surgicalTime = timeSurgicalControl.selectedSegmentIndex
+        variable.bloodCompatibility = variable.boolToInt(bloodCompatibilitySwitch.isOn)
+        variable.ophthalmicComorbidities = variable.boolToInt(ophthalmicComorbiditiesSwitch.isOn)
+        variable.postsurgicalComplications = variable.boolToInt(postsurgicalComplicationSwitch.isOn)
+        variable.groupRisk = setGroupRisk()
+        variable.systematicComorbidities = setSystematicComorbidities()
     }
     
     //MARK: Hide keyboard
