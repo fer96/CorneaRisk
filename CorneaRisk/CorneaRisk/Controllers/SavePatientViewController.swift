@@ -101,7 +101,7 @@ extension SavePatientViewController: SavePatient {
         if (name.isEmpty == true || sLName.isEmpty == true || lName.isEmpty == true || ssn.isEmpty == true || crr.isEmpty == true){
             return false
         }else {
-            return checkCRR()
+            return (checkCRR() && checkSSN(ssn))
         }
     }
     func checkCRR() -> Bool{
@@ -119,6 +119,10 @@ extension SavePatientViewController: SavePatient {
             return false
         }
     }
+    func checkSSN(_ ssn: String) -> Bool {
+        return isInt(ssn)
+    }
+    
     //MARK: Hide keyboard
     func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(SavePatientViewController.dismissKeyboard))
