@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3CE6FDBE2B5463666F2CE46B /* Pods_CorneaRisk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7BE5FAB9111BE4210F5BFA9 /* Pods_CorneaRisk.framework */; };
 		4C0A786C21F7DE7100B37AE5 /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0A786B21F7DE7100B37AE5 /* Variables.swift */; };
 		4C0A786E21F7E0A000B37AE5 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0A786D21F7E0A000B37AE5 /* Appointment.swift */; };
 		4C2DE0AE21F7E41A00C7F46A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C2DE0AD21F7E41A00C7F46A /* Main.storyboard */; };
@@ -29,6 +30,8 @@
 		4CDC178921E6F99300A5EA1E /* CorneaResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC178821E6F99300A5EA1E /* CorneaResultsViewController.swift */; };
 		4CDFB0D621F953D300B827DB /* AppoimentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDFB0D521F953D300B827DB /* AppoimentTableViewCell.swift */; };
 		4CF8B60B2201430700E6A929 /* Graph.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CF8B60A2201430700E6A929 /* Graph.storyboard */; };
+		BD44DD3C5D983E7277615F64 /* Pods_CorneaRiskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086286A3444FC9AF96AD508B /* Pods_CorneaRiskTests.framework */; };
+		DEFEC38441744314227390B5 /* Pods_CorneaRiskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD282C8695A3E8690E55690 /* Pods_CorneaRiskUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		086286A3444FC9AF96AD508B /* Pods_CorneaRiskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CorneaRiskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C0A786B21F7DE7100B37AE5 /* Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
 		4C0A786D21F7E0A000B37AE5 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
 		4C2DE0AD21F7E41A00C7F46A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -77,6 +81,14 @@
 		4CDC178821E6F99300A5EA1E /* CorneaResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorneaResultsViewController.swift; sourceTree = "<group>"; };
 		4CDFB0D521F953D300B827DB /* AppoimentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppoimentTableViewCell.swift; sourceTree = "<group>"; };
 		4CF8B60A2201430700E6A929 /* Graph.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Graph.storyboard; sourceTree = "<group>"; };
+		6B2E43F183D5BAE8EBB05D70 /* Pods-CorneaRiskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CorneaRiskUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CorneaRiskUITests/Pods-CorneaRiskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7A13581CF15F3F0519BF93C0 /* Pods-CorneaRiskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CorneaRiskTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CorneaRiskTests/Pods-CorneaRiskTests.release.xcconfig"; sourceTree = "<group>"; };
+		A0F0DEF0439D543974AD5C54 /* Pods-CorneaRisk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CorneaRisk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CorneaRisk/Pods-CorneaRisk.debug.xcconfig"; sourceTree = "<group>"; };
+		A6E282C4C68884D874B220F3 /* Pods-CorneaRisk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CorneaRisk.release.xcconfig"; path = "Pods/Target Support Files/Pods-CorneaRisk/Pods-CorneaRisk.release.xcconfig"; sourceTree = "<group>"; };
+		BB547348C7AB9913326E0336 /* Pods-CorneaRiskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CorneaRiskUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CorneaRiskUITests/Pods-CorneaRiskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BFD282C8695A3E8690E55690 /* Pods_CorneaRiskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CorneaRiskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7BE5FAB9111BE4210F5BFA9 /* Pods_CorneaRisk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CorneaRisk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E59EBC627415398C15DDFA83 /* Pods-CorneaRiskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CorneaRiskTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CorneaRiskTests/Pods-CorneaRiskTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CE6FDBE2B5463666F2CE46B /* Pods_CorneaRisk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD44DD3C5D983E7277615F64 /* Pods_CorneaRiskTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,12 +112,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEFEC38441744314227390B5 /* Pods_CorneaRiskUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1EB23D6F2DD173BC33F5D0C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0F0DEF0439D543974AD5C54 /* Pods-CorneaRisk.debug.xcconfig */,
+				A6E282C4C68884D874B220F3 /* Pods-CorneaRisk.release.xcconfig */,
+				E59EBC627415398C15DDFA83 /* Pods-CorneaRiskTests.debug.xcconfig */,
+				7A13581CF15F3F0519BF93C0 /* Pods-CorneaRiskTests.release.xcconfig */,
+				BB547348C7AB9913326E0336 /* Pods-CorneaRiskUITests.debug.xcconfig */,
+				6B2E43F183D5BAE8EBB05D70 /* Pods-CorneaRiskUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4C0A786F21F7E32C00B37AE5 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +152,8 @@
 				4C4E8CD021E3FC0700F679F4 /* CorneaRiskTests */,
 				4C4E8CDB21E3FC0700F679F4 /* CorneaRiskUITests */,
 				4C4E8CBA21E3FC0500F679F4 /* Products */,
+				1EB23D6F2DD173BC33F5D0C3 /* Pods */,
+				4FFFF91FB853BDF4EAD0770A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -202,6 +232,16 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		4FFFF91FB853BDF4EAD0770A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7BE5FAB9111BE4210F5BFA9 /* Pods_CorneaRisk.framework */,
+				086286A3444FC9AF96AD508B /* Pods_CorneaRiskTests.framework */,
+				BFD282C8695A3E8690E55690 /* Pods_CorneaRiskUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -209,9 +249,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C4E8CE121E3FC0700F679F4 /* Build configuration list for PBXNativeTarget "CorneaRisk" */;
 			buildPhases = (
+				2CC83823DE137215578F84EC /* [CP] Check Pods Manifest.lock */,
 				4C4E8CB521E3FC0500F679F4 /* Sources */,
 				4C4E8CB621E3FC0500F679F4 /* Frameworks */,
 				4C4E8CB721E3FC0500F679F4 /* Resources */,
+				F0BC62340EB0FA55953E79D3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -226,6 +268,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C4E8CE421E3FC0700F679F4 /* Build configuration list for PBXNativeTarget "CorneaRiskTests" */;
 			buildPhases = (
+				66D653DD969ADDF91A65EE9F /* [CP] Check Pods Manifest.lock */,
 				4C4E8CC921E3FC0700F679F4 /* Sources */,
 				4C4E8CCA21E3FC0700F679F4 /* Frameworks */,
 				4C4E8CCB21E3FC0700F679F4 /* Resources */,
@@ -244,6 +287,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C4E8CE721E3FC0700F679F4 /* Build configuration list for PBXNativeTarget "CorneaRiskUITests" */;
 			buildPhases = (
+				53EEEA0B15CF4267D05C7637 /* [CP] Check Pods Manifest.lock */,
 				4C4E8CD421E3FC0700F679F4 /* Sources */,
 				4C4E8CD521E3FC0700F679F4 /* Frameworks */,
 				4C4E8CD621E3FC0700F679F4 /* Resources */,
@@ -330,6 +374,97 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CC83823DE137215578F84EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CorneaRisk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53EEEA0B15CF4267D05C7637 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CorneaRiskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66D653DD969ADDF91A65EE9F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CorneaRiskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0BC62340EB0FA55953E79D3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CorneaRisk/Pods-CorneaRisk-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CorneaRisk/Pods-CorneaRisk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4C4E8CB521E3FC0500F679F4 /* Sources */ = {
@@ -524,6 +659,7 @@
 		};
 		4C4E8CE221E3FC0700F679F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0F0DEF0439D543974AD5C54 /* Pods-CorneaRisk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -544,6 +680,7 @@
 		};
 		4C4E8CE321E3FC0700F679F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6E282C4C68884D874B220F3 /* Pods-CorneaRisk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -564,6 +701,7 @@
 		};
 		4C4E8CE521E3FC0700F679F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E59EBC627415398C15DDFA83 /* Pods-CorneaRiskTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -584,6 +722,7 @@
 		};
 		4C4E8CE621E3FC0700F679F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A13581CF15F3F0519BF93C0 /* Pods-CorneaRiskTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -604,6 +743,7 @@
 		};
 		4C4E8CE821E3FC0700F679F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB547348C7AB9913326E0336 /* Pods-CorneaRiskUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -623,6 +763,7 @@
 		};
 		4C4E8CE921E3FC0700F679F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B2E43F183D5BAE8EBB05D70 /* Pods-CorneaRiskUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
