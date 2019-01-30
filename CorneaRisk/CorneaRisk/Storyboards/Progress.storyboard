@@ -275,7 +275,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lhp-lX-Z6T">
-                                    <rect key="frame" x="8" y="8" width="359" height="28"/>
+                                    <rect key="frame" x="8" y="4" width="173" height="36"/>
                                     <color key="backgroundColor" name="thirdColor"/>
                                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <state key="normal" title="Add Appointment"/>
@@ -283,14 +283,25 @@
                                         <action selector="addAppointment:" destination="TMd-DH-fee" eventType="touchUpInside" id="7sS-Zj-l0b"/>
                                     </connections>
                                 </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZw-1C-FMl">
+                                    <rect key="frame" x="194" y="4" width="173" height="36"/>
+                                    <color key="backgroundColor" name="thirdColor"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Generate Graph"/>
+                                    <connections>
+                                        <segue destination="iYb-GS-dNH" kind="show" id="fOn-cU-hNI"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <constraints>
-                                <constraint firstAttribute="trailing" secondItem="Lhp-lX-Z6T" secondAttribute="trailing" constant="8" id="AVf-bZ-N8t"/>
-                                <constraint firstItem="Lhp-lX-Z6T" firstAttribute="leading" secondItem="cjA-2b-7aH" secondAttribute="leading" constant="8" id="XCe-Hv-z9s"/>
-                                <constraint firstAttribute="bottom" secondItem="Lhp-lX-Z6T" secondAttribute="bottom" constant="8" id="fIY-4m-1Fi"/>
-                                <constraint firstItem="Lhp-lX-Z6T" firstAttribute="top" secondItem="cjA-2b-7aH" secondAttribute="top" constant="8" id="iYV-Br-wkC"/>
-                                <constraint firstItem="Lhp-lX-Z6T" firstAttribute="centerY" secondItem="cjA-2b-7aH" secondAttribute="centerY" id="moK-bR-oYI"/>
-                                <constraint firstItem="Lhp-lX-Z6T" firstAttribute="centerX" secondItem="cjA-2b-7aH" secondAttribute="centerX" id="mqO-iK-EDM"/>
+                                <constraint firstAttribute="bottom" secondItem="IZw-1C-FMl" secondAttribute="bottom" constant="4" id="40q-23-BkK"/>
+                                <constraint firstAttribute="trailing" secondItem="IZw-1C-FMl" secondAttribute="trailing" constant="8" id="7VQ-9b-CxR"/>
+                                <constraint firstItem="Lhp-lX-Z6T" firstAttribute="top" secondItem="cjA-2b-7aH" secondAttribute="top" constant="4" id="913-oy-5C0"/>
+                                <constraint firstItem="Lhp-lX-Z6T" firstAttribute="width" secondItem="cjA-2b-7aH" secondAttribute="width" multiplier="6:13" id="EIu-tU-1q9"/>
+                                <constraint firstItem="IZw-1C-FMl" firstAttribute="width" secondItem="cjA-2b-7aH" secondAttribute="width" multiplier="6:13" id="HGh-cw-opo"/>
+                                <constraint firstItem="Lhp-lX-Z6T" firstAttribute="leading" secondItem="cjA-2b-7aH" secondAttribute="leading" constant="8" id="NxX-U9-sUe"/>
+                                <constraint firstAttribute="bottom" secondItem="Lhp-lX-Z6T" secondAttribute="bottom" constant="4" id="q1b-C1-BJQ"/>
+                                <constraint firstItem="IZw-1C-FMl" firstAttribute="top" secondItem="cjA-2b-7aH" secondAttribute="top" constant="4" id="wSu-Vw-7Pr"/>
                             </constraints>
                         </view>
                         <prototypes>
@@ -409,7 +420,15 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="McP-cL-Ibu" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="3ep-OX-2XF" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2564" y="706"/>
+            <point key="canvasLocation" x="2564" y="705.69715142428788"/>
+        </scene>
+        <!--GraphViewController-->
+        <scene sceneID="zyy-Yv-0hY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Graph" referencedIdentifier="GraphViewController" id="iYb-GS-dNH" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v46-Cf-v7v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3480" y="972"/>
         </scene>
         <!--New Appointment-->
         <scene sceneID="BTh-bT-wic">
@@ -575,7 +594,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="am1-k7-xw2" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="hwU-kV-vV0" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3456.8000000000002" y="705.69715142428788"/>
+            <point key="canvasLocation" x="3500" y="375"/>
         </scene>
     </scenes>
     <resources>

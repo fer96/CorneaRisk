@@ -28,6 +28,7 @@
 		4CDC178521E69AD300A5EA1E /* Ecuations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC178421E69AD300A5EA1E /* Ecuations.swift */; };
 		4CDC178921E6F99300A5EA1E /* CorneaResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC178821E6F99300A5EA1E /* CorneaResultsViewController.swift */; };
 		4CDFB0D621F953D300B827DB /* AppoimentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDFB0D521F953D300B827DB /* AppoimentTableViewCell.swift */; };
+		4CF8B60B2201430700E6A929 /* Graph.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CF8B60A2201430700E6A929 /* Graph.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		4CDC178421E69AD300A5EA1E /* Ecuations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ecuations.swift; sourceTree = "<group>"; };
 		4CDC178821E6F99300A5EA1E /* CorneaResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorneaResultsViewController.swift; sourceTree = "<group>"; };
 		4CDFB0D521F953D300B827DB /* AppoimentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppoimentTableViewCell.swift; sourceTree = "<group>"; };
+		4CF8B60A2201430700E6A929 /* Graph.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Graph.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				4C4E8CC021E3FC0500F679F4 /* Calculator.storyboard */,
 				4C2DE0AD21F7E41A00C7F46A /* Main.storyboard */,
 				4C2DE0AF21F7E4E300C7F46A /* Progress.storyboard */,
+				4CF8B60A2201430700E6A929 /* Graph.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CF8B60B2201430700E6A929 /* Graph.storyboard in Resources */,
 				4C4E8CC721E3FC0600F679F4 /* LaunchScreen.storyboard in Resources */,
 				4CB43DEC21EE8229000D9DC6 /* Assets.xcassets in Resources */,
 				4C2DE0B021F7E4E300C7F46A /* Progress.storyboard in Resources */,

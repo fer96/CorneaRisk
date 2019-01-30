@@ -120,7 +120,7 @@ extension SavePatientViewController: SavePatient {
         }
     }
     func checkSSN(_ ssn: String) -> Bool {
-        return isInt(ssn)
+        return isInt(ssn) && ssn.count == 11
     }
     
     //MARK: Hide keyboard
