@@ -10,7 +10,7 @@ import UIKit
 
 protocol AppoimentManager {
     func enableAppoiment(_ cell: AppoimentTableViewCell, _ set: Bool)
-    func updateSaveButton(_ sender: UITextField) -> String
+    func updateStringFromTxtField(_ sender: UITextField) -> String
 }
 
 class ProgressTableViewController: UITableViewController {
@@ -25,13 +25,14 @@ class ProgressTableViewController: UITableViewController {
     
     @IBOutlet weak var saveButton: UIBarButtonItem!
     @IBAction func changeVA(_ sender: UITextField) {
-        vaString = updateSaveButton(sender)
+        vaString = updateStringFromTxtField(sender)
+        saveButton.isEnabled = checkValue()
     }
     @IBAction func changeTransplant(_ sender: UISwitch) {
         transplant = sender.isOn
     }
     @IBAction func changeComplications(_ sender: UITextField) {
-        complicatoins = updateSaveButton(sender)
+        complicatoins = updateStringFromTxtField(sender)
     }
     
     
@@ -39,6 +40,11 @@ class ProgressTableViewController: UITableViewController {
     @IBAction func addAppointment(_ sender: UIButton) {
         performSegue(withIdentifier: "NewAppointment", sender: nil)
         NewAppointmentViewController.patient = patient
+    }
+    @IBAction func generateGraphic(_ sender: UIButton) {
+        performSegue(withIdentifier: "Graph", sender: nil)
+        GraphViewController.patient = patient
+        GraphViewController.appointments = appoiments
     }
     
     
@@ -133,10 +139,18 @@ extension ProgressTableViewController: AppoimentManager {
         cell.complicationsTxtField.isEnabled = set
         
     }
-    func updateSaveButton(_ sender: UITextField) -> String {
+    
+    //MARK: Update appointment
+    func updateStringFromTxtField(_ sender: UITextField) -> String {
         let text = sender.text ?? ""
-        saveButton.isEnabled = !text.isEmpty
         return text
+    }
+    func isInt(_ str: String) -> Bool {
+        return Int(str) != nil
+    }
+    func checkValue() -> Bool{
+        let va = vaString
+        return !va.isEmpty && isInt(va)
     }
     
     //MARK: Hide keyboard
