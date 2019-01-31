@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,9 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ai-ky-2KJ" userLabel="Graph">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ai-ky-2KJ" userLabel="Graph" customClass="LineChartView" customModule="Charts">
                                 <rect key="frame" x="0.0" y="20" width="375" height="267"/>
-                                <color key="backgroundColor" name="thirdColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Pd-i5-ASQ" userLabel="Data">
                                 <rect key="frame" x="0.0" y="287" width="375" height="380"/>
@@ -117,18 +116,19 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="3ai-ky-2KJ" firstAttribute="height" secondItem="ncE-MC-alh" secondAttribute="height" multiplier="0.4" id="5x3-lb-vE7"/>
-                            <constraint firstItem="9Pd-i5-ASQ" firstAttribute="height" secondItem="ncE-MC-alh" secondAttribute="height" multiplier="0.57" id="8KA-HA-tOV"/>
                             <constraint firstItem="9Pd-i5-ASQ" firstAttribute="centerX" secondItem="UO0-1p-Nkl" secondAttribute="centerX" id="AzF-rR-FuC"/>
                             <constraint firstItem="9Pd-i5-ASQ" firstAttribute="width" secondItem="ncE-MC-alh" secondAttribute="width" id="M5z-yG-qm8"/>
                             <constraint firstItem="3ai-ky-2KJ" firstAttribute="top" secondItem="UO0-1p-Nkl" secondAttribute="top" id="NPq-p6-BpW"/>
                             <constraint firstItem="UO0-1p-Nkl" firstAttribute="bottom" secondItem="9Pd-i5-ASQ" secondAttribute="bottom" id="QxA-cY-F5U"/>
                             <constraint firstItem="3ai-ky-2KJ" firstAttribute="width" secondItem="ncE-MC-alh" secondAttribute="width" id="ho4-9p-gDI"/>
                             <constraint firstItem="3ai-ky-2KJ" firstAttribute="centerX" secondItem="UO0-1p-Nkl" secondAttribute="centerX" id="pwH-MB-81v"/>
+                            <constraint firstItem="9Pd-i5-ASQ" firstAttribute="top" secondItem="3ai-ky-2KJ" secondAttribute="bottom" id="xaP-0u-xwM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UO0-1p-Nkl"/>
                     </view>
                     <connections>
                         <outlet property="crrLabel" destination="qEX-Im-PIn" id="Uyb-q1-BHK"/>
+                        <outlet property="graphView" destination="3ai-ky-2KJ" id="K0m-Kk-MCW"/>
                         <outlet property="nameLabel" destination="Q6L-QJ-Lqg" id="KVb-uU-kYM"/>
                         <outlet property="ssnLabel" destination="Da6-p2-w1m" id="b75-0b-gUE"/>
                         <outlet property="tableView" destination="LJJ-xJ-hoP" id="mrL-iG-Oxf"/>
@@ -139,9 +139,4 @@
             <point key="canvasLocation" x="45.600000000000001" y="109.29535232383809"/>
         </scene>
     </scenes>
-    <resources>
-        <namedColor name="thirdColor">
-            <color red="0.3843137254901961" green="0.60392156862745094" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-    </resources>
 </document>
