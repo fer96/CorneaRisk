@@ -25,6 +25,7 @@
 		4CAF298421F5335E009ADCF5 /* EyeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAF298321F5335E009ADCF5 /* EyeView.swift */; };
 		4CB43DEC21EE8229000D9DC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CB43DEB21EE8229000D9DC6 /* Assets.xcassets */; };
 		4CB43DF921F27E5B000D9DC6 /* FormTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB43DF821F27E5B000D9DC6 /* FormTableViewController.swift */; };
+		4CDBF4A922026A5E007FC3AF /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDBF4A822026A5E007FC3AF /* GraphViewController.swift */; };
 		4CDC177B21E6879800A5EA1E /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC177A21E6879800A5EA1E /* Patient.swift */; };
 		4CDC178521E69AD300A5EA1E /* Ecuations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC178421E69AD300A5EA1E /* Ecuations.swift */; };
 		4CDC178921E6F99300A5EA1E /* CorneaResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC178821E6F99300A5EA1E /* CorneaResultsViewController.swift */; };
@@ -76,6 +77,7 @@
 		4CAF298321F5335E009ADCF5 /* EyeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeView.swift; sourceTree = "<group>"; };
 		4CB43DEB21EE8229000D9DC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = CorneaRisk/Assets.xcassets; sourceTree = "<group>"; };
 		4CB43DF821F27E5B000D9DC6 /* FormTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableViewController.swift; sourceTree = "<group>"; };
+		4CDBF4A822026A5E007FC3AF /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 		4CDC177A21E6879800A5EA1E /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
 		4CDC178421E69AD300A5EA1E /* Ecuations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ecuations.swift; sourceTree = "<group>"; };
 		4CDC178821E6F99300A5EA1E /* CorneaResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorneaResultsViewController.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 				4C2DE0B321F9235900C7F46A /* PatientsTableViewController.swift */,
 				4C4D1E5921FE9FC80029EBCE /* ProgressTableViewController.swift */,
 				4C4D1E5B21FFE4C50029EBCE /* NewAppointmentViewController.swift */,
+				4CDBF4A822026A5E007FC3AF /* GraphViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -477,6 +480,7 @@
 				4C4D1E5A21FE9FC80029EBCE /* ProgressTableViewController.swift in Sources */,
 				4C4E8CBD21E3FC0500F679F4 /* AppDelegate.swift in Sources */,
 				4C2DE0B421F9235900C7F46A /* PatientsTableViewController.swift in Sources */,
+				4CDBF4A922026A5E007FC3AF /* GraphViewController.swift in Sources */,
 				4C2DE0B221F9232C00C7F46A /* SavePatientViewController.swift in Sources */,
 				4C0A786E21F7E0A000B37AE5 /* Appointment.swift in Sources */,
 				4CDC177B21E6879800A5EA1E /* Patient.swift in Sources */,

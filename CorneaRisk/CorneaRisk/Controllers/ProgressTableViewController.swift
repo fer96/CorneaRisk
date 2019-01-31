@@ -41,6 +41,11 @@ class ProgressTableViewController: UITableViewController {
         performSegue(withIdentifier: "NewAppointment", sender: nil)
         NewAppointmentViewController.patient = patient
     }
+    @IBAction func generateGraphic(_ sender: UIButton) {
+        performSegue(withIdentifier: "Graph", sender: nil)
+        GraphViewController.patient = patient
+        GraphViewController.appointments = appoiments
+    }
     
     
     override func viewDidLoad() {

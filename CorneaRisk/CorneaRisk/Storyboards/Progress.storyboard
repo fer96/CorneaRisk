@@ -289,7 +289,7 @@
                                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <state key="normal" title="Generate Graph"/>
                                     <connections>
-                                        <segue destination="iYb-GS-dNH" kind="show" id="fOn-cU-hNI"/>
+                                        <action selector="generateGraphic:" destination="TMd-DH-fee" eventType="touchUpInside" id="nwN-gC-ewy"/>
                                     </connections>
                                 </button>
                             </subviews>
@@ -422,6 +422,7 @@
                     <connections>
                         <outlet property="saveButton" destination="Dfy-i6-Euc" id="Qey-iE-OLF"/>
                         <segue destination="TeX-gw-pR7" kind="show" identifier="NewAppointment" id="WaM-y6-dMh"/>
+                        <segue destination="iYb-GS-dNH" kind="show" identifier="Graph" id="EqP-kc-Jdb"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="McP-cL-Ibu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -429,10 +430,10 @@
             </objects>
             <point key="canvasLocation" x="2564" y="705.69715142428788"/>
         </scene>
-        <!--GraphViewController-->
+        <!--Graph-->
         <scene sceneID="zyy-Yv-0hY">
             <objects>
-                <viewControllerPlaceholder storyboardName="Graph" referencedIdentifier="GraphViewController" id="iYb-GS-dNH" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Graph" referencedIdentifier="Graph" id="iYb-GS-dNH" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v46-Cf-v7v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3480" y="972"/>
