@@ -25,7 +25,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Corneal Rejection Calculator" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7bj-Gk-5FT">
                                         <rect key="frame" x="0.0" y="68.5" width="375" height="85"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="36"/>
-                                        <color key="textColor" name="imssMainColor"/>
+                                        <color key="textColor" name="mainColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -52,8 +52,8 @@
         </scene>
     </scenes>
     <resources>
-        <namedColor name="imssMainColor">
-            <color red="0.0" green="0.20000000000000001" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="mainColor">
+            <color red="0.0" green="0.20000000298023224" blue="0.14100000262260437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

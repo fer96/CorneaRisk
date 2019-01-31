@@ -23,7 +23,7 @@ protocol setValuesCalculator {
 
 class FormTableViewController: UITableViewController {
     
-    var patient = Patient()
+    var variable = Variable()
     let numberOfRowAtSection: [Int] = [8,26,3]
     
     @IBOutlet weak var ageTextField: UITextField!
@@ -70,7 +70,9 @@ class FormTableViewController: UITableViewController {
     @IBAction func doneButton(_ sender: UIBarButtonItem) {
         if (checkValues() == true) {
             setValuesToPatient()
+            CorneaResultsViewController.variable = variable
             performSegue(withIdentifier: "resultsSegue", sender: nil)
+            
         }else {
             let alert = UIAlertController(title: "Error", message: "Please review your data", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
@@ -82,11 +84,7 @@ class FormTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        hideKeyboardWhenTappedAround()
                 
     }
 
@@ -101,62 +99,6 @@ class FormTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return numberOfRowAtSection[section]
     }
-
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
-    }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
 extension FormTableViewController: setValuesCalculator {
@@ -261,15 +203,26 @@ extension FormTableViewController: setValuesCalculator {
     }
     func setValuesToPatient() {
         
-        patient.setAge(Int(ageTextField.text!)!)
-        patient.sex = sexControl.selectedSegmentIndex
-        patient.graftSize = sizeGraftControl.selectedSegmentIndex
-        patient.typeOfTransplant = typeTransplantControl.selectedSegmentIndex
-        patient.surgicalTime = timeSurgicalControl.selectedSegmentIndex
-        patient.bloodCompatibility = bloodCompatibilitySwitch.isOn
-        patient.ophthalmicComorbidities = ophthalmicComorbiditiesSwitch.isOn
-        patient.postsurgicalComplications = postsurgicalComplicationSwitch.isOn
-        patient.groupRisk = setGroupRisk()
-        patient.systematicComorbidities = setSystematicComorbidities()
+        variable.setAge(Int(ageTextField.text!)!)
+        variable.sex = sexControl.selectedSegmentIndex
+        variable.graftSize = sizeGraftControl.selectedSegmentIndex
+        variable.typeOfTransplant = typeTransplantControl.selectedSegmentIndex
+        variable.surgicalTime = timeSurgicalControl.selectedSegmentIndex
+        variable.bloodCompatibility = variable.boolToInt(bloodCompatibilitySwitch.isOn)
+        variable.ophthalmicComorbidities = variable.boolToInt(ophthalmicComorbiditiesSwitch.isOn)
+        variable.postsurgicalComplications = variable.boolToInt(postsurgicalComplicationSwitch.isOn)
+        variable.groupRisk = setGroupRisk()
+        variable.systematicComorbidities = setSystematicComorbidities()
+    }
+    
+    //MARK: Hide keyboard
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(SavePatientViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }

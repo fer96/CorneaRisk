@@ -9,14 +9,8 @@
 import Foundation
 
 
-class Ecuations{
-    func cholesterolMgDlToMol(oldCholesterol: Double) -> Double {
-        return oldCholesterol * 0.02586
-    }
-    func cholesterolMolToMgDl(oldCholesterol: Double) -> Double {
-        return oldCholesterol * 38.67
-    }
-    static func corneaRisk() -> Double {
-        return Double.random(in: 0.0...100.0)
-    }
+protocol Ecuations{
+    static func corneaRisk() -> Double //{
+        //return Double.random(in: 0.0...100.0)
+    //}
 }
