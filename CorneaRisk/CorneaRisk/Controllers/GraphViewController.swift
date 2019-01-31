@@ -27,6 +27,7 @@ class GraphViewController: UIViewController {
     
     //MARK: Graph
     var vaArray = [Double]()
+    var dateArray = [Double]()
     @IBOutlet weak var graphView: LineChartView!
     let thirdColor = NSUIColor(displayP3Red: CGFloat(0.388), green: CGFloat(0.604), blue: CGFloat(0.404), alpha: CGFloat(1))
     
@@ -41,6 +42,7 @@ class GraphViewController: UIViewController {
         
         //MARK: Set graph
         setValues(GraphViewController.appointments ?? [])
+        //setValuesDate(GraphViewController.appointments ?? [])
         setGraph()
         
     }
@@ -73,6 +75,11 @@ extension GraphViewController: Graph {
         for appointment in from{
             if isInt(appointment.visualAcuity){
                 vaArray.append(Double(appointment.visualAcuity)!)
+                let year = Double(appointment.date.string(with: "yyyy"))! - 2000
+                let mont = Double(appointment.date.string(with: "MM"))! * 0.01
+                let day  = Double(appointment.date.string(with: "dd"))! * 0.0001
+                let element = year + mont + day
+                dateArray.append(Double(element))
             }
         }
     }
@@ -80,13 +87,14 @@ extension GraphViewController: Graph {
         var lineChartEntry  = [ChartDataEntry]()
     
         for i in 0..<vaArray.count {
-            let value = ChartDataEntry(x: Double(i), y: vaArray[i])
+            let value = ChartDataEntry(x: dateArray[i], y: vaArray[i])
             lineChartEntry.append(value)
         }
         
         let line = LineChartDataSet(values: lineChartEntry, label: "Visual Acuity")
         line.colors = [thirdColor]
         line.circleColors = [thirdColor]
+        line.circleRadius = 5.0
         
         let data = LineChartData()
         data.addDataSet(line)

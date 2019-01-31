@@ -66,7 +66,7 @@
                                             <constraint firstItem="Da6-p2-w1m" firstAttribute="top" secondItem="Q6L-QJ-Lqg" secondAttribute="bottom" constant="8" id="mWL-Cu-RBi"/>
                                         </constraints>
                                     </view>
-                                    <tableView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LJJ-xJ-hoP">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LJJ-xJ-hoP">
                                         <rect key="frame" x="0.0" y="114" width="375" height="266"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
@@ -106,9 +106,9 @@
                                     <constraint firstItem="hTM-oZ-hHO" firstAttribute="centerX" secondItem="9Pd-i5-ASQ" secondAttribute="centerX" id="6Lw-e2-UOH"/>
                                     <constraint firstItem="hTM-oZ-hHO" firstAttribute="width" secondItem="9Pd-i5-ASQ" secondAttribute="width" id="A3R-KV-OF3"/>
                                     <constraint firstItem="LJJ-xJ-hoP" firstAttribute="width" secondItem="9Pd-i5-ASQ" secondAttribute="width" id="IST-vv-yWh"/>
+                                    <constraint firstAttribute="bottom" secondItem="LJJ-xJ-hoP" secondAttribute="bottom" id="T8F-iG-WKu"/>
                                     <constraint firstItem="hTM-oZ-hHO" firstAttribute="top" secondItem="9Pd-i5-ASQ" secondAttribute="top" id="UYE-n1-ofW"/>
                                     <constraint firstItem="LJJ-xJ-hoP" firstAttribute="centerX" secondItem="9Pd-i5-ASQ" secondAttribute="centerX" id="h3u-3h-ENi"/>
-                                    <constraint firstAttribute="bottom" secondItem="LJJ-xJ-hoP" secondAttribute="bottom" id="lMC-9m-NCN"/>
                                     <constraint firstItem="LJJ-xJ-hoP" firstAttribute="top" secondItem="hTM-oZ-hHO" secondAttribute="bottom" id="pTL-y0-17Y"/>
                                 </constraints>
                             </view>
